@@ -1,0 +1,177 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  /* padding-top: 50px; */
+  background: var(--primary-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.texture {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  right: -4%;
+  /* transform: rotate(46deg); */
+  background: var(--secondary-background);
+  z-index: 0;
+}
+
+.btn_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.btn_container button {
+  appearance: none;
+  border: none;
+  /* background: none; */
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.one {
+  background: #3a3a3a;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* .texture::before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    left: -20%;
+    top: -10%;
+    border-radius: 50%;
+    background: var(--secondary-background);
+}
+
+.texture::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    left: -20%;
+    bottom: -10%;
+    border-radius: 50%;
+    background: var(--primary-background);
+} */
+
+.text_container {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 1;
+  padding-top: 40px;
+}
+
+/* .text_container p{
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+    font-family: var(--reddit-mono);
+   position: relative;
+   top:-29px;
+   margin-left: 5px;
+} */
+
+.text_container h2 {
+  font-size: 7rem;
+  line-height: 7rem;
+  color: var(--primary-color);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.text_container h2 p {
+  font-size: 7rem;
+}
+/* 
+.text_container h2  span{
+    color: black !important;
+} */
+
+.img_container {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 55%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  background: var(--secondary-background);
+}
+
+.img_container img {
+  min-width: 100%;
+  /* max-width:500px; */
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(30px 0px 5px #a00300);
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 90%;
+  width: 100%;
+  animation: imageSlide 18s ease-in-out infinite;
+}
+
+
+@keyframes imageSlide {
+    0% {
+      transform: translateX(0%);
+    }
+    14.28% {
+      transform: translateX(0%);
+    }
+    16.67% {
+      transform: translateX(-100%);
+    }
+    30.95% {
+      transform: translateX(-100%);
+    }
+    33.33% {
+      transform: translateX(-200%);
+    }
+    47.61% {
+      transform: translateX(-200%);
+    }
+    50% {
+      transform: translateX(-300%);
+    }
+    64.28% {
+      transform: translateX(-300%);
+    }
+    66.67% {
+      transform: translateX(-400%);
+    }
+    80.95% {
+      transform: translateX(-400%);
+    }
+    83.33% {
+      transform: translateX(-500%);
+    }
+    97.61% {
+      transform: translateX(-500%);
+    }
+    100% {
+      transform: translateX(-600%);
+    }
+  }
+  

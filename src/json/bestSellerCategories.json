@@ -1,0 +1,27 @@
+[
+    {
+        "url": "https://res.cloudinary.com/dvk80x6fi/video/upload/v1711692055/boat-recreate/videos/headphones_coxmsf.mp4",
+        "type": "Headphones",
+        "image": "/images/headphone.png"
+    },
+    {
+        "url": "https://res.cloudinary.com/dvk80x6fi/video/upload/v1711692050/boat-recreate/videos/nackbands_xnmvet.mp4",
+        "type": "Nackbands",
+        "image": "/images/neckband.png"
+    },
+    {
+        "url": "https://res.cloudinary.com/dvk80x6fi/video/upload/v1711692059/boat-recreate/videos/smartwatches_q0v4gk.mp4",
+        "type": "Smartwatches",
+        "image": "/images/smartwatches.png"
+    },
+    {
+        "url": "https://res.cloudinary.com/dvk80x6fi/video/upload/v1711692053/boat-recreate/videos/speakers_kme6op.mp4",
+        "type": "Speakers",
+        "image": "/images/speakers.png"
+    },
+    {
+        "url": "https://res.cloudinary.com/dvk80x6fi/video/upload/v1711692048/boat-recreate/videos/earbuds_zqiesz.mp4",
+        "type": "Earbuds",
+        "image": "/images/earbuds.png"
+    }
+]

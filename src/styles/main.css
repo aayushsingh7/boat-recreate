@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
+
+:root{
+ --primary-background:#000000;
+ /* --secondary-background:#aa00ee; */
+ --secondary-background:#c40000;
+ --primary-color:#f6f6f6;
+ --secondary-color:#cbcbcb;
+ --reddit-mono: "Reddit Mono", monospace;
+ --rubik-font: "Rubik Scribble", system-ui;
+ font-size: 21px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    position: relative;
+    width: 100vw;
+    background: var(--primary-background);
+    font-family: Helvetica, Arial, sans-serif;
+    /* background:var(--primary-background); */
+}
+
+.add-padding-container{
+    padding: 0px 40px;
+    width: 100%;
+}

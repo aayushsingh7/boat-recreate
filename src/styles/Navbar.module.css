@@ -1,0 +1,34 @@
+.container{
+    width: 100%;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 20px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+.container img{
+    width: 45px;
+    height: 45px;
+}
+
+
+.container ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.container ul li a{
+    margin: 0px 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    color:var(--primary-color);
+    font-size: 0.88rem;
+    cursor: pointer;
+    text-decoration: none;
+}

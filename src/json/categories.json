@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Earbuds",
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711693143/boat-recreate/images/earbuds_prev_ui_udpq9x.png"
+  },
+  {
+    "id": 2,
+    "title": "Neckband",
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692689/boat-recreate/images/neckband_prev_ui_kmk4bv.png"
+  },
+  {
+    "id": 3,
+    "title": "SmartWatches",
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692356/boat-recreate/images/smartwatch_lnc1vv.png"
+  },
+  {
+    "id": 4,
+    "title": "Wireless Headphones",
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692350/boat-recreate/images/headphones_zwr33d.png"
+  },
+  {
+    "id": 5,
+    "title": "Wireless Speakers",
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692377/boat-recreate/images/wireless_spaker_orkbsx.png"
+  },
+  {
+    "id": 6,
+    "title": "Wired Earphones",
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692373/boat-recreate/images/wired_earphones_ug5nyl.png"
+  },
+  {
+    "id": 7,
+    "title": "Soundbars",
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692586/boat-recreate/images/soundbox_2_zelee6.png"
+  },
+  {
+    "id": 8,
+    "title": "Gaming Headphones",
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692582/boat-recreate/images/gaming_headphones_prev_ui_qjgak7.png"
+  },
+  {
+    "id": 9,
+    "title": "Party Speakers",
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692363/boat-recreate/images/speaker_drllyi.png"
+  },
+  {
+    "id": 10,
+    "title": "Trimmers",
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692637/boat-recreate/images/trimmer_prev_ui_wm3e5c.png"
+  }
+]
