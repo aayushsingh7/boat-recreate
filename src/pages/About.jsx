@@ -1,31 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../styles/About.module.css";
+import { Link } from "react-router-dom";
+import achievements from '../json/achievements.json'
 
 const About = () => {
-  const achievements = [
-    {
-      description:
-        "The number 1 brand for truly wireless, and earwear in India as per Q3 CY21",
-      image:
-        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/India_s-no1-Earwear-Brand-new.png?v=1644576457",
-    },
-    {
-      description: "No. 3 Earwear + Smartwatch global market as per Q3 CY21",
-      image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/5th-largest-wearable-brand_new.png?v=1644574805",
-    },
-    {
-      description: "Leveling up our style with the young and innovative designers of the country",
-      image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/MasabaGupta_1.png?v=1620112760",
-    },
-    {
-      description: "Roaring the sound of the champions with the Indian Premier League",
-      image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt_sound_of_champions.png?v=1620112537",
-    },
-    {
-      description: "The dopest boAtheads joining our family - from the likes of Shreyas Iyer to Diljit Dosanjh!",
-      image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/ShreyasIyer_1.png?v=1620112808",
-    },
-  ];
+ 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior:'instant' })
+  }, []);
 
   return (
     <div id="about" className={styles.container}>
@@ -100,7 +82,7 @@ const About = () => {
       </section>
 
 
-  <button className={styles.home_btn}>Back to Home</button>
+   <Link to={"/"}> <button className={styles.home_btn}>Back to Home</button></Link>
 
     </div>
   );

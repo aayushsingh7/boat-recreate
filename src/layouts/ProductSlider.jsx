@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import styles from "../styles/ProductSlider.module.css";
@@ -13,7 +14,6 @@ const ProductSlider = ({ data, type, highlight, tittle }) => {
     const container = sliderRef.current;
     const hasNext =
       container.scrollLeft + container.clientWidth < container.scrollWidth - 1;
-    console.log("hasNext", hasNext);
     setNextBtn(hasNext);
 
     const hasPrev = container.scrollLeft > 0;
@@ -53,14 +53,19 @@ const ProductSlider = ({ data, type, highlight, tittle }) => {
   }, []);
 
   return (
-    <section >
-      <h2>
-        {tittle} <span className={styles.under_line}>{`${highlight}`}</span>
-      </h2>
+    <section>
+      {tittle && highlight ? (
+        <h2>
+          {tittle} <span className={styles.under_line}>{`${highlight}`}</span>
+        </h2>
+      ) : null}
 
       <div className={styles.slider}>
         {prevBtn ? (
-          <button onClick={handlePrevClick} className={`${styles.prev} ${styles.btn}`}>
+          <button
+            onClick={handlePrevClick}
+            className={`${styles.prev} ${styles.btn}`}
+          >
             <AiOutlineLeft />
           </button>
         ) : null}
@@ -70,20 +75,29 @@ const ProductSlider = ({ data, type, highlight, tittle }) => {
             return (
               <>
                 {type === "product-slider" ? (
-                  <div className={styles.product_container} key={index}>
+                  <div className={styles.product_container}>
                     <div className={styles.product_img}>
-                    <img src={data.url} alt="" />
-                    {/* <span className={styles.discount}>50% off</span> */}
+                      <img src={data.url} alt="" />
+                      {data.tag && (
+                        <span className={styles.tag}>{data.tag}</span>
+                      )}
+                      {data.special && (
+                        <span className={styles.special}>{data.special}</span>
+                      )}
                     </div>
+
                     <div className={styles.details}>
                       <p>{data.name}</p>
-                      {/* <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi voluptatem beatae tenetur cum ....</span> */}
                       <div className={styles.seprator}>
                         <div className={styles.pricing}>
-                          <span className={styles.price}>₹9{data.price}.00</span>
-                          <span className={styles.before_discount}>₹799.00</span>
-                          <span className={styles.discount}>
-                            {data.discount}% off
+                          <span className={styles.price}>
+                            ₹9{data.price}.00
+                          </span>
+                          <span className={styles.before_discount}>
+                            ₹799.00
+                          </span>
+                          <span className={styles.discountp}>
+                            {data.discountp}% off
                           </span>
                         </div>
                         <button>Add to cart</button>
@@ -91,7 +105,7 @@ const ProductSlider = ({ data, type, highlight, tittle }) => {
                     </div>
                   </div>
                 ) : (
-                  <div className={styles.vid_box} key={index}>
+                  <div className={styles.vid_box}>
                     <div
                       key={index}
                       className={styles.vid_container}
@@ -115,7 +129,10 @@ const ProductSlider = ({ data, type, highlight, tittle }) => {
           })}
         </div>
         {nextBtn ? (
-          <button onClick={() => handleNextClick()} className={`${styles.next} ${styles.btn}`}>
+          <button
+            onClick={() => handleNextClick()}
+            className={`${styles.next} ${styles.btn}`}
+          >
             <AiOutlineRight />
           </button>
         ) : null}
@@ -125,3 +142,4 @@ const ProductSlider = ({ data, type, highlight, tittle }) => {
 };
 
 export default ProductSlider;
+

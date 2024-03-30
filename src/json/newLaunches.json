@@ -1,51 +1,65 @@
 [
-    {
-      "name": "Product 1",
-      "price": 27,
-      "discount": 4,
-      "id": "l0sgj6yrm",
-      "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AB_5400D.jpg?v=1711019254"
-    },
-    {
-      "name": "Product 2",
-      "price": 41,
-      "discount": 13,
-      "id": "udqkgb69z",
-      "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Ultima_Select.jpg?v=1707299725"
-    },
-    {
-      "name": "Product 3",
-      "price": 99,
-      "discount": 17,
-      "id": "i7caxd96m",
-      "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_91.jpg?v=1706776330"
-    },
-    {
-      "name": "Product 4",
-      "price": 65,
-      "discount": 8,
-      "id": "7jvqesr4p",
-      "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/IM_111.jpg?v=1706776330"
-    },
-    {
-      "name": "Product 5",
-      "price": 60,
-      "discount": 20,
-      "id": "rgxysj2mp",
-      "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Enigma_x700_c9872d9f-18ba-467f-a07e-32445662885b.jpg?v=1702461500"
-    },
-    {
-      "name": "Product 6",
-      "price": 50,
-      "discount": 9,
-      "id": "29nlgpufv",
-      "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/300_Air.jpg?v=1704183517"
-    },
-    {
-      "name": "Product 7",
-      "price": 76,
-      "discount": 16,
-      "id": "3q1r5p2my",
-      "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Lunar_Tigon.webp?v=1702287204"
-    }
-  ]
+  {
+    "name": "Product 1",
+    "price": 27,
+    "discountp": 4,
+    "id": "l0sgj6yrm",
+    "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AB_5400D.jpg?v=1711019254",
+    "tag":"🎉New launch",
+    "special":"10 hours Playback"
+  },
+  {
+    "name": "Product 2",
+    "price": 41,
+    "discountp": 13,
+    "id": "udqkgb69z",
+    "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Ultima_Select.jpg?v=1707299725",
+    "tag":"🎉New launch",
+    "special":"10 hours Playback"
+  },
+  {
+    "name": "Product 3",
+    "price": 99,
+    "discountp": 17,
+    "id": "i7caxd96m",
+    "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_91.jpg?v=1706776330",
+    "tag":"🎉New launch",
+    "special":"10 hours Playback"
+  },
+  {
+    "name": "Product 4",
+    "price": 65,
+    "discountp": 8,
+    "id": "7jvqesr4p",
+    "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/IM_111.jpg?v=1706776330",
+    "tag":"🎉New launch",
+    "special":"10 hours Playback"
+  },
+  {
+    "name": "Product 5",
+    "price": 60,
+    "discountp": 20,
+    "id": "rgxysj2mp",
+    "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Enigma_x700_c9872d9f-18ba-467f-a07e-32445662885b.jpg?v=1702461500",
+   
+    "special":"10 hours Playback"
+  },
+  {
+    "name": "Product 6",
+    "price": 50,
+    "discountp": 9,
+    "id": "29nlgpufv",
+    "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/300_Air.jpg?v=1704183517",
+    "tag":"🎉New launch",
+    "special":"10 hours Playback"
+  },
+  {
+    "name": "Product 7",
+    "price": 76,
+    "discountp": 16,
+    "id": "3q1r5p2my",
+    "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Lunar_Tigon.webp?v=1702287204",
+    "tag":"🎉New launch",
+    "special":"10 hours Playback"
+  }
+]
