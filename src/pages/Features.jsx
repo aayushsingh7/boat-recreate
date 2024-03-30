@@ -3,9 +3,9 @@ import styles from '../styles/Features.module.css'
 
 const Features = () => {
   return (
-   <div id='features' className={styles.container}> 
-
-   </div>
+   <section id='features' className={styles.container}>
+     <h2>Our <span className={styles.under_line}>Features</span></h2>
+   </section>
   )
 }
 

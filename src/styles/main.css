@@ -15,8 +15,8 @@
 
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
@@ -24,7 +24,7 @@
 body{
     overflow-x: hidden;
     position: relative;
-    width: 100vw;
+    /* width: 100vw; */
     background: var(--primary-background);
     font-family: Helvetica, Arial, sans-serif;
     /* background:var(--primary-background); */
@@ -33,4 +33,22 @@ body{
 .add-padding-container{
     padding: 0px 40px;
     width: 100%;
+}
+
+@media (max-width:650px) {
+    :root{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:530px) {
+    :root{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:390px) {
+    :root{
+        font-size: 14px;
+    }
 }

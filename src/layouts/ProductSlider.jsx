@@ -70,7 +70,7 @@ const ProductSlider = ({ data, type, highlight, tittle }) => {
             return (
               <>
                 {type === "product-slider" ? (
-                  <div className={styles.product_container}>
+                  <div className={styles.product_container} key={index}>
                     <div className={styles.product_img}>
                     <img src={data.url} alt="" />
                     <span className={styles.discount}>50% off</span>
@@ -90,7 +90,7 @@ const ProductSlider = ({ data, type, highlight, tittle }) => {
                     </div>
                   </div>
                 ) : (
-                  <div className={styles.vid_box}>
+                  <div className={styles.vid_box} key={index}>
                     <div
                       key={index}
                       className={styles.vid_container}

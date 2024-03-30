@@ -53,7 +53,7 @@ const Home = () => {
       <section className={styles.img_container}>
         <div className={styles.slider}>
           {heroSectionImages.map((image, index) => {
-            return <img src={image} alt={`slider-${index}`} />;
+            return <img key={index} src={image} alt={`slider-${index}`} />;
           })}
         </div>
       </section>
