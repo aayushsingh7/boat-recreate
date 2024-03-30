@@ -2,6 +2,11 @@ import React from "react";
 import styles from "../styles/Home.module.css";
 import TextTransition, { presets } from "react-text-transition";
 import heroSectionImages from "../json/heroSectionImages.json";
+import ProductSlider from "../layouts/ProductSlider";
+import CategorySlider from "../layouts/CategorySlider";
+import newLaunches from "../json/newLaunches.json";
+import bestSellerCategoriesVideos from "../json/bestSellerCategories.json";
+
 
 const TEXTS = [
   "Headphones",
@@ -25,8 +30,8 @@ const Home = () => {
 
   return (
     <div id="home" className={styles.container}>
-      {/* <span className={styles.texture}></span> */}
-      <section className={styles.text_container}>
+    <section className={styles.hero_section}>
+        <section className={styles.text_container}>
         <p>Listening music becomes fun with</p>
         <h2>
           <p>
@@ -41,12 +46,14 @@ const Home = () => {
         </h2>
         {/* <p>BoAt Lifestyle is India’s fastest growing audio and wearables brand. They have a wide range of wireless earphones, earbuds, headphones, smart watches, and home audio. Whether you're working out or on an adventure, BoAt will get you sailing!</p> */}
         <div className={styles.btn_container}>
+          <a href="#home-products" style={{textDecoration:"none"}}>
           <button
             className={styles.one}
             style={{ background: "var(--secondary-background)" }}
           >
-            Show now
+            Shop now
           </button>
+          </a>
           <button className={styles.one}>About us</button>
         </div>
       </section>
@@ -57,6 +64,36 @@ const Home = () => {
           })}
         </div>
       </section>
+    </section>
+
+
+   <div className="add-padding-container" id="home-products">
+   <section>
+        <h2>
+          Shop by <span className={styles.under_line}>Categories</span>
+        </h2>
+        <CategorySlider />
+      </section>
+
+      
+      <ProductSlider
+        data={bestSellerCategoriesVideos}
+        type={"video-slider"}
+        tittle={"Explore"}
+        highlight={"Best Sellers"}
+      />
+
+      <ProductSlider
+        data={newLaunches}
+        type={"product-slider"}
+        tittle={"New"}
+        highlight={"Launches"}
+      />
+    
+   </div>
+
+
+
     </div>
   );
 };

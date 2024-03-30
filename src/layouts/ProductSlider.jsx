@@ -73,17 +73,18 @@ const ProductSlider = ({ data, type, highlight, tittle }) => {
                   <div className={styles.product_container} key={index}>
                     <div className={styles.product_img}>
                     <img src={data.url} alt="" />
-                    <span className={styles.discount}>50% off</span>
+                    {/* <span className={styles.discount}>50% off</span> */}
                     </div>
                     <div className={styles.details}>
                       <p>{data.name}</p>
+                      {/* <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi voluptatem beatae tenetur cum ....</span> */}
                       <div className={styles.seprator}>
                         <div className={styles.pricing}>
                           <span className={styles.price}>₹9{data.price}.00</span>
                           <span className={styles.before_discount}>₹799.00</span>
-                          {/* <span className={styles.discount}>
+                          <span className={styles.discount}>
                             {data.discount}% off
-                          </span> */}
+                          </span>
                         </div>
                         <button>Add to cart</button>
                       </div>

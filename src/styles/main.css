@@ -24,15 +24,26 @@
 body{
     overflow-x: hidden;
     position: relative;
-    /* width: 100vw; */
     background: var(--primary-background);
-    font-family: Helvetica, Arial, sans-serif;
-    /* background:var(--primary-background); */
+    font-family: Helvetica, Arial, sans-serif; 
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-start; */
+}
+
+body::-webkit-scrollbar{
+    width: 0px;
 }
 
 .add-padding-container{
     padding: 0px 40px;
     width: 100%;
+}
+
+
+.add-padding-container section{
+    width: 100%;
+    padding: 20px 0px;
 }
 
 @media (max-width:650px) {
