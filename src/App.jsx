@@ -12,24 +12,7 @@ import SearchResults from "./pages/SearchResults";
 import MobileSearchPage from "./layouts/MobileSearchPage";
 
 const App = () => {
-  // const router = createBrowserRouter([
-  //   {
-  //     path:"/",
-  //     element:<><SideNavbar/><Navbar/><Home/></>
-  //   },
-  //   {
-  //     path:"/about",
-  //     element:<><SideNavbar/><Navbar/><About/></>
-  //   },
-  //   {
-  //     path:"/product/:id",
-  //   element:<><SideNavbar/><Navbar/><Product/></>
-  //   },
-  //   {
-  //     path:"/search/:query",
-  //   element:<><SideNavbar/><Navbar/><SearchResults/></>
-  //   }
-  // ])
+
   return (
     <div className="app">
     <Navbar />
@@ -39,9 +22,7 @@ const App = () => {
       <Route path="/" element={<Home/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/search" element={<SearchResults/>} />
-      {/* <Route path="/" element={<Home/>} /> */}
     </Routes>
-    {/* <RouterProvider router={router}/> */}
     <Footer />
   </div>
   

@@ -36,7 +36,7 @@ transition: .5s ease-in-out;
 
 .part_one{
     width: 100%;
-    padding: 15px 20px 15px 20px;
+    padding:15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@ transition: .5s ease-in-out;
     border: none;
     background:rgb(37 37 37 / 79%);
     border-radius: 50px;
-    width:90%;
+    width:100%;
     color: var(--primary-color);
     font-size: 0.8rem;
     padding: 15px 20px;
