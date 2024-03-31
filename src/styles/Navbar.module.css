@@ -1,26 +1,29 @@
 .container{
     width: 100%;
-    height:50px;
+    height:70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:10px 20px;
+    padding:20px 20px;
     position:fixed;
     top: 0;
     left: 0;
     z-index: 10;
+    backdrop-filter: blur(50px);
 }
 
 
 .container img{
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
+    margin-right: 25px;
 }
 
 
 .container ul {
     display: flex;
     list-style: none;
+    margin-left:45px;
 }
 
 
@@ -28,7 +31,121 @@
     margin: 0px 20px;
     font-family: Helvetica, Arial, sans-serif;
     color:var(--primary-color);
-    font-size: 0.88rem;
+    font-size: 0.8rem;
     cursor: pointer;
     text-decoration: none;
+}
+
+.part_one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part_two{
+    display: flex;
+    align-items:center;
+justify-content: center;
+}
+
+.main_option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.main_option button{
+    appearance: none;
+    border: none;
+    background:none;
+    padding: 5px;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    margin: 0px 6px;
+}
+
+.part_two input{
+    background: none;
+   outline: none;
+    appearance: none;
+    border: none;
+    color:var(--primary-color);
+    padding: 10px 60px 10px 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(40px);
+    font-size: 0.8rem;
+    width: 25vw;
+    background: #0000004a;
+}
+
+.part_two input::placeholder{
+    color:#cbcbcb;
+}
+
+.search_icon{
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%);
+    right: 5%;
+}
+
+
+
+
+.ran{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.ran svg{
+    color: var(--primary-color);
+    font-size: 34px;
+    margin-right: 20px;
+    display: none;
+}
+
+.search_icon_mob{
+    display: none;
+}
+
+
+@media (max-width:940px) {
+    .container ul{
+        margin-left: 5px;
+    }
+}
+
+@media (max-width:850px) {
+    .container ul{
+        display: none;
+    }
+    .ran svg{
+        display: block;
+    }
+    .part_two input{
+        width: 100%;
+    }
+    .container img{
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media (max-width:650px) {
+    .part_two input{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:550px) {
+    .input_div{
+        display: none;
+    }
+    .search_icon_mob{
+        display: block;
+    }
 }
