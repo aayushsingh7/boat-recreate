@@ -37,15 +37,16 @@ const Home = () => {
     <div id="home" className={styles.container}>
       <section className={styles.hero_section}>
         <section className={styles.text_container}>
-          <p>Listening music becomes fun with</p>
+          {/* <p>Listening music becomes fun with</p> */}
           <h2>
             <p>
-              bo<span style={{ color: "red" }}>A</span>t
+              bo<span style={{ color: "red",fontWeight:"600" }}>A</span>t
             </p>
-            <p>
+            <p style={{fontWeight:"600"}} className={styles.custom}>
               {" "}
               <TextTransition
                 translateValue="30%"
+                
                 springConfig={presets.default}
               >
                 {TEXTS[index % TEXTS.length]}
@@ -75,6 +76,7 @@ const Home = () => {
             })}
           </div>
         </section>
+        <span className={styles.cutter}></span>
       </section>
 
       <div className="add-padding-container" id="home-products">
@@ -83,8 +85,18 @@ const Home = () => {
           type={"video-slider"}
           tittle={"Explore"}
           highlight={"Best Sellers"}
+          counter={false}
         />
 
+
+
+<ProductSlider
+          data={dailyDeals}
+          type={"product-slider"}
+          tittle={"Daily"}
+          highlight={"Deals"}
+          counter={true}
+        />
         <section>
           <h2>
             Shop by <span className={styles.under_line}>Categories</span>
@@ -97,14 +109,9 @@ const Home = () => {
           type={"product-slider"}
           tittle={"New"}
           highlight={"Launches"}
+          counter={false}
         />
 
-        <ProductSlider
-          data={dailyDeals}
-          type={"product-slider"}
-          tittle={"Daily"}
-          highlight={"Deals"}
-        />
       </div>
     </div>
   );

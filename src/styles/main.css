@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
 :root{
@@ -25,7 +26,7 @@ body{
     overflow-x: hidden;
     position: relative;
     background: var(--primary-background);
-    font-family: Helvetica, Arial, sans-serif; 
+    font-family: "Roboto", sans-serif;
     /* display: flex;
     align-items: center;
     justify-content: flex-start; */
@@ -46,9 +47,18 @@ body::-webkit-scrollbar{
     padding: 20px 0px;
 }
 
+@media (max-width:820px) {
+    .add-padding-container{
+        padding: 0px 30px;
+    }
+}
+
 @media (max-width:650px) {
     :root{
         font-size: 18px;
+    }
+    .add-padding-container{
+        padding: 0px 20px;
     }
 }
 
@@ -56,10 +66,19 @@ body::-webkit-scrollbar{
     :root{
         font-size: 16px;
     }
+    .add-padding-container{
+        padding: 0px 10px;
+    }
 }
 
-@media (max-width:390px) {
+@media (max-width:340px) {
     :root{
         font-size: 14px;
     }
+}
+
+@media (max-width:260px) {
+  :root{
+    font-size: 12px;
+  }  
 }

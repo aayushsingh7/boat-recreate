@@ -26,12 +26,13 @@ const MobileSearchPage = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    if (query.trim() !== "") {
-      setOpenSearchPage(false);
-      navigate(`/search?query=${query}`);
+    setOpenSearchPage(false);
+    if (query.trim() === "") {
+      return navigate("/");
     }
-  };
 
+    navigate(`/search?query=${query}`);
+  };
 
   return (
     <>
@@ -51,7 +52,7 @@ const MobileSearchPage = () => {
             className={styles.return}
             onClick={() => setOpenSearchPage(false)}
           />
-         <form onSubmit={handleFormSubmit} style={{width:"90%"}}>
+          <form onSubmit={handleFormSubmit} style={{ width: "90%" }}>
             <input
               type="text"
               placeholder="Search headphones, earphones, etc"

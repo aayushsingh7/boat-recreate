@@ -1,10 +1,11 @@
-
 import React, { useEffect, useRef, useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import styles from "../styles/ProductSlider.module.css";
 import ReactPlayer from "react-player";
+import { RiVerifiedBadgeFill } from "react-icons/ri";
+import DealCounter from "./DealCounter";
 
-const ProductSlider = ({ data, type, highlight, tittle }) => {
+const ProductSlider = ({ data, type, highlight, tittle, counter }) => {
   const sliderRef = useRef(null);
   const [nextBtn, setNextBtn] = useState(false);
   const [prevBtn, setPrevBtn] = useState(false);
@@ -60,6 +61,13 @@ const ProductSlider = ({ data, type, highlight, tittle }) => {
         </h2>
       ) : null}
 
+      {counter ? (
+        // <div className={styles.deals_counter}>
+        //   <img src="./images/banner.webp" alt="" />
+        //  <p>Ending in <span>14</span> Hours<span>: </span> <span>23</span> Minutes<span>: </span> <span>23</span> Seconds</p>
+        // </div>
+        <DealCounter />
+      ) : null}
       <div className={styles.slider}>
         {prevBtn ? (
           <button
@@ -81,25 +89,55 @@ const ProductSlider = ({ data, type, highlight, tittle }) => {
                       {data.tag && (
                         <span className={styles.tag}>{data.tag}</span>
                       )}
-                      {data.special && (
+                      {/* {data.special && (
                         <span className={styles.special}>{data.special}</span>
-                      )}
+                      )} */}
+
+                      {/* <div className={styles.product_review}>
+                        <p>⭐{3.6}</p>
+                        <span>|</span>
+                        <p style={{ display: "flex", alignItems: "center" }}>
+                          {40}{" "}
+                          <RiVerifiedBadgeFill
+                            style={{
+                              fontSize: "13px",
+                              marginLeft: "2px",
+                              color: "#00da00",
+                            }}
+                          />
+                        </p>
+                      </div> */}
+
+
+
                     </div>
 
                     <div className={styles.details}>
                       <p>{data.name}</p>
                       <div className={styles.seprator}>
-                        <div className={styles.pricing}>
+                      <div>
+                      <div className={styles.pricing}>
                           <span className={styles.price}>
-                            ₹9{data.price}.00
+                            ₹{data.price.toLocaleString()}.00
                           </span>
                           <span className={styles.before_discount}>
-                            ₹799.00
+                            {Number(
+                              (data.price / (1 - data.discountp / 100)).toFixed(
+                                0
+                              )
+                            ).toLocaleString()}
+                            .00
                           </span>
                           <span className={styles.discountp}>
                             {data.discountp}% off
                           </span>
                         </div>
+                        <div className={styles.product_review}>
+                <p>⭐{3.6}</p>
+                <span>|</span>
+                <p style={{display:"flex",alignItems:"center"}}>{40} <RiVerifiedBadgeFill style={{fontSize:"13px",marginLeft:"2px",color:"#00da00"}}/></p>
+              </div>
+                      </div>
                         <button>Add to cart</button>
                       </div>
                     </div>
@@ -115,8 +153,8 @@ const ProductSlider = ({ data, type, highlight, tittle }) => {
                       <ReactPlayer
                         muted={true}
                         loop={true}
-                        width={320}
-                        height={320}
+                        width={"50vw"}
+                        height={"50vw"}
                         playing={index === selectedVid}
                         url={data.url}
                       />
@@ -142,4 +180,3 @@ const ProductSlider = ({ data, type, highlight, tittle }) => {
 };
 
 export default ProductSlider;
-

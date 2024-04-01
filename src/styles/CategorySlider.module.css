@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: metro;
     src: url(Metropolis-Regular.otf);
-  }
+  } */
 
 
 .container{
@@ -49,9 +49,8 @@ padding:10px;
     text-align: center;
     font-size: 15px;
     color: var(--primary-color);
-    font-family: Helvetica, Arial, sans-serif;
     margin-top: 15px;
-
+font-weight: 400;
 }
 
 .btn{
@@ -83,3 +82,10 @@ padding:10px;
     right: 1%;
 }
 
+
+
+@media (max-width:499px) {
+    .btn{
+        display: none;
+    }
+}

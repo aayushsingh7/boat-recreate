@@ -8,7 +8,7 @@
     position:fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 100;
     backdrop-filter: blur(50px);
 }
 
@@ -29,7 +29,8 @@
 
 .container ul li a{
     margin: 0px 20px;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     color:var(--primary-color);
     font-size: 0.8rem;
     cursor: pointer;
@@ -135,6 +136,21 @@ justify-content: center;
     }
 }
 
+@media (max-width:820px) {
+.container img{
+    display: none;
+}
+.part_two input{
+    background: #9797974a;
+}
+.input_div{
+    width: 100%;
+}
+.part_two{
+    width: 100%;
+}
+}
+
 @media (max-width:650px) {
     .part_two input{
         font-size: 0.9rem;
@@ -147,5 +163,14 @@ justify-content: center;
     }
     .search_icon_mob{
         display: block;
+    }
+    .part_two{
+        width: auto;
+    }
+}
+
+@media (max-width:499px) {
+    .container{
+        padding: 20px 10px;
     }
 }

@@ -10,6 +10,7 @@ import Footer from "./layouts/Footer";
 import {Routes,Route} from 'react-router-dom'
 import SearchResults from "./pages/SearchResults";
 import MobileSearchPage from "./layouts/MobileSearchPage";
+import Cart from "./layouts/Cart";
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
     <div className="app">
     <Navbar />
     <SideNavbar/>
+    <Cart/>
     <MobileSearchPage/>
     <Routes>
       <Route path="/" element={<Home/>} />

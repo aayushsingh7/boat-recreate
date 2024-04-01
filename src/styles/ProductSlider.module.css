@@ -1,7 +1,7 @@
 .under_line {
   /* color: var(--secondary-background); */
   position: relative;
-  font-weight: bolder;
+  font-weight:600;
 }
 
 .under_line::before {
@@ -69,12 +69,16 @@
 }
 
 .vid_container {
-  min-width: 320px;
   max-width: 320px;
-  height: 320px;
+  max-height: 320px;
   border-radius: 20px;
   overflow: hidden;
   text-align: center;
+}
+
+.vid_container div{
+  max-height: 320px !important;
+  max-width: 320px !important;
 }
 
 .vid_box {
@@ -98,12 +102,13 @@
   font-size: 1rem;
   color: var(--primary-color);
   margin-top: 15px;
-  font-family: Helvetica, Arial, sans-serif;
+  /* font-family: Helvetica, Arial, sans-serif; */
 }
 
 .product_container {
   min-width: 350px;
-  background: rgb(37 37 37 / 79%);
+  /* background: rgb(37 37 37 / 79%); */
+  background: rgb(27 27 27);
   border-radius: 10px;
   margin-right: 20px;
   overflow: hidden;
@@ -154,14 +159,14 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 15px 15px;
+  padding: 10px 15px;
   flex-direction: column;
 }
 
 .details p {
   color: var(--primary-color);
-  font-size: 0.9rem;
-  font-weight: bolder;
+  font-size:1rem;
+  font-weight:400;
 }
 
 /* .pricing span{
@@ -169,17 +174,17 @@
 } */
 
 .pricing {
-  /* margin-top: 10px; */
+  margin-top: 7px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 
 .seprator {
-  margin-top: 5px;
+  /* margin-top: 5px; */
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items:end;
   justify-content: space-between;
 }
 
@@ -194,7 +199,7 @@
   cursor: pointer;
 }
 .price {
-  font-weight: bold;
+  font-weight:600;
   margin-right: 4px;
   color: var(--primary-color);
   font-size: 0.8rem;
@@ -225,20 +230,17 @@
 }
 
 .tag {
-  margin-top: 10px;
-  font-weight: bolder;
   font-size: 0.5rem;
   position: absolute;
-  top: 0%;
+  top: 3%;
   left: 0%;
-  /* color: var(--primary-color); */
   padding: 8px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  color: rgb(255, 255, 255);
-  background: rgb(0, 0, 0);
-  /* backdrop-filter: blur(20px); */
+  color:var(--primary-color);
+  background:var(--primary-background);
   text-align: center;
+  font-weight: 400;
 }
 
 .before_discount {
@@ -271,4 +273,125 @@
   font-size: 13px;
   font-weight: 900;
   margin-left: 3px;
+}
+
+.deals_counter{
+  width: 100%;
+  overflow: hidden;
+ position: relative;
+}
+
+.product_review {
+  font-weight: bolder;
+  font-size: 8px;
+  /* position: absolute;
+  bottom: 2%;
+  right: 2%; */
+  /* padding: 8px; */
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+  display: flex;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 6px;
+  width: 100px;
+  margin-top: 7px;
+}
+
+.product_review p{
+  font-size: 0.6rem;
+}
+
+.product_review span{
+  color: rgb(53, 53, 53);
+  margin: 0px 7px;
+ font-size: 25px;
+}
+
+
+
+.deals_counter p{
+  font-size: 1rem;
+    font-weight: 400;
+    color: var(--secondary-background);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 15%;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.deals_counter p span{
+  font-size: 2rem;
+margin: 0px 5px;
+}
+
+.deals_counter img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+
+@media (max-width:1100px) {
+  .product_container{
+    min-width: 320px;
+  }
+  .product_img{
+    height: 320px;
+  }
+}
+
+@media (max-width:850px) {
+  .product_review{
+    margin-top: 0px;
+    margin: 7px 0px;
+  }
+  .product_container{
+    min-width:280px;
+  }
+  .product_img{
+    height:280px;
+  }
+  .seprator{
+    align-items: start;
+    flex-direction: column;
+  }
+  .seprator button{
+    width: 100%;
+  }
+  .special{
+    width: 80%;
+  }
+  .pricing{
+    margin: 7px 0px;
+  }
+  .details{
+    padding: 10px;
+  }
+}
+
+@media (max-width:650px) {
+  .product_container{
+    min-width:180px;
+    margin-right: 10px;
+  }
+  .product_img{
+    height:180px;
+  }
+  .vid_box{
+    margin-right: 10px;
+  }
+  
+}
+
+@media (max-width:499px) {
+  .btn{
+    display: none;
+  }
 }
