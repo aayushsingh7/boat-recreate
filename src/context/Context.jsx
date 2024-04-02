@@ -10,6 +10,9 @@ const AppFunction = ({children}) => {
    const [showCart,setShowCart] = useState(false)
    const [cartItemsLength,setCartItemsLength] = useState([])
    const [cartItems,setCartItems] = useState([])
+   const [showLogin,setShowLogin] = useState(false)
+   const [showRegister,setShowRegister] = useState(false)
+   const [user,setUser] = useState({})
 
 
    const addToCart = (newProduct)=> {
@@ -34,7 +37,16 @@ const AppFunction = ({children}) => {
    useEffect(()=> {
     // window.alert("rendered")
     const cartData = JSON.parse( localStorage.getItem("cart"))
-    const cartLength  = cartData.map((data)=> data.id)
+    const user = JSON.parse(localStorage.getItem("user_details"))
+
+    setUser(user)
+
+    if(!cartData){
+        setCartItems([])
+        setCartItemsLength([])
+        return;
+    }
+    const cartLength  = cartData?.map((data)=> data.id)
     setCartItems(cartData)
     setCartItemsLength(cartLength)
    },[])
@@ -45,7 +57,7 @@ const AppFunction = ({children}) => {
 
     return (
         <AppContext.Provider value={{
-             cartItemsLength,showCart,cartItems,showSideNavbar,openSearchPage,setShowSideNavbar,setOpenSearchPage,setShowCart,addToCart,removeFromCart
+             user,showLogin,showRegister,cartItemsLength,showCart,cartItems,showSideNavbar,openSearchPage,setShowSideNavbar,setOpenSearchPage,setShowCart,addToCart,removeFromCart,setShowLogin,setShowRegister
         }}>
 {children}
         </AppContext.Provider>

@@ -7,22 +7,25 @@ import { IoIosSearch } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
 import { AppContext } from "../context/Context";
+import { FaUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [query, setQuery] = useState("");
   const q = new URLSearchParams(location.search);
   const { setShowSideNavbar } = useContext(AppContext);
+  const [showProfile,setShowProfile] = useState(false)
   const getSearchRequestText = q.get("query");
-  const { setOpenSearchPage, setShowCart, cartItemsLength } = useContext(AppContext);
+  const { setOpenSearchPage,setShowCart, user, cartItemsLength, setShowLogin } =
+    useContext(AppContext);
 
   useEffect(() => {
     setQuery(getSearchRequestText);
   }, [location.search]);
 
-  useEffect(()=> {
-  window.scrollTo({top:0,behavior:"instant"})
-  },[])
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, []);
 
   const searchQueryOnType = (e) => {
     if (query.trim() === "") {
@@ -83,11 +86,32 @@ const Navbar = () => {
           >
             <IoIosSearch style={{ fontSize: "30px" }} />
           </button>
-          <button>
+          <button onClick={() => user ? null : setShowLogin(true)} onMouseEnter={()=> setShowProfile(true)} onMouseLeave={()=> setShowProfile(false)}>
             <FaRegUser style={{ fontSize: "23px" }} />
+            {
+              showProfile ? 
+              <div
+              className={styles.user_profile}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <FaUserCircle />
+              <div>
+                <p>
+                  <span>Email:</span> aayushsingh@gmail.com
+                </p>
+                <p>
+                  <span>password:</span> ×××××××××××××
+                </p>
+              </div>
+            </div>  : null
+            }
           </button>
-          <button onClick={()=> setShowCart(true)}>
-            {cartItemsLength.length > 0 ? <span className={styles.cart_length}>{cartItemsLength.length}</span> : null}
+          <button onClick={() => setShowCart(true)}>
+            {cartItemsLength?.length > 0 ? (
+              <span className={styles.cart_length}>
+                {cartItemsLength?.length}
+              </span>
+            ) : null}
             <IoCartOutline style={{ fontSize: "31px" }} />
           </button>
         </div>
