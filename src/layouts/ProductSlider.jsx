@@ -1,15 +1,17 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import styles from "../styles/ProductSlider.module.css";
 import ReactPlayer from "react-player";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import DealCounter from "./DealCounter";
+import { AppContext } from "../context/Context";
 
 const ProductSlider = ({ data, type, highlight, tittle, counter }) => {
   const sliderRef = useRef(null);
   const [nextBtn, setNextBtn] = useState(false);
   const [prevBtn, setPrevBtn] = useState(false);
   const [selectedVid, setSelectedVid] = useState(100);
+  const {addToCart,removeFromCart, cartItems} = useContext(AppContext)
 
   const updateButtonState = () => {
     const container = sliderRef.current;
@@ -138,7 +140,11 @@ const ProductSlider = ({ data, type, highlight, tittle, counter }) => {
                 <p style={{display:"flex",alignItems:"center"}}>{40} <RiVerifiedBadgeFill style={{fontSize:"13px",marginLeft:"2px",color:"#00da00"}}/></p>
               </div>
                       </div>
-                        <button>Add to cart</button>
+                      {
+                        cartItems.map((item)=> item.id).includes(data.id) ?  
+                        <button onClick={()=> {console.log(data.id);removeFromCart(data.id)}}>Remove from cart</button> : 
+                        <button onClick={()=> addToCart(data)}>Add to cart</button>
+                      }
                       </div>
                     </div>
                   </div>

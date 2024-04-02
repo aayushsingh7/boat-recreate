@@ -2,7 +2,7 @@
     { 
         
     "name":"cbyadd headphones 12",
-    "image":"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/NION-ANC-FI_White01_medium.png?v=1702893834",
+    "url":"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/NION-ANC-FI_White01_medium.png?v=1702893834",
     "type":"headphone",
     "availableColors":[{ "color":"#FFFF", "image":"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/NION-ANC-FI_White01_medium.png?v=1702893834"},
      { "color":"#000000", "image":"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/NION-ANC-FI_Black01_medium.png?v=1702893834" },
@@ -10,7 +10,7 @@
      { "color":"#617867", "image":"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/NION-ANC-FI_Black01_197d7c60-f66c-4cf2-bdb8-e48112b9832a_medium.png?v=1709032480" }
     ],
     "discount":40,
-    "discountprice":4000,
+    "price":4000,
     "originalPrice":12000,
     "engraving":true,
     "specialities":[ "12 hours playback","Dual EQ modes", "BEAST™ Mode", "13 mm driver", "etc" ],
@@ -20,12 +20,12 @@
     { 
         
     "name":"cbyadd headphones 12",
-    "image":"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Product-Image_57e5d0a0-f8d0-4d59-8a1f-2d1a98f3bd6a_medium.png?v=1685603403",
+    "url":"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Product-Image_57e5d0a0-f8d0-4d59-8a1f-2d1a98f3bd6a_medium.png?v=1685603403",
     "type":"headphone",
     "availableColors":[
     ],
     "discount":40,
-    "discountprice":4000,
+    "price":4000,
     "originalPrice":12000,
     "engraving":true,
     "specialities":[ "12 hours playback","Dual EQ modes", "BEAST™ Mode", "13 mm driver", "etc" ],
@@ -35,12 +35,12 @@
     { 
         
     "name":"cbyadd headphones 12",
-    "image":"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Product-Image_57e5d0a0-f8d0-4d59-8a1f-2d1a98f3bd6a_medium.png?v=1685603403",
+    "url":"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Product-Image_57e5d0a0-f8d0-4d59-8a1f-2d1a98f3bd6a_medium.png?v=1685603403",
     "type":"headphone",
     "availableColors":[
     ],
     "discount":40,
-    "discountprice":4000,
+    "price":4000,
     "originalPrice":12000,
     "engraving":true,
     "specialities":[ "12 hours playback","Dual EQ modes", "BEAST™ Mode", "13 mm driver", "etc" ],
@@ -50,12 +50,12 @@
     { 
         
     "name":"cbyadd headphones 12",
-    "image":"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-image-2_b82967ce-17b6-40ea-a169-d5039dc1cd1d_medium.png?v=1655538157",
+    "url":"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-image-2_b82967ce-17b6-40ea-a169-d5039dc1cd1d_medium.png?v=1655538157",
     "type":"headphone",
     "availableColors":[
     ],
     "discount":40,
-    "discountprice":4000,
+    "price":4000,
     "originalPrice":12000,
     "engraving":false,
     "specialities":[ "12 hours playback","Dual EQ modes", "BEAST™ Mode", "13 mm driver", "etc" ],
@@ -65,12 +65,12 @@
     { 
         
     "name":"cbyadd headphones 12",
-    "image":"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-image-3_4a4b18dd-18dd-485f-9f4e-94e1f3613124_medium.png?v=1655535266",
+    "url":"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-image-3_4a4b18dd-18dd-485f-9f4e-94e1f3613124_medium.png?v=1655535266",
     "type":"headphone",
     "availableColors":[
     ],
     "discount":40,
-    "discountprice":4000,
+    "price":4000,
     "originalPrice":12000,
     "engraving":false,
     "specialities":[ "12 hours playback","Dual EQ modes", "BEAST™ Mode", "13 mm driver", "etc" ],
@@ -80,12 +80,12 @@
     { 
         
     "name":"cbyadd headphones 12",
-    "image":"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/6fe5f5a4-d3c4-44fa-afb8-317dbb8ce736_medium.png?v=1685541984",
+    "url":"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/6fe5f5a4-d3c4-44fa-afb8-317dbb8ce736_medium.png?v=1685541984",
     "type":"headphone",
     "availableColors":[
     ],
     "discount":40,
-    "discountprice":4000,
+    "price":4000,
     "originalPrice":12000,
     "engraving":true,
     "specialities":[ "12 hours playback","Dual EQ modes", "BEAST™ Mode", "13 mm driver", "etc" ],
@@ -95,7 +95,7 @@
     { 
         
     "name":"cbyadd headphones 12",
-    "image":"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Artboard7copy_a199e713-c7c6-4b57-8e36-63ee5e841b1e_medium.png?v=1705983646",
+    "url":"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Artboard7copy_a199e713-c7c6-4b57-8e36-63ee5e841b1e_medium.png?v=1705983646",
     "type":"headphone",
     "availableColors":[
         { "color":"#000000", "image":"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/NION-ANC-FI_White01_medium.png?v=1702893834"},
@@ -104,7 +104,7 @@
  
     ],
     "discount":40,
-    "discountprice":4000,
+    "price":4000,
     "originalPrice":12000,
     "engraving":true,
     "specialities":[ "12 hours playback","Dual EQ modes", "BEAST™ Mode", "13 mm driver", "etc" ],

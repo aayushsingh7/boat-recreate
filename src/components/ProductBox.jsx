@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import styles from "../styles/ProductBox.module.css";
 import productData from "../json/SearchResult.json";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
+import { AppContext } from '../context/Context';
 
 const ProductBox = ({changePermit,min,product,productIndex}) => {
 
   const [selectedColorIndices, setSelectedColorIndices] = useState(Array(productData.length).fill(0));
+  const {removeFromCart} = useContext(AppContext)
 
   const handleColorClick = (productIndex, colorIndex) => {
     setSelectedColorIndices(prevIndices => {
@@ -23,9 +25,9 @@ const ProductBox = ({changePermit,min,product,productIndex}) => {
 
   return (
    
-          <div key={productIndex} className={styles.product_box_item} style={{height:min ? `${min}px` : 'auto'}}>
+          <div key={productIndex} className={styles.product_box_item} >
             <div className={styles.product_img}>
-              <img src={product.image} alt={product.name} />
+              <img src={product.url} alt={product.name} style={{objectFit:changePermit ? "cover" : "contain",padding:changePermit ? "0px": "10px"}}/>
               {/* <p className={product.engraving ? styles.engrave : styles.engraven}> {product.engraving ? "✍️ Special Engraving Available" : ""}</p> */}
               <p className={styles.tag}>{product.tag}</p>
               <div className={styles.product_review}>
@@ -34,20 +36,20 @@ const ProductBox = ({changePermit,min,product,productIndex}) => {
                 <p style={{display:"flex",alignItems:"center"}}>{product.reviews} <RiVerifiedBadgeFill style={{fontSize:"13px",marginLeft:"2px",color:"#00da00"}}/></p>
               </div>
             </div>
-            <div className={styles.product_box_content}>
+            <div className={styles.product_box_content} style={{padding:changePermit ? "10px 10px 0px 10px" : "0px 10px"}}>
             
               <div className={styles.product_box_info}>
                 <h1>{product.name}</h1>
                 <div className={styles.product_price}>
-                  <p className={styles.discount}>₹{(product.discountprice).toLocaleString()}</p>
+                  <p className={styles.discount}>₹{(product.price).toLocaleString()}</p>
                   <p className={styles.discounto}>₹{(product.originalPrice).toLocaleString()}</p>
-                  <p className={styles.discountp}> {product.discount}% off</p>
+                  <p className={styles.discountp}> {product?.discount ? product.discount : "60"}% off</p>
                 </div>
               </div>
              
               <div className={styles.product_box_colors}>
                 <div className={styles.product_specialities}>
-                  {product.specialities.map((speciality, index) => (
+                  {product.specialities &&  product.specialities.map((speciality, index) => (
                     <span key={index}>{speciality} |</span>
                   ))}
                 </div>
@@ -73,7 +75,7 @@ const ProductBox = ({changePermit,min,product,productIndex}) => {
                   )}
               </div>
             </div>
-            <button className={`${changePermit ? styles.remove_cart : styles.view_product} ${styles.btn_btn}`}>
+            <button onClick={()=> changePermit ? removeFromCart(product.id) : null } className={`${changePermit ? styles.remove_cart : styles.view_product} ${styles.btn_btn}`}>
               {changePermit ? "Remove from Cart"  : "View Product"}</button>
           </div>
        

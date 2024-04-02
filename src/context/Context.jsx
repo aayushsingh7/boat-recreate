@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import {React, useEffect, useState} from 'react'
 import { useContext,createContext } from 'react'
 
 export const AppContext = createContext()
@@ -8,25 +8,36 @@ const AppFunction = ({children}) => {
    const [showSideNavbar,setShowSideNavbar] = useState(false)
    const [openSearchPage,setOpenSearchPage] = useState(false)
    const [showCart,setShowCart] = useState(false)
+   const [cartItemsLength,setCartItemsLength] = useState([])
    const [cartItems,setCartItems] = useState([])
 
 
    const addToCart = (newProduct)=> {
+      setCartItemsLength([...cartItemsLength,newProduct.id])
       setCartItems((oldItems)=> {
+    localStorage.setItem("cart",JSON.stringify([newProduct,...oldItems]))
         return [newProduct,...oldItems]
       })
-      localStorage.setItem("cart",cartItems)
    }
+
 
    const removeFromCart = (productId)=> {
-    setCartItems((oldItems)=> {
-        return oldItems.filter((product)=> {
-            product.id !== productId
-        })
+    setCartItemsLength(cartItemsLength.filter((item)=> item !== productId))
+    
+    setCartItems((old)=> {
+        return old.filter((item)=> item.id !== productId)
     })
-    localStorage.setItem("cart",cartItems)
+    
+    localStorage.setItem("cart",JSON.stringify(cartItems.filter((product)=> product.id !== productId)))
    }
 
+   useEffect(()=> {
+    // window.alert("rendered")
+    const cartData = JSON.parse( localStorage.getItem("cart"))
+    const cartLength  = cartData.map((data)=> data.id)
+    setCartItems(cartData)
+    setCartItemsLength(cartLength)
+   },[])
 
 
 
@@ -34,7 +45,7 @@ const AppFunction = ({children}) => {
 
     return (
         <AppContext.Provider value={{
-             showCart,cartItems,showSideNavbar,openSearchPage,setShowSideNavbar,setOpenSearchPage,setShowCart,addToCart,removeFromCart
+             cartItemsLength,showCart,cartItems,showSideNavbar,openSearchPage,setShowSideNavbar,setOpenSearchPage,setShowCart,addToCart,removeFromCart
         }}>
 {children}
         </AppContext.Provider>

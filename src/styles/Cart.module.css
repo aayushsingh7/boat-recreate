@@ -1,6 +1,6 @@
 .container {
   width: 100vw;
-  max-width:390px;
+  max-width:350px;
   background: var(--primary-background);
   height: 100dvh;
   position: fixed;
@@ -52,6 +52,24 @@ border-bottom:1px solid #232323;
     font-weight: 300;
 }
 
+.template{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height:calc(100% - 50px);
+}
+
+.template svg{
+  color: var(--primary-color);
+  font-size: 100px;
+}
+
+.template p{
+  color: var(--primary-color);
+  margin-top: 10px;
+}
 
 
 .show {

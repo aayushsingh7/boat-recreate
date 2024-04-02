@@ -14,7 +14,7 @@ const Navbar = () => {
   const q = new URLSearchParams(location.search);
   const { setShowSideNavbar } = useContext(AppContext);
   const getSearchRequestText = q.get("query");
-  const { setOpenSearchPage, setShowCart } = useContext(AppContext);
+  const { setOpenSearchPage, setShowCart, cartItemsLength } = useContext(AppContext);
 
   useEffect(() => {
     setQuery(getSearchRequestText);
@@ -87,6 +87,7 @@ const Navbar = () => {
             <FaRegUser style={{ fontSize: "23px" }} />
           </button>
           <button onClick={()=> setShowCart(true)}>
+            {cartItemsLength.length > 0 ? <span className={styles.cart_length}>{cartItemsLength.length}</span> : null}
             <IoCartOutline style={{ fontSize: "31px" }} />
           </button>
         </div>

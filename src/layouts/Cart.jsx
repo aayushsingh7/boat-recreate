@@ -2,11 +2,15 @@ import React, { useContext, useEffect } from "react";
 import styles from "../styles/Cart.module.css";
 import { AppContext } from "../context/Context";
 import { AiOutlineClose } from "react-icons/ai";
-import searchResults from '../json/SearchResult.json'
-import ProductBox from '../components/ProductBox'
+import ProductBox from "../components/ProductBox";
+import { TbShoppingCartCancel } from "react-icons/tb";
 
 const Cart = () => {
-  const { showCart, setShowCart } = useContext(AppContext);
+  const { showCart, setShowCart, cartItems } = useContext(AppContext);
+  let totalPrice = cartItems.reduce(
+    (accumulator, item) => accumulator + item.price,
+    0
+  );
 
   useEffect(() => {
     if (showCart) {
@@ -37,29 +41,51 @@ const Cart = () => {
           />
         </div>
 
-        <ul className={styles.product_container}>
-         {/* <p className={styles.heading}>Total Items: 1</p> */}
-         {
-          searchResults.map((product,index)=> {
-            return (
-              <ProductBox changePermit={true} min={430} product={product} productIndex={index} key={index}/>
-            )
-          })
-         }
-        </ul>
+        {cartItems.length === 0 ? (
+          <div className={styles.template}>
+            <TbShoppingCartCancel />
+            <p>Nothing in cart</p>
+          </div>
+        ) : (
+          <>
+            <ul className={styles.product_container}>
+              {cartItems.length > 0
+                ? cartItems.map((product, index) => {
+                    return (
+                      <ProductBox
+                        changePermit={true}
+                        min={430}
+                        product={product}
+                        productIndex={index}
+                        key={index}
+                      />
+                    );
+                  })
+                : null}
+            </ul>
+            <div className={styles.summary_container}>
+              <p>
+                Subtotal ({cartItems.length} items):{" "}
+                <span
+                  style={{
+                    color: "var(--secondary-background)",
+                    fontWeight: "600",
+                  }}
+                >
+                  ₹{totalPrice.toLocaleString()}.00
+                </span>
+              </p>
 
-     <div className={styles.summary_container}>
-      <p>Subtotal (2 items):  <span style={{color:"var(--secondary-background)",fontWeight:"600"}}>₹5,294.00</span></p>
-     
-      <label>
-        <input type="checkbox" id="gift"/>
-        This order contains a gift
-        </label>
-    
-     <button className={styles.btn_one}>Proceed to Payment</button>
-     {/* <button className={styles.btn_two}>Clear cart</button> */}
-        </div>
+              <label>
+                <input type="checkbox" id="gift" />
+                This order contains a gift
+              </label>
 
+              <button className={styles.btn_one}>Proceed to Payment</button>
+              {/* <button className={styles.btn_two}>Clear cart</button> */}
+            </div>
+          </>
+        )}
       </div>
     </>
   );
