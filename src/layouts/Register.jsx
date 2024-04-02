@@ -6,42 +6,52 @@ import { AiOutlineClose } from "react-icons/ai";
 import { AppContext } from "../context/Context";
 import generateRandomID from "../utils/generateRandomID";
 
-const Login = () => {
+const Register = () => {
 
-  const { setShowLogin,setShowRegister,getUserDetails } = useContext(AppContext);
+  const { setShowLogin, setShowRegister,getUserDetails} = useContext(AppContext);
   const [email,setEmail] = useState("")
   const [password,setPassword] = useState("")
+  const [name,setName] = useState("")
 
-  const login = (e) => {
+  const register = (e) => {
     e.preventDefault()
     localStorage.setItem("user_details",JSON.stringify(
         {
             id:generateRandomID(15),
+            name:name,
             email:email,
             password:password,
             logged_in_date:new Date().toISOString(),
         }
     ))
     getUserDetails()
-    setShowLogin(false)
+    setShowRegister(false)
   };
 
   return (
     <div className={styles.container}>
-      <form className={styles.box} onSubmit={login}>
+      <form className={styles.box} onSubmit={register}>
         <AiOutlineClose
           className={styles.close}
-          onClick={() => setShowLogin(false)}
+          onClick={() => setShowRegister(false)}
         />
-        <h2>Welcome Back🎉</h2>
+        <h2>Join Us😍</h2>
 
         <div className={styles.part_one}>
+        <input
+         name="name"
+            type="text"
+            placeholder="Enter your Name"
+            autoComplete="off"
+            required
+            onInput={(e)=> setName(e.target.value)}
+          />
+
           <input
           name="email"
             type="email"
             placeholder="Enter your Email"
             autoComplete="off"
-           
             required
             onInput={(e)=> setEmail(e.target.value)}
           />
@@ -53,8 +63,8 @@ const Login = () => {
             required
             onInput={(e)=> setPassword(e.target.value)}
           />
-          <button className={styles.forgot_password}>Forgot password</button>
-          <button className={styles.login_btn}>Login</button>
+          {/* <button className={styles.forgot_password}>Forgot password</button> */}
+          <button className={styles.login_btn}>Register</button>
         </div>
 
         <p className={styles.seprator}>------------ or -------------</p>
@@ -66,7 +76,7 @@ const Login = () => {
           <FaGoogle />
         </div>
 
-        <p className={styles.option_p}>Does't have an account? <button onClick={()=> {setShowLogin(false);setShowRegister(true)}}>Register</button></p>
+        <p className={styles.option_p}>Already have an account? <button onClick={()=> {setShowLogin(true);setShowRegister(false)}}>Login</button></p>
 
 
       </form>
@@ -74,4 +84,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;

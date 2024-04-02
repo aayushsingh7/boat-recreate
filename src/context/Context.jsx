@@ -37,10 +37,7 @@ const AppFunction = ({children}) => {
    useEffect(()=> {
     // window.alert("rendered")
     const cartData = JSON.parse( localStorage.getItem("cart"))
-    const user = JSON.parse(localStorage.getItem("user_details"))
-
-    setUser(user)
-
+    getUserDetails()
     if(!cartData){
         setCartItems([])
         setCartItemsLength([])
@@ -52,12 +49,17 @@ const AppFunction = ({children}) => {
    },[])
 
 
+   const getUserDetails = ()=> {
+    const user = JSON.parse(localStorage.getItem("user_details"))
+    setUser(user)
+   }
+
 
 
 
     return (
         <AppContext.Provider value={{
-             user,showLogin,showRegister,cartItemsLength,showCart,cartItems,showSideNavbar,openSearchPage,setShowSideNavbar,setOpenSearchPage,setShowCart,addToCart,removeFromCart,setShowLogin,setShowRegister
+             getUserDetails,user,showLogin,showRegister,cartItemsLength,showCart,cartItems,showSideNavbar,openSearchPage,setShowSideNavbar,setOpenSearchPage,setShowCart,addToCart,removeFromCart,setShowLogin,setShowRegister
         }}>
 {children}
         </AppContext.Provider>

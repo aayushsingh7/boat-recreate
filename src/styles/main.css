@@ -14,14 +14,28 @@
  font-size: 21px;
 }
 
-
 *{
-    margin: 0px;
-    padding: 0px;
-    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
+   scroll-behavior: smooth;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0 );
+  }
+  
+  input,
+  textarea,
+  button,
+  select,
+  a{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0 );
+  }
+  
+  a:focus,
+  a:visited,
+  a:active{
+    outline: none;
+  }
+   
 body{
     overflow-x: hidden;
     position: relative;

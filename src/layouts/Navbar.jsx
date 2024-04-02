@@ -8,6 +8,9 @@ import { useNavigate } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
 import { AppContext } from "../context/Context";
 import { FaUserCircle } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+import { RiLockPasswordFill } from "react-icons/ri";
+
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -89,7 +92,7 @@ const Navbar = () => {
           <button onClick={() => user ? null : setShowLogin(true)} onMouseEnter={()=> setShowProfile(true)} onMouseLeave={()=> setShowProfile(false)}>
             <FaRegUser style={{ fontSize: "23px" }} />
             {
-              showProfile ? 
+              showProfile && user ? 
               <div
               className={styles.user_profile}
               onClick={(e) => e.stopPropagation()}
@@ -97,11 +100,12 @@ const Navbar = () => {
               <FaUserCircle />
               <div>
                 <p>
-                  <span>Email:</span> aayushsingh@gmail.com
+                  <span><IoMail/></span> aayushsingh@gmail.com
                 </p>
                 <p>
-                  <span>password:</span> ×××××××××××××
+                  <span><RiLockPasswordFill/></span> ×××××××××××××
                 </p>
+                <button>Logout</button>
               </div>
             </div>  : null
             }

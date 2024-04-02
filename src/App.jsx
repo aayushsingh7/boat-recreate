@@ -13,6 +13,7 @@ import MobileSearchPage from "./layouts/MobileSearchPage";
 import Cart from "./layouts/Cart";
 import Login from "./layouts/Login";
 import { AppContext } from "./context/Context";
+import Register from "./layouts/Register";
 
 const App = () => {
  const {showLogin,showRegister} = useContext(AppContext)
@@ -35,6 +36,7 @@ const App = () => {
       <Route path="/search" element={<SearchResults/>} />
     </Routes>
    {showLogin ?  <Login/>:null}
+   {showRegister ? <Register/> : null}
     <Footer />
   </div>
   

@@ -128,6 +128,7 @@ border-radius:15px;
 cursor: pointer;
 }
 
+
 @media (max-width:550px) {
     .box{
         max-width: 90vw;

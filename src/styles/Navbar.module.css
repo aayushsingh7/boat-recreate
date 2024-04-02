@@ -176,10 +176,16 @@ justify-content: center;
     text-align: start;
     border-radius: 10px;
     font-weight: 400;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
 }
 
-.user_profile span{
+.user_profile span svg{
     font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-right: 8px;
 }
 
 
