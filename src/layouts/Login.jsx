@@ -66,7 +66,7 @@ const Login = () => {
           <FaGoogle />
         </div>
 
-        <p className={styles.option_p}>Does't have an account? <button onClick={()=> {setShowLogin(false);setShowRegister(true)}}>Register</button></p>
+        <p className={styles.option_p}>Doesn't have an account? <button onClick={()=> {setShowLogin(false);setShowRegister(true)}}>Register</button></p>
 
 
       </form>

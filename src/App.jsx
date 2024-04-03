@@ -14,9 +14,10 @@ import Cart from "./layouts/Cart";
 import Login from "./layouts/Login";
 import { AppContext } from "./context/Context";
 import Register from "./layouts/Register";
+import UserDetails from "./layouts/UserDetails";
 
 const App = () => {
- const {showLogin,showRegister} = useContext(AppContext)
+ const {showLogin,showRegister,showProfile} = useContext(AppContext)
  useEffect(()=> {
   if(showLogin || showRegister){
     document.body.style.overflowY = "hidden"
@@ -37,6 +38,7 @@ const App = () => {
     </Routes>
    {showLogin ?  <Login/>:null}
    {showRegister ? <Register/> : null}
+   {showProfile ? <UserDetails/> : null}
     <Footer />
   </div>
   

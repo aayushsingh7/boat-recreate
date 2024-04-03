@@ -17,9 +17,9 @@ const Navbar = () => {
   const [query, setQuery] = useState("");
   const q = new URLSearchParams(location.search);
   const { setShowSideNavbar } = useContext(AppContext);
-  const [showProfile,setShowProfile] = useState(false)
+  // const [showProfile,setShowProfile] = useState(false)
   const getSearchRequestText = q.get("query");
-  const { setOpenSearchPage,setShowCart, user, cartItemsLength, setShowLogin } =
+  const { setOpenSearchPage,setShowCart, user, cartItemsLength, setShowLogin,setShowProfile } =
     useContext(AppContext);
 
   useEffect(() => {
@@ -89,26 +89,9 @@ const Navbar = () => {
           >
             <IoIosSearch style={{ fontSize: "30px" }} />
           </button>
-          <button onClick={() => user ? null : setShowLogin(true)} onMouseEnter={()=> setShowProfile(true)} onMouseLeave={()=> setShowProfile(false)}>
+          <button onClick={() => user ? setShowProfile(true) : setShowLogin(true)}>
             <FaRegUser style={{ fontSize: "23px" }} />
-            {
-              showProfile && user ? 
-              <div
-              className={styles.user_profile}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <FaUserCircle />
-              <div>
-                <p>
-                  <span><IoMail/></span> aayushsingh@gmail.com
-                </p>
-                <p>
-                  <span><RiLockPasswordFill/></span> ×××××××××××××
-                </p>
-                <button>Logout</button>
-              </div>
-            </div>  : null
-            }
+            
           </button>
           <button onClick={() => setShowCart(true)}>
             {cartItemsLength?.length > 0 ? (
