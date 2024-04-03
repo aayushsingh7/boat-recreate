@@ -1,93 +1,191 @@
 [
-    {
-      "name": "Airdopes 191G",
-      "price": 1399,
-      "original_price":3490,
-      "discount": 60,
-      "id": "l0sgj6yrm",
-      "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/191G_1.gif?v=1686650191",
-      "tag":"✍️Special Engraving Available",
-      "features":["Up to 30 Hours Playback","Clear Calling","BEAST Mode"],
-      "reviews":1200,
-      "reviewStars": 4.3
-
-    },
-    {
-      "name": "Stone 180",
-      "price":999,
-      "original_price":2400,
-      "discount":60,
-      "reviews": 123,
-      "reviewStars": 4.4,
-      "id": "l0sgj6yrq",
-      "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_180.jpg?v=1702014281",
-      "tag":"₹200 OFF ON BIG200",
-      "special":"60 hours playback"
-
-    },
-    {
-      "name": "Wave Call",
-      "price":1199,
-      "original_price":7990,
-      "discount":85,
-      "reviews":687,
-      "reviewStars":4.8,
-      "id": "l0sgj6ym",
-      "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Wave_Call__1.jpg?v=1689751649",
-      "tag":"✍️special engraving available",
-      "special":"BT Calling"
-    },
-    {
-      "name": "Airdopes 131 PRO",
-      "price": 999,
-      "original_price":2990,
-      "discount":67,
-      "reviews": 12,
-      "reviewStars": 3.9,
-      "id": "l0sgj6yrn",
-      "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_131_e7e95f2c-0bb3-492e-89df-613a2cfb792f.jpg?v=1686297917",
-      "tag":"✍️Special Engraving Available",
-      "special":"45 Hours Playback"
-
-    },
-    {
-      "name": "Rockerz 255 Max",
-      "price": 1299,
-      "original_price":3999,
-      "discount":68,
-      "reviews": 43,
-      "reviewStars": 2.7,
-      "id": "l0sgj6yro",
-      "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt-Rockerz-255-Max.jpg?v=1682579854",
-      "tag":"₹200 OFF ON BIG200",
-      "special":"60 Hours Playback",
-      "features":["EQ Modes","IPX5 Water Resistance","Self Repair"]
-    },
-    
-    {
-      "name": "Lunar Connect",
-      "price": 1199,
-      "original_price":7999,
-      "discount":85,
-      "reviews": 87,
-      "reviewStars":4.1,
-      "id": "l0sgj6yrp",
-      "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Lunar_connect_1.webp?v=1709108774",
-      "special":"BT Calling",
-      "features":[
-        "100+ Sports Modes","ENx Technology","Bilingual Supports"
-      ]
-    },
-    {
-      "name":"Cosmos",
-      "price":1499,
-      "discount":79,
-      "original_price":6900,
-      "reviews":199,
-      "reviewStars": 4.1,
-      "id":"l0sgj6901",
-      "main_image":"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Cosmos.jpg?v=1703057088",
-      "special":"AMOLED Display",
-      "features":["700+ Active Modes","10 Days Battery Life","Bluetooth v5.0"]
-    }
+  {
+    "id": "0392920390008",
+    "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Nirvana_Ion.jpg?v=1697621745",
+    "more_images": [
+      "https://www.boat-lifestyle.com/cdn/shop/files/ION_WHITE_600x.jpg?v=1702007882",
+      "https://www.boat-lifestyle.com/cdn/shop/products/NirvanaION-FI_White02-a_1100x.png?v=1702007882",
+      "https://www.boat-lifestyle.com/cdn/shop/products/Crystal_1100x.jpg?v=1702007882"
+    ],
+    "price": 2299,
+    "discount": 71,
+    "original_price": 7990,
+    "name": "Nirvana Lon",
+    "features": [
+      "ENx Technology",
+      "BEAST Mode",
+      "Dual EQ Modes"
+    ],
+    "description": "Bluetooth Wireless Earbuds with Crystal Bionic Sound powered by HiFi®️ DSP, 120 Hours Playback, Dual EQ Modes, Quad Mics with ENx™ Technology",
+    "engraving": true,
+    "type": "earbuds",
+    "tag": "",
+    "special": "120 Hours Playback",
+    "reviews": 67,
+    "reviewStars": 5.0,
+    "stock_qty": 120,
+    "sold_qty": 283
+  },
+  {
+    "id": "9504594832111",
+    "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/131_f04f74fd-45d4-4614-85cf-6ccf69c4cf90.jpg?v=1691395049",
+    "more_images": [
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/131-3_600x.jpg?v=1702008197",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ad131FIAD131TypeCcopy_1100x.jpg?v=1702008197",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/FeatureImagesAD131BV5.0copy_1100x.jpg?v=1702008197",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/FeatureImagesAD131VAcopy_1100x.jpg?v=1702008197"
+    ],
+    "price": 899,
+    "discount": 70,
+    "original_price": 2990,
+    "name": "Airdopes 131",
+    "features": [
+      "13mm drivers",
+      "IWP Technology"
+    ],
+    "description": "Wireless Earbuds with upto 60 Hours Playback, 13mm Drivers, IWP Technology, 650mAh Charging Case",
+    "engraving": true,
+    "type": "earbuds",
+    "tag": "",
+    "special": "60 Hours Playback",
+    "reviews": 1345,
+    "reviewStars": 4.8,
+    "stock_qty": 10,
+    "sold_qty": 2394
+  },
+  {
+    "id": "1112920394322",
+    "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Wave_Call__1.jpg?v=1689751649",
+    "more_images": [
+      "https://www.boat-lifestyle.com/cdn/shop/products/Wave-Call-3_1080x.jpg?v=1685530109",
+      "https://www.boat-lifestyle.com/cdn/shop/products/3_f6ec6230-6e65-47ae-8814-677be9c2e6d2_1080x.jpg?v=1685530109",
+      "https://www.boat-lifestyle.com/cdn/shop/files/71YDN2SIcjL._SX679_679x.jpg?v=1685530109",
+      "https://www.boat-lifestyle.com/cdn/shop/files/61P8pRPZ5lL._SX679_679x.jpg?v=1685530109"
+    ],
+    "price": 1199,
+    "discount": 85,
+    "original_price": 7990,
+    "name": "Wave Call",
+    "features": [
+      "HD Curved Display",
+      "Save upto 10 contacts"
+    ],
+    "description": "Bluetooth Calling Smartwatch with 1.69 (4.29 cm) HD Curved Display, 150+ Watch Faces, Heart Rate & SPO2 Monitoring",
+    "engraving": false,
+    "type": "smartwatches",
+    "tag": "",
+    "special": "BT Calling",
+    "reviews": 50,
+    "reviewStars": 4.9,
+    "stock_qty": 658,
+    "sold_qty": 495
+  },
+  {
+    "id": "0392900193845",
+    "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_131_e7e95f2c-0bb3-492e-89df-613a2cfb792f.jpg?v=1686297917",
+    "more_images": [
+      "https://www.boat-lifestyle.com/cdn/shop/files/131Pro-3_600x.jpg?v=1703232410",
+      "https://www.boat-lifestyle.com/cdn/shop/files/05_2_1100x.jpg?v=1703232410",
+      "https://www.boat-lifestyle.com/cdn/shop/files/07_3_1100x.jpg?v=1703232410",
+      "https://www.boat-lifestyle.com/cdn/shop/files/09_2_1100x.jpg?v=1703232410"
+    ],
+    "price": 999,
+    "discount": 67,
+    "original_price": 2990,
+    "name": "Airdopes 131 Pro",
+    "features": [
+      "Clear Calling",
+      "BEAST Mode"
+    ],
+    "description": "Wireless Earbuds with ENx™ Noise cancellation technology, BEAST™ mode, 55 Hours of battery life, IPX5 Sweat & Water Resistance",
+    "engraving": false,
+    "type": "earbuds",
+    "tag": "",
+    "special": "45 Hours Playback",
+    "reviews": 187,
+    "reviewStars": 4.9,
+    "stock_qty": 192,
+    "sold_qty": 594
+  },
+  {
+    "id": "0392920111124",
+    "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5f7d33ad-39a9-4426-836e-c300814839b9_600x.png?v=1625046105",
+    "more_images": [
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/04_8f721dd3-4d7c-46bb-aa34-09004fd60c3a_600x.jpg?v=1687513263",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/06_cfbb2a7b-ca4a-467b-a48e-9319aedc56bd_600x.jpg?v=1687513262",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/02_f32857d1-53d1-49bd-aecb-560176d22b13_600x.jpg?v=1687513262",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/03_c22b3f68-ec5e-4732-b98c-cfaf09125def_600x.jpg?v=1687513263"
+    ],
+    "price": 999,
+    "discount": 67,
+    "original_price": 2990,
+    "name": "Rockerz 235 V2",
+    "features": [
+      "10mm Drivers",
+      "Fast Charging"
+    ],
+    "description": "Bluetooth Stereo Wireless Earphone with Up to 8 Hours of Uninterrupted Music, Fast Charging, IPX5 sweat and water resistance",
+    "engraving": false,
+    "type": "neckbands",
+    "tag": "",
+    "special": "8 Hours Playback",
+    "reviews": 1745,
+    "reviewStars": 4.8,
+    "stock_qty": 1040,
+    "sold_qty": 332
+  },
+  {
+    "id": "0392920666574",
+    "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt-Airdopes-Atom-83.jpg?v=1682576552",
+    "more_images": [
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/original-imaghdynga78ga9z_416x.webp?v=1685517874",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/original-imaghdynvtarcmnr_416x.webp?v=1685517878",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/original-imaghdyn5vsbjpzg_416x.webp?v=1685517874",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/original-imaghdynp2sba7dq_416x.webp?v=1685517876"
+    ],
+    "price": 1499,
+    "discount": 57,
+    "original_price": 3490,
+    "name": "Airdopes Atom 83",
+    "features": [
+      "13mm drivers",
+      "ASAP Charge"
+    ],
+    "description": "True Wireless Earbuds with up to 50 Hours Playtime, Quad Mics with ENx™ Technology, 13mm Drivers, BEAST™ Mode, ASAP™ Charge",
+    "engraving": false,
+    "type": "earbuds",
+    "tag": "",
+    "special": "50 Hours Playback",
+    "reviews": 43,
+    "reviewStars": 4.7,
+    "stock_qty": 82,
+    "sold_qty": 283
+  },
+  {
+    "id": "0392920112321",
+    "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Lunar_connect_1.webp?v=1709108774",
+    "more_images": [
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1.1125_1100x.png?v=1678115037",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/LunarConnect-FI_Green03_1100x.png?v=1678260796",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/LunarConnect-FI_Green05_1100x.png?v=1678260796",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/LunarConnect-FI_Green02_1100x.png?v=1678115037"
+    ],
+    "price": 1199,
+    "discount": 85,
+    "original_price": 7999,
+    "name": "Lunar Connect",
+    "features": [
+      "100+ Sports Modes",
+      "ENx Technology"
+    ],
+    "description": "Round Dial Smart Watch with 1.28” (3.25 cm) HD Display, BT Calling, Supports Hindi & English Language, Up to 20 contacts, 100+ Sports Modes",
+    "engraving": false,
+    "type": "smartwatches",
+    "tag": "",
+    "special": "12 Hours Playback",
+    "reviews": 15,
+    "reviewStars": 4.9,
+    "stock_qty": 120,
+    "sold_qty": 283
+  }
 ]

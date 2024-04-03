@@ -104,7 +104,7 @@ const ProductSlider = ({ data, type, highlight, tittle, counter }) => {
                               ₹{product.price.toLocaleString()}.00
                             </span>
                             <span className={styles.before_discount}>
-                              {/* {product.original_price.toLocaleString()} */}
+                              {product.original_price.toLocaleString()}
                               .00
                             </span>
                             <span className={styles.discountp}>
