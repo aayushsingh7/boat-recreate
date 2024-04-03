@@ -47,7 +47,7 @@ font-weight: 100;
     }
 }
 
-@media (max-width:560px) {
+@media (max-width:450px) {
     .grid_container{
         grid-template-columns: repeat(1,1fr);
     }

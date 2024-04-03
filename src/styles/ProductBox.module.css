@@ -71,10 +71,14 @@
     align-items: flex-start;
 }
 
-.product_box_info h1 {
+.product_box_info h3 {
     font-size: 1rem;
     font-weight: 400;
     margin: 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 
 .product_box_info p {
@@ -106,10 +110,10 @@
 }
 
 .product_specialities span{
-    font-size: 0.6rem;
+    font-size: 0.55rem;
     padding: 6px 17px;
-    background: #262626;
-    border-radius: 5px;
+    background: #323232eb;
+    border-radius:10px;
 }
 
 .product_box_colors::-webkit-scrollbar{
@@ -180,7 +184,7 @@
 
 .btn_btn {
    margin:7px 0px;
-    height: 35px;
+    padding: 11px 20px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -189,10 +193,8 @@
     border-radius: 5px;
     color:var(--primary-color);
     width:100%;
-    /* -webkit-box-shadow: 0px 200px 300px 117px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 200px 300px 117px rgba(0,0,0,1); */
-    /* box-shadow: 0px 200px 300px 117px rgba(255, 0, 0, 0.479); */
     cursor: pointer;
+    font-weight: 600;
 }
 
 
@@ -292,7 +294,29 @@
 
 @media (max-width:569px) {
  .product_specialities span{
-    font-size: 0.8rem;
-    padding: ;
+    font-size: 0.6rem;
+    padding: 5px 12px;
  }
+}
+
+@media (max-width:450px) {
+    .product_specialities span{
+        font-size: 0.8rem;
+        padding: 5px 17px;
+     }
+     .product_box_info h3{
+        font-size: 1.5rem;
+     }
+     .discounto{
+        font-size: 0.9rem;
+     }
+     .discountp{
+        font-size: 0.9rem;
+     }
+     .discount{
+        font-size:1.2rem;
+     }
+     .product_review p{
+        font-size: 0.7rem;
+     }
 }
