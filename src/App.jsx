@@ -15,6 +15,7 @@ import Login from "./layouts/Login";
 import { AppContext } from "./context/Context";
 import Register from "./layouts/Register";
 import UserDetails from "./layouts/UserDetails";
+import ViewProduct from "./pages/ViewProduct";
 
 const App = () => {
  const {showLogin,showRegister,showProfile} = useContext(AppContext)
@@ -35,6 +36,7 @@ const App = () => {
       <Route path="/" element={<Home/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/search" element={<SearchResults/>} />
+      <Route path="/products/:type/:name" element={<ViewProduct/>}/>
     </Routes>
    {showLogin ?  <Login/>:null}
    {showRegister ? <Register/> : null}

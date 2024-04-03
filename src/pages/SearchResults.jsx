@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import {useLocation} from 'react-router-dom'
 import styles from '../styles/SearchResult.module.css'
-import searchResults from '../json/SearchResult.json'
+import searchResults from '../json/searchResults.json'
 import ProductBox from '../components/ProductBox'
 
 const SearchResults = () => {

@@ -1,0 +1,246 @@
+[
+    {
+        "id": "0392920394322",
+        "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Untitled-1_bf68149e-5ab0-4761-8116-d558ef0e178a_medium.png?v=1679352411",
+        "more_images": [],
+        "price": 1999,
+        "discount": 60,
+        "original_price": 4900,
+        "name": "boAt Immortal 200",
+        "features": [
+            "50mm Drivers",
+            "Noise Isolating Mic",
+            "Real RGB LEDs"
+        ],
+        "description": "",
+        "engraving": false,
+        "type": "headphones",
+        "tag": "",
+        "special":"12 Hours Playback",
+        "reviews": 45,
+        "reviewStars": 4.6,
+        "stock_qty": 120,
+        "sold_qty": 283
+    },
+    {
+        "id": "0392920394899",
+        "main_image": "https://www.boat-lifestyle.com/cdn/shop/files/Artboard1_8df9ee77-d374-456c-b593-7f2ba765a4dc_600x.png?v=1705917047",
+        "more_images": [
+            "https://www.boat-lifestyle.com/cdn/shop/files/Artboard2_f77c6f43-27d3-43a6-b9b8-cac60e5c5e21_600x.jpg?v=1705917077",
+            "https://www.boat-lifestyle.com/cdn/shop/files/Artboard3_65644b0a-cfc0-4eea-a6ed-47ba6de4dbb1_600x.jpg?v=1705917077",
+            "https://www.boat-lifestyle.com/cdn/shop/files/Artboard4_6e0502ef-0b37-46b3-b939-6357c7536d74_600x.jpg?v=1705917077",
+            "https://www.boat-lifestyle.com/cdn/shop/files/Artboard5_dfdbc8ac-ca5f-4e7e-93f7-3fb7abb9612e_600x.jpg?v=1705917077"
+        ],
+        "price": 1499,
+        "discount": 57,
+        "original_price": 3499,
+        "name": "Immortal 111",
+        "features": [
+            "BEAST Mode",
+            "40 Hours Playback"
+        ],
+        "description": "Bluetooth Gaming Wireless Earbuds with BEAST™️Mode, ENx™ Technology, ASAP™ Charge, Bluetooth v5.3",
+        "engraving": false,
+        "type": "earbuds",
+        "tag": "🎉 New Launch",
+        "special":"Gaming Earbuds",
+        "reviews": 16,
+        "reviewStars": 5.0,
+        "stock_qty": 9,
+        "sold_qty": 78
+    },
+    {
+        "id": "0392920391234",
+        "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-blue_600x.png?v=1613731627",
+        "more_images": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bass_daa229c5-4d3e-4afd-abca-54243a07238a_800x.jpg?v=1667509001",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Control_bd4a0552-f8f7-411f-b642-06ff69fbe386_800x.jpg?v=1667509001",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Cushion-COmfort_09cc933f-2e93-4cc1-a41f-26b907e9c917_800x.jpg?v=1667509001",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Dual-Mode_ddc40b42-2e31-4e0d-8081-07301eb1ca4e_800x.jpg?v=1667509001"
+        ],
+        "price": 1599,
+        "discount": 60,
+        "original_price": 3990,
+        "name": "Rockerz 518",
+        "features": [
+            "50mm Drivers",
+            "Comfort Fit",
+            "Master Control"
+        ],
+        "description": "Wireless Headphone with Dynamic 50mm Driver, Up To 20 Hours Of Playtime, Easy Control & Lightweight",
+        "engraving": false,
+        "type": "earbuds",
+        "tag": "Restocking Soon",
+        "reviews": 49,
+        "reviewStars": 4.9,
+        "stock_qty": 0,
+        "sold_qty": 1020,
+        "special":"50 Hours Playback"
+    },
+    {
+        "id": "0392920399999",
+        "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/NION-ANC-FI_White01_medium.png?v=1702893834",
+        "more_images": [
+            "https://www.boat-lifestyle.com/cdn/shop/files/NION-ANC-FI_White06_600x.jpg?v=1702894033",
+            "https://www.boat-lifestyle.com/cdn/shop/files/NION-ANC-FI_White05_600x.jpg?v=1702894033",
+            "https://www.boat-lifestyle.com/cdn/shop/files/NION-ANC-FI_White08_600x.jpg?v=1702894033",
+            "https://www.boat-lifestyle.com/cdn/shop/files/NION-ANC-FI_White03_600x.jpg?v=1702894033"
+        ],
+        "price": 2799,
+        "discount": 72,
+        "original_price": 9990,
+        "name": "Nirvana Lon ANC",
+        "features": [
+            "120 Hours Playback",
+            "BEAST Mode",
+            "ENx Technology"
+        ],
+        "description": "Wireless Earbuds with Active Noise Cancellation, ENx™ Technology, 120 Hours Playback, BEAST™ Mode",
+        "engraving": true,
+        "type": "earbuds",
+        "tag": "✨ Trending",
+        "reviews": 28,
+        "reviewStars": 4.9,
+        "stock_qty": 3449,
+        "sold_qty": 1304
+    },
+    {
+        "id": "9403939102932",
+        "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/black-1-removebg-preview_medium.png?v=1689846474",
+        "more_images": [
+            "https://www.boat-lifestyle.com/cdn/shop/files/black-2_800x.png?v=1689846474",
+            "https://www.boat-lifestyle.com/cdn/shop/files/black-4_800x.png?v=1689846474",
+            "https://www.boat-lifestyle.com/cdn/shop/files/black-3_800x.png?v=1689846474",
+            "https://www.boat-lifestyle.com/cdn/shop/files/black-2_664ab300-423f-4bd8-8a0a-38cb466b032f_800x.png?v=1689846474"
+        ],
+        "price": 3499,
+        "discount": 61,
+        "original_price": 8990,
+        "name": "Cosmos Plus",
+        "features": [
+            "BT Calling",
+            "1.78 AMOLED Display",
+            "100+ Sports Mode"
+        ],
+        "description": "Smartwatch with 1.78' (4.52cm) AMOLED Display, BT Calling, 100+ Sports Modes, Heart Rate, SpO2",
+        "engraving": false,
+        "type": "smartwatches",
+        "tag": "",
+        "reviews": 8,
+        "reviewStars": 4.8,
+        "stock_qty": 232,
+        "sold_qty": 121,
+        "special":"AMOLET Display"
+    },
+    {
+        "id": "9485743291827",
+        "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Artboard8_medium.png?v=1704949292",
+        "more_images": [
+            "https://www.boat-lifestyle.com/cdn/shop/files/Artboard1_600x.jpg?v=1704949292",
+            "https://www.boat-lifestyle.com/cdn/shop/files/Artboard2_9c6487fe-8ac5-44e6-b162-e8404e83dde2_600x.jpg?v=1704949292",
+            "https://www.boat-lifestyle.com/cdn/shop/files/Artboard3_bc470ff1-d7a1-4ce0-8cbd-0f08b759264b_600x.jpg?v=1704949292",
+            "https://www.boat-lifestyle.com/cdn/shop/files/Artboard4_e5c1f3c6-875b-41e8-be49-2c3659c53b73_600x.jpg?v=1704949292"
+        ],
+        "price": 1099,
+        "discount": 76,
+        "original_price": 4490,
+        "name": "Airdrops 161 Pro Buds",
+        "features": [
+            "ENx Technology",
+            "BEAST Mode",
+            "IPX5 Resistence"
+        ],
+        "description": "Wireless Earbuds with 50 Hours Playback, Dual Pairing, Dual Mics with ENx™ Technology",
+        "engraving": false,
+        "type": "smartwatches",
+        "tag": "🎉 New Launch",
+        "reviews": 17,
+        "reviewStars": 4.8,
+        "stock_qty": 232,
+        "sold_qty": 121,
+ "special":"v5.0 Bluetooth"
+    },
+    {
+        "id": "9698743291827",
+        "main_image": "https://www.boat-lifestyle.com/cdn/shop/files/Artboard3_44_600x.png?v=1705550564",
+        "more_images": [
+            "https://www.boat-lifestyle.com/cdn/shop/files/blitz-1500-boat-original-imafzr3zdyhqxgsy_416x.webp?v=1705550564",
+            "https://www.boat-lifestyle.com/cdn/shop/files/blitz-1500-boat-original-imafzr3zhtrxyqfx_416x.webp?v=1705550564",
+            "https://www.boat-lifestyle.com/cdn/shop/files/blitz-1500-boat-original-imafzr3z2axattep_416x.webp?v=1705550564",
+            "https://www.boat-lifestyle.com/cdn/shop/files/blitz-1500-boat-original-imafzr3z8yafk5ep_416x.webp?v=1705550564"
+        ],
+        "price": 3499,
+        "discount": 50,
+        "original_price": 6990,
+        "name": "Blitz 1500 | 50W Bluetooth wireless speakers",
+        "features": [
+            "2.1 Channel",
+            "RGB LED Lights",
+            "5 EQ Modes"
+        ],
+        "description": "50W Bluetooth Wired Speaker with 5 Entertainment EQ Modes, RGB Led, 2.1 Channel, BT, Aux,USB, FM",
+        "engraving": true,
+        "type": "speakers",
+        "tag": "",
+        "reviews": 121,
+        "reviewStars": 3.9,
+        "stock_qty": 192,
+        "sold_qty": 560,
+        "special":"50W Rms Sound"
+    },
+    {
+        "id": "0968548532174",
+        "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/255-ARc-2_medium.png?v=1673002983",
+        "more_images": [
+            "https://www.boat-lifestyle.com/cdn/shop/files/original-imagk7xksshqym8z_416x.webp?v=1685703761",
+            "https://www.boat-lifestyle.com/cdn/shop/files/original-imagk7xkfq2hsmex_416x.webp?v=1685703762",
+            "https://www.boat-lifestyle.com/cdn/shop/files/original-imagk7xkfcdthupr_416x.webp?v=1685703763"
+        ],
+        "price": 1299,
+        "discount": 48,
+        "original_price": 2499,
+        "name": "Rockerz 225 ARC | Wireless Nackband",
+        "features": [
+            "ENx Technology",
+            "ASAP Charge",
+            "BEAST Mode"
+        ],
+        "description": "Wireless Bluetooth Neckband with ENx™ Technology, playback for 30 hours nonstop, BEAST™ Mode, Bluetooth v5.2",
+        "engraving": false,
+        "type": "neckbands",
+        "tag": "",
+        "reviews": 55,
+        "reviewStars": 4.5,
+        "stock_qty": 192,
+        "sold_qty": 560,
+        "special":"ASAP Charging"
+    },
+    {
+        "id": "0968548511123",
+        "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Red_d8ee4785-21ae-4fee-943e-d5c571131ae8_medium.png?v=1660654082",
+        "more_images": [
+            "https://www.boat-lifestyle.com/cdn/shop/files/bassheads-220-bassheads-200-boat-original-imafyefk69pzxt5q_150ef814-6e7f-43e7-b8d9-8c7c79c2eb60_416x.webp?v=1686293287",
+            "https://www.boat-lifestyle.com/cdn/shop/files/bassheads-220-bassheads-200-boat-original-imafyefkd2jfvew6_c8f7754d-e52f-4f09-8baf-ecf6f29249bb_416x.webp?v=1686293287",
+            "https://www.boat-lifestyle.com/cdn/shop/files/bassheads-220-bassheads-200-boat-original-imafyefkr5jmhatc_e64da2d6-2655-43b9-9e65-6410cf2d9373_416x.webp?v=1686293287",
+            "https://www.boat-lifestyle.com/cdn/shop/files/bassheads-220-bassheads-200-boat-original-imafyefkxfxgm3hq_b2029c4f-a3f9-4f8a-9fcb-acda59f99c0b_368x.webp?v=1686293287"
+        ],
+        "price": 699,
+        "discount": 30,
+        "original_price": 999,
+        "name": "boAt BassHeads 220 MKI",
+        "features": [
+            "Super Extra Bass",
+            "Polished Metal Design",
+            "Hands-free communication"
+        ],
+        "description": "Wireless Bluetooth Neckband with ENx™ Technology, playback for 30 hours nonstop, BEAST™ Mode, Bluetooth v5.2",
+        "engraving": false,
+        "type": "wired earphones",
+        "tag": "",
+        "reviews": 23,
+        "reviewStars": 4.8,
+        "stock_qty": 8,
+        "sold_qty": 1219,
+        "special":"Noice Isolation"
+    }
+]

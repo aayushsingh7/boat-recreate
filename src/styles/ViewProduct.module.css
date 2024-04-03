@@ -1,0 +1,22 @@
+.container{
+    width: 100%;
+    padding: 80px 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* i will edit the container padding accroding to the app's padding setting */
+}
+
+.product_image_container{
+    width:50%;
+    background: pink; 
+    height: 500px;
+    /* remove the height and background ( they are just for your understanding) */
+}
+
+.product_details_container{
+    width: 50%;
+    background-color: wheat;
+    height: 500px;
+    /* remove the height and background ( they are just for your understanding) */
+}

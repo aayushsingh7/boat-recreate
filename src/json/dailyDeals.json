@@ -1,70 +1,93 @@
 [
     {
-      "name": "Nirvana Ion",
-      "price": 2700,
-      "originalPrice":3000,
-      "discount": 4,
+      "name": "Airdopes 191G",
+      "price": 1399,
+      "original_price":3490,
+      "discount": 60,
       "id": "l0sgj6yrm",
-      "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Nirvana_Ion.jpg?v=1697621745",
-      "tag":"✍️special engraving available",
-      "special":"120 hours playback"
+      "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/191G_1.gif?v=1686650191",
+      "tag":"✍️Special Engraving Available",
+      "features":["Up to 30 Hours Playback","Clear Calling","BEAST Mode"],
+      "reviews":1200,
+      "reviewStars": 4.3
 
     },
     {
-      "name": "Airdopes 131",
-      "price": 899,
-      "originalPrice":1500,
-      "discount": 15,
-      "id": "l0sgj6ym",
-      "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/131_f04f74fd-45d4-4614-85cf-6ccf69c4cf90.jpg?v=1691395049",
-      "tag":"✍️special engraving available",
-      "special":"60 hours playback"
-
-    },
-    {
-      "name": "Airdopes 161",
-      "price": 999,
-      "originalPrice":2000,
-      "discount": 50,
-      "id": "l0sgj6yrn",
-      "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_161.jpg?v=1686297917",
-      "tag":"✍️special engraving available",
-      "special":"120 hours playback"
-
-    },
-    {
-      "name": "Rockerz 255 Max",
-      "price": 1299,
-      "originalPrice":2000,
-      "discount": 20,
-      "id": "l0sgj6yro",
-      "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt-Rockerz-255-Max.jpg?v=1682579854",
-      "tag":"₹200 OFF ON BIG200",
-      "special":"60 hours playback"
-
-    },
-    
-    {
-      "name": "Rockerz 255 Max",
-      "price": 1299,
-      "originalPrice":2000,
-      "discount": 20,
-      "id": "l0sgj6yrp",
-      "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt-Rockerz-255-Max.jpg?v=1682579854",
-      "tag":"₹200 OFF ON BIG200",
-      "special":"60 hours playback"
-
-    },
-    
-    {
-      "name": "Rockerz 255 Max",
-      "price": 1299,
-      "originalPrice":2000,
-      "discount": 20,
+      "name": "Stone 180",
+      "price":999,
+      "original_price":2400,
+      "discount":60,
+      "reviews": 123,
+      "reviewStars": 4.4,
       "id": "l0sgj6yrq",
-      "url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt-Rockerz-255-Max.jpg?v=1682579854",
+      "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_180.jpg?v=1702014281",
       "tag":"₹200 OFF ON BIG200",
       "special":"60 hours playback"
 
+    },
+    {
+      "name": "Wave Call",
+      "price":1199,
+      "original_price":7990,
+      "discount":85,
+      "reviews":687,
+      "reviewStars":4.8,
+      "id": "l0sgj6ym",
+      "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Wave_Call__1.jpg?v=1689751649",
+      "tag":"✍️special engraving available",
+      "special":"BT Calling"
+    },
+    {
+      "name": "Airdopes 131 PRO",
+      "price": 999,
+      "original_price":2990,
+      "discount":67,
+      "reviews": 12,
+      "reviewStars": 3.9,
+      "id": "l0sgj6yrn",
+      "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_131_e7e95f2c-0bb3-492e-89df-613a2cfb792f.jpg?v=1686297917",
+      "tag":"✍️Special Engraving Available",
+      "special":"45 Hours Playback"
+
+    },
+    {
+      "name": "Rockerz 255 Max",
+      "price": 1299,
+      "original_price":3999,
+      "discount":68,
+      "reviews": 43,
+      "reviewStars": 2.7,
+      "id": "l0sgj6yro",
+      "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt-Rockerz-255-Max.jpg?v=1682579854",
+      "tag":"₹200 OFF ON BIG200",
+      "special":"60 Hours Playback",
+      "features":["EQ Modes","IPX5 Water Resistance","Self Repair"]
+    },
+    
+    {
+      "name": "Lunar Connect",
+      "price": 1199,
+      "original_price":7999,
+      "discount":85,
+      "reviews": 87,
+      "reviewStars":4.1,
+      "id": "l0sgj6yrp",
+      "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Lunar_connect_1.webp?v=1709108774",
+      "special":"BT Calling",
+      "features":[
+        "100+ Sports Modes","ENx Technology","Bilingual Supports"
+      ]
+    },
+    {
+      "name":"Cosmos",
+      "price":1499,
+      "discount":79,
+      "original_price":6900,
+      "reviews":199,
+      "reviewStars": 4.1,
+      "id":"l0sgj6901",
+      "main_image":"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Cosmos.jpg?v=1703057088",
+      "special":"AMOLED Display",
+      "features":["700+ Active Modes","10 Days Battery Life","Bluetooth v5.0"]
     }
 ]

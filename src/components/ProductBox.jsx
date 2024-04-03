@@ -1,8 +1,10 @@
 import React, { useContext, useState } from 'react';
 import styles from "../styles/ProductBox.module.css";
-import productData from "../json/SearchResult.json";
+import productData from "../json/searchResults.json";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { AppContext } from '../context/Context';
+import { Link } from 'react-router-dom';
+import formatURL from '../utils/formatURL';
 
 const ProductBox = ({changePermit,min,product,productIndex}) => {
 
@@ -24,10 +26,9 @@ const ProductBox = ({changePermit,min,product,productIndex}) => {
   };
 
   return (
-   
-          <div key={productIndex} className={styles.product_box_item} >
+          <Link to={formatURL(`/products/${product.type}/${product.name}`)} key={productIndex} className={styles.product_box_item}>
             <div className={styles.product_img}>
-              <img src={product.url} alt={product.name} style={{objectFit:changePermit ? "cover" : "contain",padding:changePermit ? "0px": "10px"}}/>
+              <img src={product.main_image} alt={product.name} style={{objectFit:changePermit ? "cover" : "contain",padding:changePermit ? "0px": "10px"}}/>
               {/* <p className={product.engraving ? styles.engrave : styles.engraven}> {product.engraving ? "✍️ Special Engraving Available" : ""}</p> */}
               <p className={styles.tag}>{product.tag}</p>
               <div className={styles.product_review}>
@@ -42,42 +43,25 @@ const ProductBox = ({changePermit,min,product,productIndex}) => {
                 <h1>{product.name}</h1>
                 <div className={styles.product_price}>
                   <p className={styles.discount}>₹{(product.price).toLocaleString()}</p>
-                  <p className={styles.discounto}>₹{(product.originalPrice).toLocaleString()}</p>
+                  <p className={styles.discounto}>₹{(product.original_price).toLocaleString()}</p>
                   <p className={styles.discountp}> {product?.discount ? product.discount : "60"}% off</p>
                 </div>
               </div>
              
-              <div className={styles.product_box_colors}>
+              <div className={styles.product_box_colors}
+               style={{height:changePermit ? "auto" : "50px",overflowY:"scroll"}}
+               >
                 <div className={styles.product_specialities}>
-                  {product.specialities &&  product.specialities.map((speciality, index) => (
-                    <span key={index}>{speciality} |</span>
+                  {product.features &&  product.features.map((feature, index) => (
+                    <span key={index}>{feature}</span>
                   ))}
                 </div>
-                {product.availableColors ? (
-                  <div className={styles.product_colors}>
-                    <ul>
-                      {product.availableColors.map((color, colorIndex) => (
-                        <button className={styles.color_button}
-                          key={colorIndex}
-                          onClick={() => handleColorClick(productIndex, colorIndex)}
-                          style={{
-                            backgroundColor: color.color,
-                            border: selectedColorIndices[productIndex] === colorIndex ? '2px solid red' : 'none'
-                          }}
-                        >
-                          <span style={{ backgroundColor: color.color }}></span>
-                        </button>
-                      ))}
-                    </ul>
-                  </div>
-                ) : (
-                  <p className={styles.engraven}></p>
-                  )}
+
               </div>
             </div>
             <button onClick={()=> changePermit ? removeFromCart(product.id) : null } className={`${changePermit ? styles.remove_cart : styles.view_product} ${styles.btn_btn}`}>
               {changePermit ? "Remove from Cart"  : "View Product"}</button>
-          </div>
+          </Link>
        
      
   );

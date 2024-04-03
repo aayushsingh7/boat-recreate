@@ -102,12 +102,10 @@
   font-size: 1rem;
   color: var(--primary-color);
   margin-top: 15px;
-  /* font-family: Helvetica, Arial, sans-serif; */
 }
 
 .product_container {
   min-width: 350px;
-  /* background: rgb(37 37 37 / 79%); */
   background: rgb(27 27 27);
   border-radius: 10px;
   margin-right: 20px;
@@ -117,6 +115,7 @@
   cursor: pointer;
   scale: 1;
   transition: 0.5s ease-in-out;
+  text-decoration: none;
 }
 
 .product_img {

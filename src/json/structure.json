@@ -1,0 +1,46 @@
+{
+    "id": "0392920394322",
+    "main_image": "https://www.boat-lifestyle.com/cdn/shop/products/ion-W_800x.png?v=1678780574",
+    "more_images": [
+        "https://www.boat-lifestyle.com/cdn/shop/files/ION_WHITE_72x.jpg?v=1702007882",
+        "https://www.boat-lifestyle.com/cdn/shop/products/NirvanaION-FI_White02-a_72x.png?v=1702007882",
+        "https://www.boat-lifestyle.com/cdn/shop/products/NirvanaION-FI_White02-b_72x.png?v=1702007882"
+    ],
+    "price": 5000,
+    "discount": 50,
+    "original_price": 10000,
+    "name":"Immortal 150",
+    "features": [
+        "12 hours playback",
+        "Dual EQ modes",
+        "BEAST™ Mode",
+        "13 mm driver",
+        "etc"
+    ],
+    "description": "Bluetooth Gaming Wireless Earbuds with BEAST™️Mode, 40 Hours Playback, Blazing RGB Lights",
+    "engraving": true,
+    "availableColors": [
+        {
+            "color": "#FFFF",
+            "image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/NION-ANC-FI_White01_medium.png?v=1702893834"
+        },
+        {
+            "color": "#000000",
+            "image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/NION-ANC-FI_Black01_medium.png?v=1702893834"
+        },
+        {
+            "color": "#a48ea4",
+            "image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/NION-ANC-FI_Black01_9ea9d407-0e36-499e-b4af-44841621e5aa_medium.png?v=1709032480"
+        },
+        {
+            "color": "#617867",
+            "image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/NION-ANC-FI_Black01_197d7c60-f66c-4cf2-bdb8-e48112b9832a_medium.png?v=1709032480"
+        }
+    ],
+    "type": "earbuds",
+    "tag": "60 Hours Playback",
+    "reviews": 45,
+    "reviewStars": 3.5,
+    "stock_qty": 342,
+    "sold_qty": 1203
+}
