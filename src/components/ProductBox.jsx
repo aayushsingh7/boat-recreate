@@ -5,12 +5,15 @@ import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { AppContext } from '../context/Context';
 import { Link } from 'react-router-dom';
 import { FaStar } from "react-icons/fa";
+import formatNumber from '../utils/formatNumbers'
 import formatURL from '../utils/formatURL';
 
 const ProductBox = ({changePermit,min,product,productIndex}) => {
 
   const [selectedColorIndices, setSelectedColorIndices] = useState(Array(productData.length).fill(0));
-  const {removeFromCart} = useContext(AppContext)
+  const {removeFromCart,cartItems,addToCart} = useContext(AppContext)
+  const inCart = cartItems.map((data)=> data.id).includes(product.id)
+  // console.log(inCart,product)
 
   const handleColorClick = (productIndex, colorIndex) => {
     setSelectedColorIndices(prevIndices => {
@@ -29,13 +32,14 @@ const ProductBox = ({changePermit,min,product,productIndex}) => {
   return (
           <Link to={formatURL(`/products/${product.type}/${product.name}`)} key={productIndex} className={styles.product_box_item}>
             <div className={styles.product_img}>
-              <img src={product.main_image} alt={product.name} style={{objectFit:changePermit ? "cover" : "contain",padding:changePermit ? "0px": "10px"}}/>
+              <img src={product.main_image} alt={product.name} style={{objectFit: product?.background ? "cover" : "contain",
+              padding:product?.background ? "0px": "10px"}}/>
               <p className={styles.tag}>{product.tag}</p>
               <div className={styles.product_review}>
                 <p style={{display:"flex",alignItems:"center"}} >
-                  <FaStar style={{marginRight:"2px",marginBottom:"3px",fontSize:"12px",color:"yellow"}}/>{product.reviewStars}</p>
+                  <FaStar style={{marginRight:"2px",marginBottom:"3px",fontSize:"12px",color:"yellow"}}/>{product.reviewStars.toString().includes(".") ? product.reviewStars : `${product.reviewStars}.0`}</p>
                 <span>|</span>
-                <p style={{display:"flex",alignItems:"center"}}>{product.reviews} <RiVerifiedBadgeFill style={{fontSize:"13px",marginLeft:"2px",color:"#00da00"}}/></p>
+                <p style={{display:"flex",alignItems:"center"}}>{formatNumber(product.reviews)} <RiVerifiedBadgeFill style={{fontSize:"13px",marginLeft:"2px",color:"#00da00"}}/></p>
               </div>
             </div>
             <div className={styles.product_box_content} style={{padding:changePermit ? "10px 10px 0px 10px" : "0px 10px"}}>
@@ -63,8 +67,8 @@ const ProductBox = ({changePermit,min,product,productIndex}) => {
              </div>
             }
             </div>
-            <button  className={`${changePermit ? styles.remove_cart : styles.view_product} ${styles.btn_btn}`}>
-              {changePermit ? "Remove from Cart"  : "Add to Cart"}</button>
+            <button onClick={(e)=> {e.stopPropagation();e.preventDefault();inCart ? removeFromCart(product.id) : addToCart(product)}} className={`${changePermit ? styles.remove_cart : styles.view_product} ${styles.btn_btn}`}>
+              {inCart ? "Remove from Cart"  : "Add to Cart"}</button>
           </Link>
        
      

@@ -20,7 +20,8 @@
         "reviews": 45,
         "reviewStars": 4.6,
         "stock_qty": 120,
-        "sold_qty": 283
+        "sold_qty": 283,
+        "background":false
     },
     {
         "id": "0392920394899",
@@ -48,6 +49,8 @@
         "reviewStars": 5.0,
         "stock_qty": 9,
         "sold_qty": 78
+        ,
+        "background":false
     },
     {
         "id": "0392920391234",
@@ -69,13 +72,14 @@
         ],
         "description": "Wireless Headphone with Dynamic 50mm Driver, Up To 20 Hours Of Playtime, Easy Control & Lightweight",
         "engraving": false,
-        "type": "earbuds",
+        "type": "headphones",
         "tag": "Restocking Soon",
         "reviews": 49,
         "reviewStars": 4.9,
         "stock_qty": 0,
         "sold_qty": 1020,
-        "special":"50 Hours Playback"
+        "special":"50 Hours Playback",
+        "background":false
     },
     {
         "id": "0392920399999",
@@ -102,7 +106,8 @@
         "reviews": 28,
         "reviewStars": 4.9,
         "stock_qty": 3449,
-        "sold_qty": 1304
+        "sold_qty": 1304,
+        "background":false
     },
     {
         "id": "9403939102932",
@@ -130,7 +135,8 @@
         "reviewStars": 4.8,
         "stock_qty": 232,
         "sold_qty": 121,
-        "special":"AMOLET Display"
+        "special":"AMOLET Display",
+        "background":false
     },
     {
         "id": "9485743291827",
@@ -144,7 +150,7 @@
         "price": 1099,
         "discount": 76,
         "original_price": 4490,
-        "name": "Airdrops 161 Pro Buds",
+        "name": "Airdops 161 Pro Buds",
         "features": [
             "ENx Technology",
             "BEAST Mode",
@@ -152,13 +158,14 @@
         ],
         "description": "Wireless Earbuds with 50 Hours Playback, Dual Pairing, Dual Mics with ENx™ Technology",
         "engraving": false,
-        "type": "smartwatches",
+        "type": "earbuds",
         "tag": "🎉 New Launch",
         "reviews": 17,
         "reviewStars": 4.8,
         "stock_qty": 232,
         "sold_qty": 121,
- "special":"v5.0 Bluetooth"
+ "special":"v5.0 Bluetooth",
+ "background":false
     },
     {
         "id": "9698743291827",
@@ -186,7 +193,8 @@
         "reviewStars": 3.9,
         "stock_qty": 192,
         "sold_qty": 560,
-        "special":"50W Rms Sound"
+        "special":"50W Rms Sound",
+        "background":false
     },
     {
         "id": "0968548532174",
@@ -213,7 +221,8 @@
         "reviewStars": 4.5,
         "stock_qty": 192,
         "sold_qty": 560,
-        "special":"ASAP Charging"
+        "special":"ASAP Charging",
+        "background":false
     },
     {
         "id": "0968548511123",
@@ -241,6 +250,7 @@
         "reviewStars": 4.8,
         "stock_qty": 8,
         "sold_qty": 1219,
-        "special":"Noice Isolation"
+        "special":"Noice Isolation",
+        "background":false
     }
 ]

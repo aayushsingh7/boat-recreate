@@ -7,12 +7,11 @@ import { IoIosSearch } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
 import { AppContext } from "../context/Context";
-import { FaUserCircle } from "react-icons/fa";
-import { IoMail } from "react-icons/io5";
-import { RiLockPasswordFill } from "react-icons/ri";
+import { useLocation } from 'react-router-dom';
 
 
 const Navbar = () => {
+  const location = useLocation()
   const navigate = useNavigate();
   const [query, setQuery] = useState("");
   const q = new URLSearchParams(location.search);
@@ -23,7 +22,11 @@ const Navbar = () => {
     useContext(AppContext);
 
   useEffect(() => {
-    setQuery(getSearchRequestText);
+    if(location.pathname.startsWith("/search")){
+      setQuery(getSearchRequestText);
+      return;
+    }
+    setQuery("")
   }, [location.search]);
 
   useEffect(() => {

@@ -88,7 +88,7 @@ const ProductSlider = ({ data, type, highlight, tittle, counter }) => {
                  <Link className={styles.product_container} to={formatURL(`/products/${product.type}/${product.name}`)} >
                  
                     <div className={styles.product_img}>
-                      <img src={product.main_image} alt="" />
+                      <img src={product.more_images[0]} alt="" />
                       {product.tag && (
                         <span className={styles.tag}>{product.tag}</span>
                       )}
@@ -136,15 +136,17 @@ const ProductSlider = ({ data, type, highlight, tittle, counter }) => {
                         </div>
                         {cartItems.map((item) => item.id).includes(product.id) ? (
                           <button
-                            onClick={() => {
-                              console.log(product.id);
+                            onClick={(e) => {
+                              e.preventDefault()
                               removeFromCart(product.id);
                             }}
                           >
                             Remove from cart
                           </button>
                         ) : (
-                          <button onClick={() => addToCart(product)}>
+                          <button onClick={(e) => {
+                            e.preventDefault()
+                            addToCart(product)}}>
                             Add to cart
                           </button>
                         )}

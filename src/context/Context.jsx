@@ -14,6 +14,7 @@ const AppFunction = ({children}) => {
    const [showRegister,setShowRegister] = useState(false)
    const [user,setUser] = useState({})
    const [showProfile,setShowProfile] = useState(false)
+   const [showFilters,setShowFilters] = useState(false)
 
 
    const addToCart = (newProduct)=> {
@@ -60,7 +61,7 @@ const AppFunction = ({children}) => {
 
     return (
         <AppContext.Provider value={{
-             showProfile,user,showLogin,showRegister,cartItemsLength,showCart,cartItems,showSideNavbar,openSearchPage,setShowSideNavbar,setOpenSearchPage,setShowCart,addToCart,removeFromCart,setShowLogin,setShowRegister,getUserDetails,setShowProfile
+             showFilters,showProfile,user,showLogin,showRegister,cartItemsLength,showCart,cartItems,showSideNavbar,openSearchPage,setShowSideNavbar,setOpenSearchPage,setShowCart,addToCart,removeFromCart,setShowLogin,setShowRegister,getUserDetails,setShowProfile,setShowFilters
         }}>
 {children}
         </AppContext.Provider>

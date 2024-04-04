@@ -1,12 +1,13 @@
 [
   {
-    "id": "0392920394322",
+    "id": "9506943211233",
     "name": "Nirvana Eutopia",
     "price": 3999,
     "discount": 47,
     "original_price": 7490,
-    "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Nirvana_Eutopia.jpg?v=1711716650",
+    "main_image":"https://www.boat-lifestyle.com/cdn/shop/files/Artboard1_9517fb5e-6ef2-479a-8c86-5298f09800b9_1300x.png?v=1711716893",
     "more_images": [
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Nirvana_Eutopia.jpg?v=1711716650",
         "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/5_e68edeb2-5b40-49a9-a794-1bc61768dd57_700x.jpg?v=1711716893",
         "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/4_ea2b1903-27d2-4ff3-84a9-bbcf4ea83362_700x.jpg?v=1711716893",
         "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/6_80d6c579-aefc-40a5-ba15-df0059c5fe4c_700x.jpg?v=1711716893",
@@ -21,40 +22,18 @@
     "sold_qty": 1203,
     "features": ["12 hours playback", "Dual EQ modes", "BEAST™ Mode", "13 mm driver", "etc" ],
     "description": "Wireless Headphone with 20H Playback,  Dual Mic with Enx, ASAP charge",
-    "engraving": false 
+    "engraving": false  ,
+    "background":false
   },
   {
-    "id": "0392920394322",
-    "name": "Avante Bar 5400D",
-    "price": 19000,
-    "discount": 64,
-    "original_price": 54999,
-    "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AB_5400D.jpg?v=1711019254",
-    "more_images": [
-        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard1_541dfb38-2f20-4f6b-9294-283e45477fb7_700x.jpg?v=1711019705",
-        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard2_7a2d95f9-d1c9-472f-bc0a-30f322f19c85_700x.jpg?v=1711019705",
-        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard3_700x.jpg?v=1711019705",
-        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard4_002da9ca-82cb-4ee8-a9b4-12ba35f3e49d_700x.jpg?v=1711019705"
-    ],
-    "tag":"🎉 New launch",
-    "type": "speakers",
-    "special":"550 watts",
-    "reviews": 4,
-    "reviewStars": 5.0,
-    "stock_qty": 342,
-    "sold_qty": 1203,
-    "features": ["Bluetooth with 7nm rhythmic Dynamic Drivers", "Nonstop Music", "55 hours if battery" ],
-    "description": "Bluetooth with 7nm rhythmic Dynamic Drivers, Nonstop Music, 55 hours if battery",
-    "engraving": false 
-  },
-  {
-    "id": "0392920394322",
+    "id": "0005948334218",
     "name": "Stone Spinx Pro",
     "price": 3499,
     "discount": 65,
     "original_price": 9999,
-    "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_Spinx_Pro.jpg?v=1709718328",
+    "main_image": "https://www.boat-lifestyle.com/cdn/shop/files/Stone_SpinXPro_1_1300x.png?v=1709717404",
     "more_images": [
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_Spinx_Pro.jpg?v=1709718328",
         "https://www.boat-lifestyle.com/cdn/shop/files/Stone_SpinXPro_2_700x.jpg?v=1709717442",
         "https://www.boat-lifestyle.com/cdn/shop/files/Stone_SpinXPro_3_700x.jpg?v=1709717442",
         "https://www.boat-lifestyle.com/cdn/shop/files/Stone_SpinXPro_4_700x.jpg?v=1709717442",
@@ -69,16 +48,18 @@
     "sold_qty": 1203,
     "features": ["Bluetooth with 7nm rhythmic Dynamic Drivers", "Nonstop Music", "55 hours if battery" ],
     "description": "Bluetooth with 7nm rhythmic Dynamic Drivers, Nonstop Music, 55 hours if battery",
-    "engraving": false 
+    "engraving": false  ,
+    "background":false
   },
   {
-    "id": "0392920394322",
-    "name": "Ultimate Select",
+    "id": "9995844344213",
+    "name": "Ultima Select",
     "price": 2999,
     "discount": 77,
     "original_price": 12999,
-    "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Ultima_Select.jpg?v=1707299725",
+    "main_image": "https://www.boat-lifestyle.com/cdn/shop/files/Artboard11_600x.png?v=1707301108",
     "more_images": [
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Ultima_Select.jpg?v=1707299725",
         "https://www.boat-lifestyle.com/cdn/shop/files/Artboard5_1eea1a3c-656b-404b-8835-aa09d294e4bd_600x.jpg?v=1707301108",
         "https://www.boat-lifestyle.com/cdn/shop/files/Artboard7_74b54a89-4e80-4bcd-bb87-6d7131daccf8_600x.jpg?v=1707301108",
         "https://www.boat-lifestyle.com/cdn/shop/files/Artboard9_a6f138d6-c31d-4cf7-bd1e-351165f28128_599x.jpg?v=1707301108",
@@ -91,42 +72,46 @@
     "reviewStars": 5.0,
     "stock_qty": 342,
     "sold_qty": 1203,
-    "features": ["Bluetooth with 7nm rhythmic Dynamic Drivers", "Nonstop Music", "55 hours if battery" ],
+    "features": ["Bluetooth Calling","100+ Sports Modes","100+ Watch Faces" ],
     "description": "Bluetooth with 7nm rhythmic Dynamic Drivers, Nonstop Music, 55 hours if battery",
-    "engraving": false 
+    "engraving": false ,
+    "background":false
   },
   {
-    "id": "0392920394322",
+    "id": "9444593312348",
     "name": "AirDopes 131 pro",
     "price": 999,
     "discount": 77,
     "original_price": 2999,
-    "main_image": "https://www.boat-lifestyle.com/cdn/shop/files/Workaholic_2.png?v=1685083745",
+    "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Grey_560cad08-698b-45d6-a3dd-d10ae3fec8ee_medium.png?v=1697625863",
     "more_images": [
-        "https://www.boat-lifestyle.com/cdn/shop/files/131Pro-3_600x.jpg?v=1703232410",
+      "https://www.boat-lifestyle.com/cdn/shop/files/131Pro-3_600x.jpg?v=1703232410",
+
         "https://www.boat-lifestyle.com/cdn/shop/files/05_2_700x.jpg?v=1703232410",
         "https://www.boat-lifestyle.com/cdn/shop/files/07_3_700x.jpg?v=1703232410",
         "https://www.boat-lifestyle.com/cdn/shop/files/09_2_700x.jpg?v=1703232410"
     ],
     "tag":"🎉 New launch",
-    "type": "Watches",
+    "type": "earbuds",
     "special":"Nonstop Music",
     "reviews": 14,
     "reviewStars": 5.0,
     "stock_qty": 342,
     "sold_qty": 1203,
-    "features": ["Bluetooth with 7nm rhythmic Dynamic Drivers", "Nonstop Music", "55 hours if battery","IPX5 Sweat" ],
+    "features": ["BEAST™ Mode", "55 hours battery","IPX5 Sweat" ],
     "description": "Bluetooth with 7nm rhythmic Dynamic Drivers, Nonstop Music, 55 hours if battery,IPX5 Sweat",
-    "engraving": false 
+    "engraving": false  ,
+    "background":false
   },
   {
-    "id": "0392920394322",
+    "id": "9999923888123",
     "name": "AirDopes 381 pro",
     "price": 1599,
     "discount": 68,
     "original_price": 4990,
-    "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt-Airdopes-381.jpg?v=1682576552",
+    "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/f4378c25-429e-4766-b61a-025d40a98dfb_600x.png?v=1625046463",
     "more_images": [
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt-Airdopes-381.jpg?v=1682576552",
         "https://www.boat-lifestyle.com/cdn/shop/products/battery-3_0b37c40a-4bf6-4849-8297-6c195b1b3287_700x.jpg?v=1678974123",
         "https://www.boat-lifestyle.com/cdn/shop/products/boat-3_b6dc4cb5-c2c7-44c8-8b07-fad1ab57fd35_700x.jpg?v=1678974123",
         "https://www.boat-lifestyle.com/cdn/shop/products/IPX-3_a9e9da41-3504-4b08-be8c-263530c031d4_700x.jpg?v=1678974123",
@@ -139,9 +124,36 @@
     "reviewStars": 4.8,
     "stock_qty": 342,
     "sold_qty": 1203,
-    "features": ["Bluetooth with 7nm rhythmic Dynamic Drivers", "Nonstop Music", "20 hours","IPX5 Sweat" ],
+    "features": [ "Nonstop Music", "20 Hours Playback","IPX5 Sweat" ],
     "description": "Bluetooth with 7nm rhythmic Dynamic Drivers, Nonstop Music, 20 hours,IPX5 Sweat",
-    "engraving": false 
+    "engraving": false ,
+    "background":false
+  },
+  {
+    "id": "9954832212734",
+    "name": "Avante Bar 5400D",
+    "price": 19000,
+    "discount": 64,
+    "original_price": 54999,
+    "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Artboard6_259902fa-69ef-4495-b388-34c7a19efada_medium.png?v=1711019705",
+    "more_images": [
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AB_5400D.jpg?v=1711019254",
+        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard1_541dfb38-2f20-4f6b-9294-283e45477fb7_700x.jpg?v=1711019705",
+        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard2_7a2d95f9-d1c9-472f-bc0a-30f322f19c85_700x.jpg?v=1711019705",
+        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard3_700x.jpg?v=1711019705",
+        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard4_002da9ca-82cb-4ee8-a9b4-12ba35f3e49d_700x.jpg?v=1711019705"
+    ],
+    "tag":"🎉 New launch",
+    "type": "speakers",
+    "special":"550 watts",
+    "reviews": 4,
+    "reviewStars": 5.0,
+    "stock_qty": 342,
+    "sold_qty": 1203,
+    "features": ["Bluetooth with 7nm rhythmic Dynamic Drivers", "Nonstop Music", "55 hours if battery" ],
+    "description": "Bluetooth with 7nm rhythmic Dynamic Drivers, Nonstop Music, 55 hours if battery",
+    "engraving": false  ,
+    "background":false
   }
   
 ]

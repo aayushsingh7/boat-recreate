@@ -115,7 +115,7 @@ const UserDetails = () => {
             />
           </div>
 
-          <button className={styles.forgot_password}>Forgot password</button>
+        {editProfile ? <button className={styles.forgot_password} onClick={(e)=> e.preventDefault()}>Forgot password</button> : null}
         <div className={styles.sep}>
         <button className={styles._btn} onClick={(e)=> {setEditProfile(true);editProfile ? null : e.preventDefault()}}>{editProfile ? "Save Changes" : "Edit Profile"}</button>
         {editProfile ? null :  <button className={`${styles.btn_dark} ${styles.logout}`} onClick={(e)=> {e.preventDefault();setShowProfile(false);localStorage.removeItem("user_details");getUserDetails()}}>Logout</button>}
