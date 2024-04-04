@@ -217,6 +217,9 @@ color:#ffaa00;
     .filters_btn{
         display: flex;
     }
+    .container h4::before{
+      width:40%;
+    }
 }
 
 @media (max-width:450px) {

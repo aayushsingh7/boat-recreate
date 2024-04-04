@@ -5,7 +5,7 @@ import ReactPlayer from "react-player";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import DealCounter from "./DealCounter";
 import { AppContext } from "../context/Context";
-import formatNumber from "../utils/formatNumbers,js";
+import formatNumber from "../utils/formatNumbers";
 import { Link } from "react-router-dom";
 import formatURL from "../utils/formatURL";
 
