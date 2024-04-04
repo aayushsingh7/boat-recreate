@@ -51,7 +51,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={styles.container}>
+    <nav className={styles.container} style={{position:location.pathname.startsWith("/products") ? "relative" : "fixed"}}>
       <div className={styles.part_one}>
         <div className={styles.ran}>
           <CiMenuBurger onClick={() => setShowSideNavbar(true)} />

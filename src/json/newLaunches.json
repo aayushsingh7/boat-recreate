@@ -8,7 +8,7 @@
     "main_image":"https://www.boat-lifestyle.com/cdn/shop/files/Artboard1_9517fb5e-6ef2-479a-8c86-5298f09800b9_1300x.png?v=1711716893",
     "more_images": [
         "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Nirvana_Eutopia.jpg?v=1711716650",
-        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/5_e68edeb2-5b40-49a9-a794-1bc61768dd57_700x.jpg?v=1711716893",
+      
         "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/4_ea2b1903-27d2-4ff3-84a9-bbcf4ea83362_700x.jpg?v=1711716893",
         "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/6_80d6c579-aefc-40a5-ba15-df0059c5fe4c_700x.jpg?v=1711716893",
         "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/7_f61acd9c-2aae-4f71-b677-a144689e2c55_700x.jpg?v=1711716893"
@@ -20,7 +20,7 @@
     "reviewStars": 3.5,
     "stock_qty": 342,
     "sold_qty": 1203,
-    "features": ["12 hours playback", "Dual EQ modes", "BEAST™ Mode", "13 mm driver", "etc" ],
+    "features": ["12 hours playback", "Dual EQ modes", "BEAST™ Mode", "13 mm driver" ],
     "description": "Wireless Headphone with 20H Playback,  Dual Mic with Enx, ASAP charge",
     "engraving": false  ,
     "background":false
