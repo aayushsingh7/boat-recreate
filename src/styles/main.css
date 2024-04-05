@@ -43,13 +43,27 @@ body{
     font-family: "Roboto", sans-serif;
     height: 100dvh;
     overflow: scroll;
-    /* display: flex;
-    align-items: center;
-    justify-content: flex-start; */
 }
 
 body::-webkit-scrollbar{
     width: 0px;
+}
+
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100vw;
+    background: var(--primary-background);
+}
+.app_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1700px;
+    flex-direction: column;
 }
 
 .add-padding-container{

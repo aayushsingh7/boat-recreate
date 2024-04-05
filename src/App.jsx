@@ -29,6 +29,7 @@ const App = () => {
   return (
     <div className="app">
     <Navbar />
+    <div className="app_content">
     <SideNavbar/>
     <Cart/>
     <MobileSearchPage/>
@@ -42,6 +43,7 @@ const App = () => {
    {showRegister ? <Register/> : null}
    {showProfile ? <UserDetails/> : null}
     <Footer />
+    </div>
   </div>
   
   );
