@@ -41,6 +41,8 @@ body{
     position: relative;
     background: var(--primary-background);
     font-family: "Roboto", sans-serif;
+    height: 100dvh;
+    overflow: scroll;
     /* display: flex;
     align-items: center;
     justify-content: flex-start; */

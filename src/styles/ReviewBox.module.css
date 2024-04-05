@@ -1,0 +1,135 @@
+.grid_box{
+    width: 100%;
+    padding: 15px;
+    margin:3px 0px;
+    border-top: 1px solid #2e2e2e;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.name{
+    font-size: 0.73rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 3px;
+}
+
+.verified{
+    font-size: 0.57rem;
+    color:rgb(0, 218, 0);
+    font-weight: 600;
+    display:flex;
+    align-items: center;
+}
+
+.user_details{
+    display: flex;
+    flex-direction: column;
+}
+
+.header svg{
+    font-size: 45px;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.stars{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin: 17px 0px;
+}
+
+.stars svg{
+    font-size: 20px;
+    color: #ffaa00;
+}
+
+.stars span{
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-left: 10px;
+    color: var(--primary-color);
+    flex: 1;
+}
+
+.review_description{
+    font-size: 0.75rem;
+    color: #9d9d9d;
+    line-height: 1.15rem;
+}
+
+.response_options{
+    display: flex;
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+
+
+.response_options div{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 17px;
+}
+
+.response_options div svg{
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.response_options button{
+    appearance: none;
+    border: none;
+    background: none;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: 6px 20px;
+    background: #313131;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seprator{
+    font-size: 20px;
+    color: #515151;
+    margin: 0px 15px;
+}
+
+
+.posted_date{
+    color:#9d9d9d;
+    font-size: 0.6rem;
+}
+
+.review_images{
+    width: 100%;
+    margin-top: 16px;
+}
+
+.review_images img{
+height: 70px;
+width: 70px;
+margin-right:5px;
+border-radius:5px;
+}
+
+@media (max-width:850px) {
+    .grid_box{
+        padding:15px 0px;
+    }
+}
+
+@media (max-width:499px) {
+    .name{
+        font-size: 0.8rem;
+    }
+    .verified{
+        font-size: 0.7rem;
+    }
+}

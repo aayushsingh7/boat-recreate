@@ -213,7 +213,7 @@ transform: rotate(45deg);
     .hero_section{
       flex-direction:column-reverse;
       position: relative;
-      height: calc(100dvh - 70px);
+      height: calc(100vh - 70px);
     }
     .img_container{
       width:100%;

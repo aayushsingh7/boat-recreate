@@ -60,7 +60,7 @@ const ProductSlider = ({ data, type, highlight, tittle, counter }) => {
   }, []);
 
   return (
-    <section>
+    <section className={styles.sec_tion}>
       {tittle && highlight ? (
         <h2>
           {tittle} <span className={styles.under_line}>{`${highlight}`}</span>

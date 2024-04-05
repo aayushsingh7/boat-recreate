@@ -1,7 +1,7 @@
 [
     {
         "id": "0392920394322",
-        "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Untitled-1_bf68149e-5ab0-4761-8116-d558ef0e178a_medium.png?v=1679352411",
+        "main_image": "https://www.boat-lifestyle.com/cdn/shop/products/Untitled-1_bf68149e-5ab0-4761-8116-d558ef0e178a_800x.png?v=1679352411",
         "more_images": [],
         "price": 1999,
         "discount": 60,
@@ -83,7 +83,7 @@
     },
     {
         "id": "0392920399999",
-        "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/NION-ANC-FI_White01_medium.png?v=1702893834",
+        "main_image": "https://www.boat-lifestyle.com/cdn/shop/files/NION-ANC-FI_White01_600x.png?v=1702893834",
         "more_images": [
             "https://www.boat-lifestyle.com/cdn/shop/files/NION-ANC-FI_White06_600x.jpg?v=1702894033",
             "https://www.boat-lifestyle.com/cdn/shop/files/NION-ANC-FI_White05_600x.jpg?v=1702894033",
@@ -111,7 +111,7 @@
     },
     {
         "id": "9403939102932",
-        "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/black-1-removebg-preview_medium.png?v=1689846474",
+        "main_image": "https://www.boat-lifestyle.com/cdn/shop/files/black-1-removebg-preview_500x.png?v=1689846474",
         "more_images": [
             "https://www.boat-lifestyle.com/cdn/shop/files/black-2_800x.png?v=1689846474",
             "https://www.boat-lifestyle.com/cdn/shop/files/black-4_800x.png?v=1689846474",
@@ -140,7 +140,7 @@
     },
     {
         "id": "9485743291827",
-        "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Artboard8_medium.png?v=1704949292",
+        "main_image": "https://www.boat-lifestyle.com/cdn/shop/files/Artboard8_600x.png?v=1704949292",
         "more_images": [
             "https://www.boat-lifestyle.com/cdn/shop/files/Artboard1_600x.jpg?v=1704949292",
             "https://www.boat-lifestyle.com/cdn/shop/files/Artboard2_9c6487fe-8ac5-44e6-b162-e8404e83dde2_600x.jpg?v=1704949292",
@@ -226,12 +226,11 @@
     },
     {
         "id": "0968548511123",
-        "main_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Red_d8ee4785-21ae-4fee-943e-d5c571131ae8_medium.png?v=1660654082",
+        "main_image": "https://www.boat-lifestyle.com/cdn/shop/products/Red_d8ee4785-21ae-4fee-943e-d5c571131ae8_1300x.png?v=1660654082",
         "more_images": [
             "https://www.boat-lifestyle.com/cdn/shop/files/bassheads-220-bassheads-200-boat-original-imafyefk69pzxt5q_150ef814-6e7f-43e7-b8d9-8c7c79c2eb60_416x.webp?v=1686293287",
             "https://www.boat-lifestyle.com/cdn/shop/files/bassheads-220-bassheads-200-boat-original-imafyefkd2jfvew6_c8f7754d-e52f-4f09-8baf-ecf6f29249bb_416x.webp?v=1686293287",
-            "https://www.boat-lifestyle.com/cdn/shop/files/bassheads-220-bassheads-200-boat-original-imafyefkr5jmhatc_e64da2d6-2655-43b9-9e65-6410cf2d9373_416x.webp?v=1686293287",
-            "https://www.boat-lifestyle.com/cdn/shop/files/bassheads-220-bassheads-200-boat-original-imafyefkxfxgm3hq_b2029c4f-a3f9-4f8a-9fcb-acda59f99c0b_368x.webp?v=1686293287"
+            "https://www.boat-lifestyle.com/cdn/shop/files/bassheads-220-bassheads-200-boat-original-imafyefkr5jmhatc_e64da2d6-2655-43b9-9e65-6410cf2d9373_416x.webp?v=1686293287"
         ],
         "price": 699,
         "discount": 30,

@@ -38,7 +38,7 @@ font-weight: 100;
     justify-content: flex-start;
     width: 100%;
     flex-direction: column;
-    padding: 80px 30px 80px 30px;
+    padding: 80px 20px 80px 20px;
 }
 
 .search_filter_sidenav{
@@ -181,6 +181,7 @@ color:#ffaa00;
     justify-content: center;
     cursor: pointer;
     font-weight: 600;
+    margin-top: 10px;
 }
 
 .filters_btn:hover{
@@ -219,6 +220,12 @@ color:#ffaa00;
     }
     .container h4::before{
       width:40%;
+    }
+}
+
+@media (max-width:520px) {
+    .results{
+        padding: 80px 10px ;
     }
 }
 
