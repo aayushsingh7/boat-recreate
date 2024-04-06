@@ -12,16 +12,20 @@ import ReviewBox from "../components/ReviewBox";
 import styles from "../styles/ViewProduct.module.css";
 import mergedArray from "../utils/mergeJsonArray";
 import Button from "../components/Button";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { GoDot, GoDotFill } from "react-icons/go";
+
 
 
 
 const ViewProduct = () => {
   const { name, type } = useParams();
-  const { addToCart, removeFromCart, cartItems} = useContext(AppContext)
+  const { addToCart, removeFromCart, cartItems } = useContext(AppContext)
   const [product, setProduct] = useState(null);
   const [image, setImage] = useState("")
+  const [imageIndex, setImageIndex] = useState(0)
 
-  
+
   const calculateTimeLeft = () => {
     const now = new Date();
     const midnight = new Date(now);
@@ -65,7 +69,10 @@ const ViewProduct = () => {
       );
     });
 
-    const updatedImagesArray = [...foundProduct.more_images.slice(1)]
+    let updatedImagesArray = [...foundProduct.more_images.slice(1)]
+    updatedImagesArray.unshift(foundProduct.main_image)
+
+
 
     setProduct({
       ...foundProduct,
@@ -80,7 +87,20 @@ const ViewProduct = () => {
     setImage(url)
   }
 
-  
+  const handlePrevClick = () => {
+    setImageIndex((index) => {
+      if (index === 0) return product.more_images.length - 1
+      return index - 1;
+    })
+  }
+
+  const handleNextClick = () => {
+    setImageIndex((index) => {
+      if (index === product.more_images.length - 1) return 0;
+      return index + 1
+    })
+  }
+
 
 
   return (
@@ -93,23 +113,37 @@ const ViewProduct = () => {
               <section className={styles.product_image_container}>
 
                 <div className={styles.main_image}>
-                  <img src={image} alt="" />
+                  <Button onClick={handlePrevClick} text={<AiOutlineLeft style={{ fontSize: "18px", color: "var(--primary-color)" }} />} background="var(--secondary-background)" height="30px" width="30px" borderRadius="50%" position="absolute" top="50%" transform="translateY(-50%)" left="3%" zIndex="10" />
+               
+               
                   {
-                    window.innerWidth < 530 && product.more_images.map((image, index) => {
+                    product.more_images.map((image, index) => {
                       return (
-                        <img onMouseEnter={() => setImage(image)} className={styles.side_image} key={index} src={image} alt={`image[${index}]`}
-                          onClick={() => handleImageSelect(image)} />
+                        <img
+                          className={styles.side_image} key={index} src={image} alt={`image[${index}]`}
+                          onClick={() => handleImageSelect(image)} style={{ translate: `${-100 * imageIndex}%` }}
+                           />
                       )
                     })
                   }
+                  <Button onClick={handleNextClick} text={<AiOutlineRight style={{ fontSize: "18px", color: "var(--primary-color)" }} />} background="var(--secondary-background)" height="30px" width="30px" borderRadius="50%" position="absolute" top="50%" transform="translateY(-50%)" right="3%" zIndex="10" />
+
+                  <div className={styles.image_counter_dots}>
+                    {
+                      product.more_images.map((image, index) => {
+                        return <Button onClick={()=> setImageIndex(index)} key={image} text={index === imageIndex ? <GoDotFill style={{ fontSize: "17px" }} /> : <GoDot style={{ fontSize: "17px" }} />} background="none" />
+                      })
+                    }
+                  </div>
+
                 </div>
 
                 <div className={styles.more_images}>
-                  <img onMouseEnter={() => setImage(product.main_image)} src={product.main_image} alt="" onClick={() => handleImageSelect(product.main_image)} />
+                
                   {
                     window.innerWidth > 530 && product.more_images.map((image, index) => {
                       return (
-                        <img onMouseEnter={() => setImage(image)} className={styles.side_image} key={index} src={image} alt={`image[${index}]`}
+                        <img onMouseEnter={() => setImageIndex(index)} className={styles.side_image} key={index} src={image} alt={`image[${index}]`}
                           onClick={() => handleImageSelect(image)} />
                       )
                     })
@@ -153,8 +187,8 @@ const ViewProduct = () => {
                     {
                       cartItems.map((item) => item.id).includes(product.id) ?
 
-                        <Button text={"Remove from Cart"} onClick={()=> removeFromCart(product.id)} padding={"14px 15px"} width={"100%"} fontSize={"0.8rem"} borderRadius={"10px"} background={"var(--mid-dark-background)"} /> : 
-                        <Button text={"Add to Cart"} onClick={()=> addToCart(product)} padding={"14px 15px"} width={"100%"} fontSize={"0.8rem"} borderRadius={"10px"} background={"var(--mid-dark-background)"} />
+                        <Button text={"Remove from Cart"} onClick={() => removeFromCart(product.id)} padding={"14px 15px"} width={"100%"} fontSize={"0.8rem"} borderRadius={"10px"} background={"var(--mid-dark-background)"} /> :
+                        <Button text={"Add to Cart"} onClick={() => addToCart(product)} padding={"14px 15px"} width={"100%"} fontSize={"0.8rem"} borderRadius={"10px"} background={"var(--mid-dark-background)"} />
                     }
                     <Button text={"Buy Now"} padding={"14px 15px"} marginTop="7px" width={"100%"} fontSize={"0.8rem"} borderRadius={"10px"} background={"var(--secondary-background)"} />
                   </div>
@@ -168,20 +202,20 @@ const ViewProduct = () => {
                     <div className={styles.offer}>
                       <h5>Bank Offer</h5>
                       <p>Upto ₹850.00 discount on select Credit Cards, Debit Carts and more</p>
-                      <Button background="none" text={"Use now"}  width="100%" textAlign="start" />
+                      <Button background="none" text={"Use now"} width="100%" textAlign="start" />
                     </div>
 
                     <div className={styles.offer}>
                       <h5>Cashbacks</h5>
                       <p>Amazon Pay Rewards - Shop and Get rewards worth 850rs</p>
-                      <Button background="none" text={"Use now"}  width="100%" textAlign="start" />
+                      <Button background="none" text={"Use now"} width="100%" textAlign="start" />
                     </div>
 
 
                     <div className={styles.offer}>
                       <h5>Partner offers</h5>
                       <p>Get GST invoice and save up to 28% on business purchases</p>
-                      <Button background="none" text={"Use now"}  width="100%" textAlign="start" />
+                      <Button background="none" text={"Use now"} width="100%" textAlign="start" />
                     </div>
                   </div>
                 </div>
@@ -219,7 +253,7 @@ const ViewProduct = () => {
       </div>
 
       <div className={styles.reviews_container}>
-        <h2 >Customers <span>Reviews</span>:</h2>
+        <h2 >Customers <span>Reviews</span>:</h2>-
 
         <div className={styles.reviews_details}>
 
@@ -234,7 +268,7 @@ const ViewProduct = () => {
 
             <div className={styles.btn_container}>
 
-              <Button text={"Add a Customer Review"}  padding={"14px 15px"} width={"100%"} fontSize={"0.8rem"} borderRadius={"10px"} background={"var(--secondary-background)"} />
+              <Button text={"Add a Customer Review"} padding={"14px 15px"} width={"100%"} fontSize={"0.8rem"} borderRadius={"10px"} background={"var(--secondary-background)"} />
             </div>
 
           </section>

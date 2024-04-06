@@ -78,4 +78,3 @@ const ProductBox = ({changePermit,min,product,productIndex}) => {
 };
 
 export default ProductBox;
-// onClick={()=>  removeFromCart(product.id)}
