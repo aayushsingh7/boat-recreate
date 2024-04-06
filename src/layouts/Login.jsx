@@ -5,6 +5,7 @@ import { BsGithub, BsTwitterX } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 import { AppContext } from "../context/Context";
 import generateRandomID from "../utils/generateRandomID";
+import Button from "../components/Button";
 
 const Login = () => {
 
@@ -54,7 +55,7 @@ const Login = () => {
             onInput={(e)=> setPassword(e.target.value)}
           />
           <button className={styles.forgot_password}>Forgot password</button>
-          <button className={styles.login_btn}>Login</button>
+           <Button text={"Login"} onClick={login} padding="15px 20px"  width="100%"  fontSize= "0.8rem"  borderRadius= "10px"  background= "var(--secondary-background)"  marginTop= "40px" />
         </div>
 
         <p className={styles.seprator}>------------ or -------------</p>

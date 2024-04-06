@@ -35,13 +35,13 @@
 }
 
 .btn_container button {
-  appearance: none;
-  border: none;
+  /* appearance: none;
+  border: none; */
   /* background: none; */
-  padding: 12px 30px;
+  /* padding: 12px 30px;
   font-size: 1rem;
   color: var(--primary-color);
-  border-radius: 5px;
+  border-radius: 5px; */
 }
 
 .one {

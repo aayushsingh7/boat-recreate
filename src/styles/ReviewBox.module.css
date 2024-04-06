@@ -59,7 +59,7 @@
 
 .review_description{
     font-size: 0.75rem;
-    color: #9d9d9d;
+    color: var(--light-dark-background);
     line-height: 1.15rem;
 }
 
@@ -83,7 +83,7 @@
     margin-right: 3px;
 }
 
-.response_options button{
+/* .response_options button{
     appearance: none;
     border: none;
     background: none;
@@ -93,7 +93,7 @@
     background: #313131;
     border-radius: 5px;
     cursor: pointer;
-}
+} */
 
 .seprator{
     font-size: 20px;
@@ -103,7 +103,7 @@
 
 
 .posted_date{
-    color:#9d9d9d;
+    color:var(--light-dark-background);
     font-size: 0.6rem;
 }
 

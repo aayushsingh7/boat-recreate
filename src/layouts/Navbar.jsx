@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
 import { AppContext } from "../context/Context";
 import { useLocation } from 'react-router-dom';
+import Button from '../components/Button'
 
 
 const Navbar = () => {
@@ -16,13 +17,12 @@ const Navbar = () => {
   const [query, setQuery] = useState("");
   const q = new URLSearchParams(location.search);
   const { setShowSideNavbar } = useContext(AppContext);
-  // const [showProfile,setShowProfile] = useState(false)
   const getSearchRequestText = q.get("query");
-  const { setOpenSearchPage,setShowCart, user, cartItemsLength, setShowLogin,setShowProfile } =
+  const { setOpenSearchPage, setShowCart, user, cartItemsLength, setShowLogin, setShowProfile } =
     useContext(AppContext);
 
   useEffect(() => {
-    if(location.pathname.startsWith("/search")){
+    if (location.pathname.startsWith("/search")) {
       setQuery(getSearchRequestText);
       return;
     }
@@ -51,7 +51,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={styles.container} style={{position:location.pathname.startsWith("/products") ? "relative" : "fixed"}}>
+    <nav className={styles.container} style={{ position: location.pathname.startsWith("/products") ? "relative" : "fixed" }}>
       <div className={styles.part_one}>
         <div className={styles.ran}>
           <CiMenuBurger onClick={() => setShowSideNavbar(true)} />
@@ -86,24 +86,28 @@ const Navbar = () => {
           />
         </div>
         <div className={styles.main_option}>
-          <button
+
+          <Button background="none" margin="0px 6px" padding="5px" fontSize="0.8rem"
+            text={<IoIosSearch style={{ fontSize: "30px" }} />}
             className={styles.search_icon_mob}
             onClick={() => setOpenSearchPage(true)}
-          >
-            <IoIosSearch style={{ fontSize: "30px" }} />
-          </button>
-          <button onClick={() => user ? setShowProfile(true) : setShowLogin(true)}>
-            <FaRegUser style={{ fontSize: "23px" }} />
-            
-          </button>
-          <button onClick={() => setShowCart(true)}>
-            {cartItemsLength?.length > 0 ? (
-              <span className={styles.cart_length}>
-                {cartItemsLength?.length}
-              </span>
-            ) : null}
-            <IoCartOutline style={{ fontSize: "31px" }} />
-          </button>
+          />
+
+
+          <Button background="none" margin="0px 6px" padding="5px" fontSize="0.8rem" onClick={() => user ? setShowProfile(true) : setShowLogin(true)} text={<FaRegUser style={{ fontSize: "23px" }} />} />
+
+          <Button background="none" margin="0px 6px" padding="5px" fontSize="0.8rem" position="relative" onClick={() => setShowCart(true)}
+            text={
+              <>
+                {cartItemsLength?.length > 0 ? (
+                  <span className={styles.cart_length}>
+                    {cartItemsLength?.length}
+                  </span>
+                ) : null}
+                <IoCartOutline style={{ fontSize: "31px" }} />
+              </>}
+          />
+
         </div>
       </div>
     </nav>

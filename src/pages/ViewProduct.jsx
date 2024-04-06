@@ -1,35 +1,27 @@
 
-import mergedArray from "../utils/mergeJsonArray";
-import React, { useState, useEffect, useContext } from "react";
-import styles from "../styles/ViewProduct.module.css";
-import { useParams } from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
 import { FaLock } from "react-icons/fa6";
-import ProductSlider from '../layouts/ProductSlider'
-import products from '../json/dailyDeals.json'
+import { useParams } from "react-router-dom";
 import { AppContext } from "../context/Context";
-import { IoPersonCircleSharp } from "react-icons/io5";
-import { RiVerifiedBadgeFill } from "react-icons/ri";
-import { AiFillDislike, AiFillLike, AiFillStar, AiOutlineDislike } from "react-icons/ai";
-import reviews from '../json/reviews.json'
-import { AiOutlineLike } from "react-icons/ai";
+
+
+import products from '../json/dailyDeals.json';
+import reviews from '../json/reviews.json';
+import ProductSlider from '../layouts/ProductSlider';
 import ReviewBox from "../components/ReviewBox";
+import styles from "../styles/ViewProduct.module.css";
+import mergedArray from "../utils/mergeJsonArray";
+import Button from "../components/Button";
 
 
-
-
-// Import your JavaScript data here
 
 const ViewProduct = () => {
   const { name, type } = useParams();
-  const { addToCart, removeFromCart, cartItems, user } = useContext(AppContext)
+  const { addToCart, removeFromCart, cartItems} = useContext(AppContext)
   const [product, setProduct] = useState(null);
   const [image, setImage] = useState("")
 
-  // const [inCart,setInCart] = useState(false)
-  // setInCart(cartItems.map((d)=> d.id).includes(foundProduct.id))
-
-  // searching the requested product
-
+  
   const calculateTimeLeft = () => {
     const now = new Date();
     const midnight = new Date(now);
@@ -88,7 +80,7 @@ const ViewProduct = () => {
     setImage(url)
   }
 
-  console.log(window.innerWidth)
+  
 
 
   return (
@@ -160,10 +152,11 @@ const ViewProduct = () => {
                   <div className={styles.btn_container}>
                     {
                       cartItems.map((item) => item.id).includes(product.id) ?
-                        <button className={styles.cart_btn} onClick={() => removeFromCart(product.id)}>Remove from Cart</button> :
-                        <button className={styles.cart_btn} onClick={() => addToCart(product)}>Add to Cart</button>
+
+                        <Button text={"Remove from Cart"} onClick={()=> removeFromCart(product.id)} padding={"14px 15px"} width={"100%"} fontSize={"0.8rem"} borderRadius={"10px"} background={"var(--mid-dark-background)"} /> : 
+                        <Button text={"Add to Cart"} onClick={()=> addToCart(product)} padding={"14px 15px"} width={"100%"} fontSize={"0.8rem"} borderRadius={"10px"} background={"var(--mid-dark-background)"} />
                     }
-                    <button className={styles.buy_now}>Buy Now</button>
+                    <Button text={"Buy Now"} padding={"14px 15px"} marginTop="7px" width={"100%"} fontSize={"0.8rem"} borderRadius={"10px"} background={"var(--secondary-background)"} />
                   </div>
 
                   <span className={styles.sec_trans}><FaLock /> Secure transaction</span>
@@ -175,20 +168,20 @@ const ViewProduct = () => {
                     <div className={styles.offer}>
                       <h5>Bank Offer</h5>
                       <p>Upto ₹850.00 discount on select Credit Cards, Debit Carts and more</p>
-                      <button>Use now</button>
+                      <Button background="none" text={"Use now"}  width="100%" textAlign="start" />
                     </div>
 
                     <div className={styles.offer}>
                       <h5>Cashbacks</h5>
                       <p>Amazon Pay Rewards - Shop and Get rewards worth 850rs</p>
-                      <button>Use now</button>
+                      <Button background="none" text={"Use now"}  width="100%" textAlign="start" />
                     </div>
 
 
                     <div className={styles.offer}>
                       <h5>Partner offers</h5>
                       <p>Get GST invoice and save up to 28% on business purchases</p>
-                      <button>Use now</button>
+                      <Button background="none" text={"Use now"}  width="100%" textAlign="start" />
                     </div>
                   </div>
                 </div>
@@ -221,6 +214,7 @@ const ViewProduct = () => {
           tittle={"More From"}
           highlight={"boAt"}
           counter={false}
+          id={product?.id}
         />
       </div>
 
@@ -231,15 +225,16 @@ const ViewProduct = () => {
 
           <section className={styles.reviews_summary}>
 
-            <div className={styles.star_counter}><span>5 star</span> <p><span style={{ width: "60%" }}></span></p> <span>20%</span></div>
+            <div className={styles.star_counter}><span>5 star</span> <p><span style={{ width: "60%" }}></span></p> <span>60%</span></div>
 
             <div className={styles.star_counter}><span>4 star</span> <p><span style={{ width: "20%" }}></span></p> <span>20%</span></div>
-            <div className={styles.star_counter}><span>3 star</span> <p><span style={{ width: "10%" }}></span></p> <span>20%</span></div>
-            <div className={styles.star_counter}><span>2 star</span> <p><span style={{ width: "8%" }}></span></p> <span>20%</span></div>
-            <div className={styles.star_counter}><span>1 star</span> <p><span style={{ width: "2%" }}></span></p> <span>20%</span></div>
+            <div className={styles.star_counter}><span>3 star</span> <p><span style={{ width: "10%" }}></span></p> <span>10%</span></div>
+            <div className={styles.star_counter}><span>2 star</span> <p><span style={{ width: "1%" }}></span></p> <span>1%</span></div>
+            <div className={styles.star_counter}><span>1 star</span> <p><span style={{ width: "9%" }}></span></p> <span>9%</span></div>
 
             <div className={styles.btn_container}>
-              <button>Add a Customer Review</button>
+
+              <Button text={"Add a Customer Review"}  padding={"14px 15px"} width={"100%"} fontSize={"0.8rem"} borderRadius={"10px"} background={"var(--secondary-background)"} />
             </div>
 
           </section>

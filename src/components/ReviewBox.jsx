@@ -4,6 +4,7 @@ import { AiFillDislike, AiFillLike, AiFillStar, AiOutlineDislike, AiOutlineLike 
 import { IoPersonCircleSharp } from 'react-icons/io5'
 import { RiVerifiedBadgeFill } from 'react-icons/ri'
 import { AppContext } from '../context/Context'
+import Button from './Button'
 
 const ReviewBox = ({ review }) => {
 
@@ -75,11 +76,11 @@ const ReviewBox = ({ review }) => {
          }
 
             <div className={styles.response_options}>
-                <div>{likes.includes(user.id) ? <AiFillLike onClick={removeLike} /> : <AiOutlineLike onClick={addLike} />}{likes.length}</div>
+                <div>{likes.includes(user?.id) ? <AiFillLike onClick={removeLike} /> : <AiOutlineLike onClick={addLike} />}{likes.length}</div>
                 <span className={styles.seprator}>|</span>
-                <div>{dislike.includes(user.id) ? <AiFillDislike onClick={removeDislike} /> : <AiOutlineDislike onClick={addDislike} />}{dislike.length}</div>
+                <div>{dislike.includes(user?.id) ? <AiFillDislike onClick={removeDislike} /> : <AiOutlineDislike onClick={addDislike} />}{dislike.length}</div>
                 <span className={styles.seprator}>|</span>
-                <button>Report</button>
+                <Button text={"Report"} padding="6px 20px"  fontSize= "0.65rem"  borderRadius= "5px"  background= "var(--mid-dark-background)" />
             </div>
 
         </div>

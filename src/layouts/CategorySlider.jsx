@@ -8,7 +8,7 @@ const CategorySlider = () => {
   const smoothScroll = (direction) => {
     const container = containerRef.current;
     if (container) {
-      const boxWidth = container.offsetWidth / products.length;
+      const boxWidth = container.offsetWidth / categories.length;
       const scrollFraction = 5; // Adjust this value to control the scrolling distance
       const scrollStep =
         direction === "left"

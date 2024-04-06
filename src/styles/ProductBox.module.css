@@ -37,14 +37,10 @@
     position: absolute;
     top: 81%;
     right: 2%;
-    /* padding: 8px; */
-    color: rgb(255, 255, 255);
-    background: rgb(0, 0, 0);
-    display: flex;
+    color: var(--primary-color);
+    background:var(--primary-background);
+    display:inline-flex;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 1px 6px;
 }
 
@@ -181,21 +177,6 @@
     border: none;
 }
 
-.btn_btn {
-   margin:7px 0px;
-    padding: 11px 20px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 5px;
-    color:var(--primary-color);
-    width:100%;
-    cursor: pointer;
-    font-weight: 600;
-}
-
 
 .view_product{
     background:var(--secondary-background);
@@ -230,7 +211,7 @@
 }
 
 .discounto{
-    color: rgb(98, 98, 98);
+    color:var(--light-dark-background);
     text-decoration: line-through;
     font-size: 0.7rem;
     font-weight: 600;

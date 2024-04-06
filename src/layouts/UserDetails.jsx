@@ -1,14 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
-import styles from "../styles/UserDetails.module.css";
-import { FaFacebookF, FaGoogle } from "react-icons/fa";
-import { BsGithub, BsTwitterX } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
-import { AppContext } from "../context/Context";
-import generateRandomID from "../utils/generateRandomID";
-import { FaAddressCard } from "react-icons/fa6";
-import { RiLockPasswordFill } from "react-icons/ri";
-import { IoMail } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
+import { FaAddressCard } from "react-icons/fa6";
+import { IoMail } from "react-icons/io5";
+import { RiLockPasswordFill } from "react-icons/ri";
+import { AppContext } from "../context/Context";
+import styles from "../styles/UserDetails.module.css";
+import generateRandomID from "../utils/generateRandomID";
+import Button from '../components/Button'
 
 const UserDetails = () => {
   const { setShowProfile, getUserDetails,user } =
@@ -115,12 +114,21 @@ const UserDetails = () => {
             />
           </div>
 
-        {editProfile ? <button className={styles.forgot_password} onClick={(e)=> e.preventDefault()}>Forgot password</button> : null}
+        {editProfile ? <Button onClick={(e)=> e.preventDefault()} text={"Forgot password"}  className={styles.forgot_password} marginTop="15px" background="none" fontSize="0.8rem" textAlign="end" /> : null}
+
+        
+
+
         <div className={styles.sep}>
-        <button className={styles._btn} onClick={(e)=> {setEditProfile(true);editProfile ? null : e.preventDefault()}}>{editProfile ? "Save Changes" : "Edit Profile"}</button>
-        {editProfile ? null :  <button className={`${styles.btn_dark} ${styles.logout}`} onClick={(e)=> {e.preventDefault();setShowProfile(false);localStorage.removeItem("user_details");getUserDetails()}}>Logout</button>}
+
+        <Button padding={"15px 20px"} fontSize="0.9rem" borderRadius="10px" width="100%" onClick={(e)=> {setEditProfile(true);editProfile ? null : e.preventDefault()}} text={editProfile ? "Save Changes" : "Edit Profile"}  background="var(--secondary-background)" />
+
+        {editProfile ? null :  <Button padding={"15px 20px"} fontSize="0.9rem" borderRadius="10px" width="100%" onClick={(e)=> {e.preventDefault();setShowProfile(false);localStorage.removeItem("user_details");getUserDetails()}} text={"Logout"}  background="var(--mid-dark-background)" />}
+        
+  
         </div>
-         {editProfile ?  <button style={{marginTop:"10px"}} className={styles.btn_dark} onClick={()=> setEditProfile(false)}>Cancle</button> : null}
+         {editProfile && <Button marginTop="7px" text={"Cancle"} background="var(--mid-dark-background)" padding="15px 20px" width="100%" fontSize="0.9rem" borderRadius="10px"/>}
+         
         </div>
 
       </form>

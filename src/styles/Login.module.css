@@ -58,7 +58,7 @@
     appearance: none;
     border: none;
     outline: none;
-  background:rgb(49, 49, 49);
+  background:var(--mid-dark-background);
 width: 100%;
 font-size: 0.8rem;
 padding:15px;

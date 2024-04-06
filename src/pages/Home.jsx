@@ -8,6 +8,7 @@ import newLaunches from "../json/newLaunches.json";
 import bestSellerCategoriesVideos from "../json/bestSellerCategories.json";
 import dailyDeals from "../json/dailyDeals.json";
 import { Link } from "react-router-dom";
+import Button from "../components/Button";
 
 const TEXTS = [
   "Headphones",
@@ -56,16 +57,16 @@ const Home = () => {
           {/* <p>BoAt Lifestyle is India’s fastest growing audio and wearables brand. They have a wide range of wireless earphones, earbuds, headphones, smart watches, and home audio. Whether you're working out or on an adventure, BoAt will get you sailing!</p> */}
           <div className={styles.btn_container}>
             <a href="#home-products" style={{ textDecoration: "none" }}>
-              <button
-                className={styles.one}
-                style={{ background: "var(--secondary-background)" }}
-              >
-                Shop now
-              </button>
+              <Button padding="12px 30px" borderRadius="5px" fontSize="1rem"
+                margin="10px" background="var(--secondary-background)" 
+                text={"Shop now"}
+              />
             </a>
             <Link to={"/about"}>
-              {" "}
-              <button className={styles.one}>About us</button>
+            <Button padding="12px 30px" borderRadius="5px" fontSize="1rem"
+                margin="10px" background="var(--mid-dark-background)" 
+                text={"About Us"}
+              />
             </Link>
           </div>
         </section>

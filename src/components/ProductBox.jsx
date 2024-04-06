@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { FaStar } from "react-icons/fa";
 import formatNumber from '../utils/formatNumbers'
 import formatURL from '../utils/formatURL';
+import Button from './Button';
 
 const ProductBox = ({changePermit,min,product,productIndex}) => {
 
@@ -31,6 +32,7 @@ const ProductBox = ({changePermit,min,product,productIndex}) => {
 
   return (
           <Link to={formatURL(`/products/${product.type}/${product.name}`)} key={productIndex} className={styles.product_box_item}>
+          
             <div className={styles.product_img}>
               <img src={product.main_image} alt={product.name} style={{objectFit: product?.background ? "cover" : "contain",
               padding:product?.background ? "0px": "10px"}}/>
@@ -67,8 +69,8 @@ const ProductBox = ({changePermit,min,product,productIndex}) => {
              </div>
             }
             </div>
-            <button onClick={(e)=> {e.stopPropagation();e.preventDefault();inCart ? removeFromCart(product.id) : addToCart(product)}} className={`${changePermit ? styles.remove_cart : styles.view_product} ${styles.btn_btn}`}>
-              {inCart ? "Remove from Cart"  : "Add to Cart"}</button>
+           
+               <Button onClick={(e)=> {e.preventDefault();inCart ? removeFromCart(product?.id) : addToCart(product)}} text={inCart ? "Remove from Cart" : "Add to Cart"}  width="100%" padding="11px 20px" fontSize="0.8rem" margin="6px 0px" borderRadius="5px" background={inCart ? "var(--mid-dark-background)" :  "var(--secondary-background)" }/>
           </Link>
        
      

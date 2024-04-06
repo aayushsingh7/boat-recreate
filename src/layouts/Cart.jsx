@@ -4,6 +4,7 @@ import { AppContext } from "../context/Context";
 import { AiOutlineClose } from "react-icons/ai";
 import ProductBox from "../components/ProductBox";
 import { TbShoppingCartCancel } from "react-icons/tb";
+import Button from "../components/Button";
 
 const Cart = () => {
   const { showCart, setShowCart, cartItems } = useContext(AppContext);
@@ -60,7 +61,7 @@ const Cart = () => {
                         key={index}
                       />
                     );
-                  })
+                })
                 : null}
             </ul>
             <div className={styles.summary_container}>
@@ -81,8 +82,8 @@ const Cart = () => {
                 This order contains a gift
               </label>
 
-              <button className={styles.btn_one}>Proceed to Payment</button>
-              {/* <button className={styles.btn_two}>Clear cart</button> */}
+            <Button text={"Proceed to Payment"} padding="15px" width="100%" fontSize="0.8rem" borderRadius="10px" background="var(--secondary-background)"/>
+            
             </div>
           </>
         )}

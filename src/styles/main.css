@@ -7,7 +7,9 @@
  --primary-background:#000000;
  /* --secondary-background:#aa00ee; */
  --secondary-background:#c40000;
- --primary-color:#ecebeb;
+ --light-dark-background:#848484;
+--mid-dark-background:#313131;
+ --primary-color:#f1f1f1;
  --secondary-color:#cbcbcb;
  --reddit-mono: "Reddit Mono", monospace;
  --rubik-font: "Rubik Scribble", system-ui;
