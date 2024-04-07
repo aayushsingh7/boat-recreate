@@ -549,7 +549,12 @@ left: 0%;
         height: 430px;
     }
 .main_image img{
-    width: auto;
+   object-fit: contain;
+}.main_image{
+    background: none;
+}
+.main_image img:first-child{
+    background: #212121;
 }
 }
 
