@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link, useLocation} from "react-router-dom";
-import styles from "../styles/SearchResult.module.css";
-import mergedArray from "../utils/mergeJsonArray";
-import ProductBox from "../components/ProductBox";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-import formatURL from "../utils/formatURL";
 import { IoFilterSharp } from "react-icons/io5";
+import { Link, useLocation } from "react-router-dom";
+import ProductBox from "../components/ProductBox";
 import { AppContext } from "../context/Context";
+import styles from "../styles/SearchResult.module.css";
+import formatURL from "../utils/formatURL";
+import mergedArray from "../utils/mergeJsonArray";
 
 
 const SearchResults = () => {

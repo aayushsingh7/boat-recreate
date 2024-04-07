@@ -1,14 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
-import styles from "../styles/Navbar.module.css";
-import { Link } from "react-router-dom";
-import { FaRegUser } from "react-icons/fa6";
-import { IoCartOutline } from "react-icons/io5";
-import { IoIosSearch } from "react-icons/io";
-import { useNavigate } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
+import { FaRegUser } from "react-icons/fa6";
+import { IoIosSearch } from "react-icons/io";
+import { IoCartOutline } from "react-icons/io5";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import Button from '../components/Button';
 import { AppContext } from "../context/Context";
-import { useLocation } from 'react-router-dom';
-import Button from '../components/Button'
+import styles from "../styles/Navbar.module.css";
 
 
 const Navbar = () => {

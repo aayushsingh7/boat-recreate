@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
-import ProductSliderBox from "../components/ProductSliderBox";
-import styles from "../styles/ProductSlider.module.css";
+import SliderBox from "../components/SliderBox";
+import styles from "../styles/Slider.module.css";
 import DealCounter from "./DealCounter";
 
-const ProductSlider = ({ data, type, highlight, tittle, counter, id }) => {
+const Slider = ({ data, type, highlight, tittle, counter, id }) => {
 
 
 
@@ -80,7 +80,7 @@ const ProductSlider = ({ data, type, highlight, tittle, counter, id }) => {
         <div className={styles.slider_container} ref={sliderRef}>
           {data.filter((product)=> id ? product.id !== id : true).map((product, index) => {
             return (
-             <ProductSliderBox selectedVid={selectedVid} setSelectedVid={setSelectedVid} index={index} type={type} product={product} key={index}/>
+             <SliderBox selectedVid={selectedVid} setSelectedVid={setSelectedVid} index={index} type={type} data={product} key={index}/>
             );
           })}
         </div>
@@ -97,4 +97,4 @@ const ProductSlider = ({ data, type, highlight, tittle, counter, id }) => {
   );
 };
 
-export default ProductSlider;
+export default Slider;

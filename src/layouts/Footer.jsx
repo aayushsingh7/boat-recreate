@@ -1,10 +1,8 @@
-import React from 'react'
-import styles from '../styles/Footer.module.css'
-import logo from '/images/dark-logo.png'
-import { FaFacebookF } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+import React from 'react';
 import { BsInstagram, BsTwitterX } from "react-icons/bs";
+import { FaFacebookF, FaYoutube } from "react-icons/fa";
+import styles from '../styles/Footer.module.css';
+import logo from '/images/dark-logo.png';
 
 
 

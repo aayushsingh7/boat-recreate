@@ -1,14 +1,16 @@
 import React, { useEffect } from "react";
-import styles from "../styles/Home.module.css";
+import { Link } from "react-router-dom";
 import TextTransition, { presets } from "react-text-transition";
-import heroSectionImages from "../json/heroSectionImages.json";
-import ProductSlider from "../layouts/ProductSlider";
-import CategorySlider from "../layouts/CategorySlider";
-import newLaunches from "../json/newLaunches.json";
+import Button from "../components/Button";
 import bestSellerCategoriesVideos from "../json/bestSellerCategories.json";
 import dailyDeals from "../json/dailyDeals.json";
-import { Link } from "react-router-dom";
-import Button from "../components/Button";
+import heroSectionImages from "../json/heroSectionImages.json";
+import newLaunches from "../json/newLaunches.json";
+import CategorySlider from "../layouts/CategorySlider";
+import Slider from "../layouts/Slider";
+import styles from "../styles/Home.module.css";
+import reviews from '../json/reviews.json'
+import ImageSlider from "../layouts/ImageSlider";
 
 const TEXTS = [
   "Headphones",
@@ -81,7 +83,7 @@ const Home = () => {
       </section>
 
       <div className="add-padding-container" id="home-products">
-        <ProductSlider
+        <Slider
           data={bestSellerCategoriesVideos}
           type={"video-slider"}
           tittle={"Explore"}
@@ -91,7 +93,7 @@ const Home = () => {
 
 
 
-<ProductSlider
+<Slider
           data={dailyDeals}
           type={"product-slider"}
           tittle={"Daily"}
@@ -105,13 +107,24 @@ const Home = () => {
           <CategorySlider />
         </section>
 
-        <ProductSlider
+        <Slider
           data={newLaunches}
           type={"product-slider"}
           tittle={"New"}
           highlight={"Launches"}
           counter={false}
         />
+
+        <Slider
+        data={reviews}
+        type={"review-slider"}
+        tittle={"Customers"}
+        highlight={"Reviews"}
+        counter={false} />
+        
+      <ImageSlider 
+      tittle={"In the"} 
+      highlight={"Press"}/>
 
       </div>
     </div>

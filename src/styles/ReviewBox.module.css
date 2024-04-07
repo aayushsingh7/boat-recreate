@@ -5,6 +5,37 @@
     border-top: 1px solid #2e2e2e;
 }
 
+.grid_box_fixed{
+width: 400px;
+height: 350px;
+flex-shrink: 0;
+margin: 0px 7px;
+padding: 15px 10px 15px 15px;
+border-radius: 10px;
+background: rgb(27 27 27);
+display: flex;
+flex-direction: column;
+}
+
+.grid_box_fixed .overflow_scroll_container{
+    padding-right: 5px;
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.grid_box_fixed:first-child{
+    margin-left: 0px;
+}
+
+.grid_box_fixed .overflow_scroll_container::-webkit-scrollbar{
+    width: 5px;
+}
+
+.grid_box_fixed .overflow_scroll_container::-webkit-scrollbar-thumb{
+    background: var(--light-dark-background);
+    border-radius: 10px;
+}
+
 .header{
     display: flex;
     align-items: center;

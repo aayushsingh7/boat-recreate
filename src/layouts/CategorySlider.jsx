@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import styles from "../styles/CategorySlider.module.css";
 import categories from "../json/categories.json";
+import styles from "../styles/CategorySlider.module.css";
 
 const CategorySlider = () => {
   const containerRef = useRef(null);

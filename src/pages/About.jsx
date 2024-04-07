@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import styles from "../styles/About.module.css";
 import { Link } from "react-router-dom";
-import achievements from '../json/achievements.json'
+import achievements from '../json/achievements.json';
+import styles from "../styles/About.module.css";
 
 const About = () => {
  

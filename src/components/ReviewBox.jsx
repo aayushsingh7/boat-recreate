@@ -1,17 +1,18 @@
 import React, { useContext, useState } from 'react'
-import styles from '../styles/ReviewBox.module.css'
 import { AiFillDislike, AiFillLike, AiFillStar, AiOutlineDislike, AiOutlineLike } from 'react-icons/ai'
 import { IoPersonCircleSharp } from 'react-icons/io5'
 import { RiVerifiedBadgeFill } from 'react-icons/ri'
 import { AppContext } from '../context/Context'
+import styles from '../styles/ReviewBox.module.css'
 import Button from './Button'
 
-const ReviewBox = ({ review }) => {
+const ReviewBox = ({ review, type }) => {
 
     const { user } = useContext(AppContext)
     const [likes, setLikes] = useState([])
     const [dislike, setDislike] = useState([])
 
+    console.log(user)
 
     const addLike = () => {
       removeDislike()
@@ -40,8 +41,10 @@ const ReviewBox = ({ review }) => {
     }
 
 
+    console.log(type)
+
     return (
-        <div className={styles.grid_box}>
+        <div className={type === "fixed" ? styles.grid_box_fixed: styles.grid_box}>
             <div className={styles.header}>
                 <IoPersonCircleSharp />
                 <div className={styles.user_details}>
@@ -63,17 +66,20 @@ const ReviewBox = ({ review }) => {
                 <span>{review.review_title}</span>
             </div>
 
-            <p className={styles.review_description}>{review.review_description}</p>
+<div className={styles.overflow_scroll_container}>
+    
+<p className={styles.review_description}>{review.review_description}</p>
 
 
-         {
-            review.review_images.length > 0 && 
-            <div className={styles.review_images}>
-            {review.review_images.map((image,index)=> {
-             return <img src={image} key={index} alt="" />
-            })}
-                 </div>
-         }
+{
+   review.review_images.length > 0 && 
+   <div className={styles.review_images}>
+   {review.review_images.map((image,index)=> {
+    return <img src={image} key={index} alt="" />
+   })}
+        </div>
+}
+</div>
 
             <div className={styles.response_options}>
                 <div>{likes.includes(user?.id) ? <AiFillLike onClick={removeLike} /> : <AiOutlineLike onClick={addLike} />}{likes.length}</div>

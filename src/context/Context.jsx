@@ -1,5 +1,6 @@
 import {React, useEffect, useState} from 'react'
 import { useContext,createContext } from 'react'
+import generateRandomID from '../utils/generateRandomID'
 
 export const AppContext = createContext()
 
@@ -53,6 +54,8 @@ const AppFunction = ({children}) => {
 
    const getUserDetails = ()=> {
     const user = JSON.parse(localStorage.getItem("user_details"))
+    console.log("userId",user)
+    if(!user) return setUser({id:generateRandomID(15)})
     setUser(user)
    }
 

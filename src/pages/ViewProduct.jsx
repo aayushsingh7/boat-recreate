@@ -5,15 +5,15 @@ import { useParams } from "react-router-dom";
 import { AppContext } from "../context/Context";
 
 
-import products from '../json/dailyDeals.json';
-import reviews from '../json/reviews.json';
-import ProductSlider from '../layouts/ProductSlider';
-import ReviewBox from "../components/ReviewBox";
-import styles from "../styles/ViewProduct.module.css";
-import mergedArray from "../utils/mergeJsonArray";
-import Button from "../components/Button";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { GoDot, GoDotFill } from "react-icons/go";
+import Button from "../components/Button";
+import ReviewBox from "../components/ReviewBox";
+import products from '../json/dailyDeals.json';
+import reviews from '../json/reviews.json';
+import Slider from '../layouts/Slider';
+import styles from "../styles/ViewProduct.module.css";
+import mergedArray from "../utils/mergeJsonArray";
 
 
 
@@ -242,7 +242,7 @@ const ViewProduct = () => {
       </div>
 
       <div className={styles.slider_padding}>
-        <ProductSlider
+        <Slider
           data={products}
           type={"product-slider"}
           tittle={"More From"}

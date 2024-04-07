@@ -211,7 +211,7 @@ top: -2px !important;
   
   .discountp {
     color: green;
-    font-size: 13px;
+    font-size:0.6rem;
     font-weight: 900;
     margin-left: 3px;
   }
@@ -283,7 +283,7 @@ top: -2px !important;
   @media (max-width:650px) {
     .product_slider_box_btn{
       position: absolute;
-      bottom:39%;
+      bottom:42%;
       right: 3%;
       backdrop-filter: blur(30px);
       background:rgb(0, 0, 0) !important;

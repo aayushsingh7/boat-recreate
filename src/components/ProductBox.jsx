@@ -1,11 +1,11 @@
 import React, { useContext, useState } from 'react';
-import styles from "../styles/ProductBox.module.css";
-import productData from "../json/searchResults.json";
-import { RiVerifiedBadgeFill } from "react-icons/ri";
-import { AppContext } from '../context/Context';
-import { Link } from 'react-router-dom';
 import { FaStar } from "react-icons/fa";
-import formatNumber from '../utils/formatNumbers'
+import { RiVerifiedBadgeFill } from "react-icons/ri";
+import { Link } from 'react-router-dom';
+import { AppContext } from '../context/Context';
+import productData from "../json/searchResults.json";
+import styles from "../styles/ProductBox.module.css";
+import formatNumber from '../utils/formatNumbers';
 import formatURL from '../utils/formatURL';
 import Button from './Button';
 

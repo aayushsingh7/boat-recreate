@@ -4,10 +4,10 @@ import { FaUser } from "react-icons/fa";
 import { FaAddressCard } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import { RiLockPasswordFill } from "react-icons/ri";
+import Button from '../components/Button';
 import { AppContext } from "../context/Context";
 import styles from "../styles/UserDetails.module.css";
 import generateRandomID from "../utils/generateRandomID";
-import Button from '../components/Button'
 
 const UserDetails = () => {
   const { setShowProfile, getUserDetails,user } =

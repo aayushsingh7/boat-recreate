@@ -1,24 +1,17 @@
-import React, { useContext, useEffect } from "react";
-import { Link } from "react-router-dom";
-import styles from "../styles/SideNavbar.module.css";
-import { HiOutlineHome } from "react-icons/hi";
-import { TbHeadphones } from "react-icons/tb";
-import { FaRegBuilding } from "react-icons/fa";
-import { IoMailOutline } from "react-icons/io5";
-import { IoLogOut } from "react-icons/io5";
-import { AppContext } from "../context/Context";
+import React, { useContext } from "react";
 import { AiOutlineClose } from "react-icons/ai";
+import { FaRegBuilding } from "react-icons/fa";
+import { HiOutlineHome } from "react-icons/hi";
+import { IoLogOut, IoMailOutline } from "react-icons/io5";
+import { TbHeadphones } from "react-icons/tb";
+import { Link } from "react-router-dom";
+import { AppContext } from "../context/Context";
+import styles from "../styles/SideNavbar.module.css";
 
 const SideNavbar = () => {
   const { showSideNavbar, setShowSideNavbar, getUserDetails } =
     useContext(AppContext);
-  useEffect(() => {
-    if (showSideNavbar) {
-      document.body.style.overflowY = "hidden";
-    } else {
-      document.body.style.overflowY = "scroll";
-    }
-  }, [showSideNavbar]);
+
 
   return (
     <>

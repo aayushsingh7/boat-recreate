@@ -1,5 +1,5 @@
-import styles from "../styles/DealCounter.module.css";
 import React, { useEffect, useState } from "react";
+import styles from "../styles/DealCounter.module.css";
 
 const DealCounter = () => {
   const calculateTimeLeft = () => {

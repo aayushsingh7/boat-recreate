@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
-import styles from "../styles/MobileSearchPage.module.css";
-import { AppContext } from "../context/Context";
 import { AiOutlineArrowLeft } from "react-icons/ai";
-import categories from "../json/categories.json";
 import { useNavigate } from "react-router-dom";
+import { AppContext } from "../context/Context";
+import categories from "../json/categories.json";
+import styles from "../styles/MobileSearchPage.module.css";
 
 const MobileSearchPage = () => {
   const { openSearchPage, setOpenSearchPage } = useContext(AppContext);
@@ -12,14 +12,7 @@ const MobileSearchPage = () => {
   const q = new URLSearchParams(location.search);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (openSearchPage) {
-      document.body.style.overflowY = "hidden";
-    } else {
-      document.body.style.overflowY = "scroll";
-    }
-  }, [openSearchPage]);
-
+  
   useEffect(() => {
     setQuery(q.get("query"));
   }, [openSearchPage]);

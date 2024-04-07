@@ -1,11 +1,11 @@
 import React, { useContext, useState } from "react";
-import styles from "../styles/Login.module.css";
-import { FaFacebookF, FaGoogle } from "react-icons/fa";
-import { BsGithub, BsTwitterX } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
-import { AppContext } from "../context/Context";
-import generateRandomID from "../utils/generateRandomID";
+import { BsGithub, BsTwitterX } from "react-icons/bs";
+import { FaFacebookF, FaGoogle } from "react-icons/fa";
 import Button from "../components/Button";
+import { AppContext } from "../context/Context";
+import styles from "../styles/Login.module.css";
+import generateRandomID from "../utils/generateRandomID";
 
 const Login = () => {
 

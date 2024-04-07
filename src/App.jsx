@@ -1,31 +1,32 @@
 import React, { useContext, useEffect } from "react";
-import Product from "./pages/Product";
-import Home from "./pages/Home";
-import Features from "./pages/Features";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import SideNavbar from "./layouts/SideNavbar";
-import Navbar from "./layouts/Navbar";
-import Footer from "./layouts/Footer";
-import {Routes,Route} from 'react-router-dom'
-import SearchResults from "./pages/SearchResults";
-import MobileSearchPage from "./layouts/MobileSearchPage";
-import Cart from "./layouts/Cart";
-import Login from "./layouts/Login";
+import { Route, Routes } from 'react-router-dom';
 import { AppContext } from "./context/Context";
+import Cart from "./layouts/Cart";
+import Footer from "./layouts/Footer";
+import Login from "./layouts/Login";
+import MobileSearchPage from "./layouts/MobileSearchPage";
+import Navbar from "./layouts/Navbar";
 import Register from "./layouts/Register";
+import SideNavbar from "./layouts/SideNavbar";
 import UserDetails from "./layouts/UserDetails";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import SearchResults from "./pages/SearchResults";
 import ViewProduct from "./pages/ViewProduct";
 
 const App = () => {
- const {showLogin,showRegister,showProfile} = useContext(AppContext)
+  
+ const {showLogin,showRegister,showProfile,showCart,openSearchPage, showSideNavbar,} = useContext(AppContext)
+
  useEffect(()=> {
-  if(showLogin || showRegister){
+  if(showLogin || showRegister || showProfile || showCart || openSearchPage || showSideNavbar){
     document.body.style.overflowY = "hidden"
   }else{
     document.body.style.overflowY = "scroll"
   }
- },[showLogin,showRegister])
+ },[showLogin,showRegister,showCart,openSearchPage, showSideNavbar,showProfile])
+
+
   return (
     <div className="app">
     <Navbar />

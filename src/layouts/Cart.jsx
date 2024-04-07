@@ -1,25 +1,18 @@
-import React, { useContext, useEffect } from "react";
-import styles from "../styles/Cart.module.css";
-import { AppContext } from "../context/Context";
+import React, { useContext } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import ProductBox from "../components/ProductBox";
 import { TbShoppingCartCancel } from "react-icons/tb";
 import Button from "../components/Button";
+import ProductBox from "../components/ProductBox";
+import { AppContext } from "../context/Context";
+import styles from "../styles/Cart.module.css";
 
 const Cart = () => {
   const { showCart, setShowCart, cartItems } = useContext(AppContext);
+
   let totalPrice = cartItems.reduce(
     (accumulator, item) => accumulator + item.price,
     0
   );
-
-  useEffect(() => {
-    if (showCart) {
-      document.body.style.overflowY = "hidden";
-    } else {
-      document.body.style.overflowY = "scroll";
-    }
-  }, [showCart]);
 
   return (
     <>
