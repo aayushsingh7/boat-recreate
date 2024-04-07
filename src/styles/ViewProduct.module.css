@@ -574,14 +574,11 @@ left: 0%;
         width: 100%;
         display: flex;
         align-items: flex-start;
-        justify-content: flex-start;
-        scroll-snap-type: x mandatory;
-        scroll-snap-points-x: repeat(100vw);
-        overflow-x: scroll;
+        justify-content: flex-start
     }
 
     .main_image img{
-        scroll-snap-align: start;
+       
         min-width: 100%;
         max-width: 100%;
     }
