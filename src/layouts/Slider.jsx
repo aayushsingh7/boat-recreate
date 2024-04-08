@@ -8,54 +8,77 @@ import Button from "../components/Button";
 
 const Slider = ({ data, type, highlight, tittle, counter, id }) => {
 
-
-
   const sliderRef = useRef(null);
-  const [nextBtn, setNextBtn] = useState(false);
-  const [prevBtn, setPrevBtn] = useState(false);
+  // const [nextBtn, setNextBtn] = useState(false);
+  // const [prevBtn, setPrevBtn] = useState(false);
   const [selectedVid, setSelectedVid] = useState(100);
+  let selected;
+  let startX;
+  let scrollLeft;
 
-  const updateButtonState = () => {
-    const container = sliderRef.current;
-    const hasNext =
-      container.scrollLeft + container.clientWidth < container.scrollWidth - 1;
-    setNextBtn(hasNext);
+  // const updateButtonState = () => {
 
-    const hasPrev = container.scrollLeft > 0;
-    setPrevBtn(hasPrev);
-  };
+  //   const container = sliderRef.current;
+  //   const hasNext =
+  //     container.scrollLeft + container.clientWidth < container.scrollWidth - 1;
+  //   setNextBtn(hasNext);
 
-  const handleNextClick = () => {
-    updateButtonState();
-    sliderRef.current.scrollBy({
-      left: sliderRef.current.clientWidth,
-      behavior: "smooth",
-    });
-  };
+  //   const hasPrev = container.scrollLeft > 0;
+  //   setPrevBtn(hasPrev);
+  // };
 
-  const handlePrevClick = () => {
-    updateButtonState();
-    sliderRef.current.scrollBy({
-      left: -sliderRef.current.clientWidth,
-      behavior: "smooth",
-    });
-  };
+  // const handleNextClick = () => {
+  //   updateButtonState();
+  //   sliderRef.current.scrollBy({
+  //     left: sliderRef.current.clientWidth,
+  //     behavior: "smooth",
+  //   });
+  // };
 
-  useEffect(() => {
-    if (sliderRef.current) {
-      const ref = sliderRef.current;
-      const handleScroll = () => {
-        updateButtonState();
-      };
-      sliderRef.current.addEventListener("scroll", handleScroll);
-      window.addEventListener("resize", handleScroll);
-      handleScroll();
-      return () => {
-        ref.removeEventListener("scroll", handleScroll);
-        window.removeEventListener("resize", handleScroll);
-      };
-    }
-  }, []);
+  // const handlePrevClick = () => {
+  //   updateButtonState();
+  //   sliderRef.current.scrollBy({
+  //     left: -sliderRef.current.clientWidth,
+  //     behavior: "smooth",
+  //   });
+  // };
+
+  // useEffect(() => {
+  //   if (sliderRef.current) {
+  //     const ref = sliderRef.current;
+  //     const handleScroll = () => {
+  //       updateButtonState();
+  //     };
+  //     sliderRef.current.addEventListener("scroll", handleScroll);
+  //     window.addEventListener("resize", handleScroll);
+  //     handleScroll();
+  //     return () => {
+  //       ref.removeEventListener("scroll", handleScroll);
+  //       window.removeEventListener("resize", handleScroll);
+  //     };
+  //   }
+  // }, []);
+   
+  const handleMouseDown = (e)=> {
+    e.preventDefault()
+selected = true
+  startX = e.pageX - sliderRef.current.offsetLeft;
+  scrollLeft = sliderRef.current.scrollLeft;
+  }
+
+  const handleMouseUp = (e)=> {
+   selected = false
+  }
+ 
+  const handleMouseMove = (e)=> {
+    if(!selected) return;
+    e.preventDefault()
+    const x = e.pageX - sliderRef.current.offsetLeft;
+    const walk = ( x - startX) * 2         
+     sliderRef.current.scrollLeft = scrollLeft -  walk
+     
+  }
+
 
   return (
     <section className={styles.sec_tion}>
@@ -69,7 +92,7 @@ const Slider = ({ data, type, highlight, tittle, counter, id }) => {
         <DealCounter />
       ) : null}
       <div className={styles.slider}>
-        {prevBtn ? (
+        {/* {prevBtn ? (
           <Button
             onClick={handlePrevClick}
             className={`${styles.prev}`}
@@ -85,16 +108,16 @@ const Slider = ({ data, type, highlight, tittle, counter, id }) => {
             background="var(--primary-color)"
           text={ <AiOutlineLeft />}
           />
-        ) : null}
+        ) : null} */}
 
-        <div className={styles.slider_container} ref={sliderRef}>
+        <div className={styles.slider_container} ref={sliderRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp}>
           {data.filter((product)=> id ? product.id !== id : true).map((product, index) => {
             return (
              <SliderBox selectedVid={selectedVid} setSelectedVid={setSelectedVid} index={index} type={type} data={product} key={index}/>
             );
           })}
         </div>
-        {nextBtn ? (
+        {/* {nextBtn ? (
            <Button
            onClick={handleNextClick}
            className={`${styles.next}`}
@@ -110,7 +133,7 @@ const Slider = ({ data, type, highlight, tittle, counter, id }) => {
            background="var(--primary-color)"
          text={ <AiOutlineRight />}
          />
-        ) : null}
+        ) : null} */}
       </div>
     </section>
   );

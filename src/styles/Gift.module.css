@@ -1,0 +1,22 @@
+.container{
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 70px;
+    padding:10px 60px;
+}
+
+@media (max-width:1320px) {
+.container{
+    padding: 10px 30px;
+} 
+}
+
+@media (max-width:530px) {
+    .container{
+        padding: 10px;
+    }
+}

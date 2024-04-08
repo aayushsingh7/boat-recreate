@@ -321,6 +321,8 @@ margin-top: 10px;
 
 .offer button{
   color: #0099ff !important;
+  justify-content: start !important;
+  margin-top: 10px;
 }
 
 .about_product h5{

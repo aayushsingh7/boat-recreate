@@ -4,6 +4,7 @@
     border-radius: 20px;
     overflow: hidden;
     text-align: center;
+    cursor: pointer;
   }
   
   .vid_container div{
@@ -94,7 +95,7 @@
   .details p {
     color: var(--primary-color);
     font-size:1rem;
-    font-weight:600;
+    font-weight:500;
   }
   
   /* .pricing span{
@@ -131,20 +132,14 @@
   
   
   .price {
-    font-weight:600;
+    font-weight:500;
     margin-right: 4px;
     color: var(--primary-color);
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 
-  .before_discount{
-position: relative;
-top: -2px !important;
-  }
-  .discountp{
-    position: relative;
-    top: -2px;
-  }
+    
+ 
   /* 
   .discount{
       margin-left: 4px;
@@ -187,10 +182,11 @@ top: -2px !important;
   .before_discount {
     color:var(--light-dark-background);
     text-decoration: line-through;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-weight: bold;
-    position: relative;
-    top: 0px;
+   position: relative;
+    top: -2px !important;
+    margin-left: 6px;
   }
   
   .special {
@@ -210,10 +206,12 @@ top: -2px !important;
   }
   
   .discountp {
-    color: green;
-    font-size:0.6rem;
+    color: rgb(1, 195, 1);
+    font-size:0.7rem;
     font-weight: 900;
-    margin-left: 3px;
+    margin-left: 6px;
+    position: relative;
+    top: -2px;
   }
   
   .deals_counter{

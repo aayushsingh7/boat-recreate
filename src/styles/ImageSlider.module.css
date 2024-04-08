@@ -38,6 +38,10 @@
     height: 300px;
     background: var(--box-bg-color);
     transition: translate 350ms ease-in-out;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
 
  .image_container{

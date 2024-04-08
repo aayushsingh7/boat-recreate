@@ -13,6 +13,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import SearchResults from "./pages/SearchResults";
 import ViewProduct from "./pages/ViewProduct";
+import Gift from "./pages/Gift";
 
 const App = () => {
   const location = useLocation();
@@ -52,6 +53,7 @@ setShowLogin,setShowRegister,setShowProfile,setShowCart,setOpenSearchPage,setSho
       <Route path="/about" element={<About/>} />
       <Route path="/search" element={<SearchResults/>} />
       <Route path="/products/:type/:name" element={<ViewProduct/>}/>
+      <Route path="/gift" element={<Gift/>} />
     </Routes>
    {showLogin ?  <Login/>:null}
    {showRegister ? <Register/> : null}
