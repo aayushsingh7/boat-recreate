@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import categories from "../json/categories.json";
 import styles from "../styles/CategorySlider.module.css";
+import Button from '../components/Button'
+import {AiOutlineRight,AiOutlineLeft} from 'react-icons/ai'
 
 const CategorySlider = () => {
   const containerRef = useRef(null);
@@ -23,16 +25,20 @@ const CategorySlider = () => {
 
   return (
     <div className={styles.container}>
-      <button
-        onClick={() => smoothScroll("left")}
-        className={`${styles.prev} ${styles.btn}`}
-      >
-        {" "}
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-          <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z" />
-          <path d="M13.293 7.293 8.586 12l4.707 4.707 1.414-1.414L11.414 12l3.293-3.293-1.414-1.414z" />
-        </svg>
-      </button>
+     <Button
+           onClick={()=> smoothScroll("left")}
+           className={`${styles.next}`}
+           position="absolute"
+           top="50%"
+           transform="translateY(-50%)"
+           padding="3px"
+           width="42px"
+           zIndex="10"
+       boxShadow="0px 0px 4px 1px #313131"
+           borderRadius="50%"
+           height="42px"
+           background="var(--primary-color)"
+         text={ <AiOutlineLeft />} />
 
       <div
         className={styles.category_box_container}
@@ -52,16 +58,21 @@ const CategorySlider = () => {
           </div>
         ))}
       </div>
-      <button
-        onClick={() => smoothScroll("right")}
-        className={`${styles.next} ${styles.btn}`}
-      >
-        {" "}
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-          <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z" />
-          <path d="M13.293 7.293 8.586 12l4.707 4.707 1.414-1.414L11.414 12l3.293-3.293-1.414-1.414z" />
-        </svg>{" "}
-      </button>
+      <Button
+           onClick={()=> smoothScroll("right")}
+           className={`${styles.next}`}
+           position="absolute"
+           top="50%"
+           transform="translateY(-50%)"
+           padding="3px"
+           width="42px"
+           zIndex="10"
+           boxShadow="0px 0px 4px 1px #313131"
+           borderRadius="50%"
+           height="42px"
+           background="var(--primary-color)"
+         text={ <AiOutlineRight />} />
+
     </div>
   );
 };

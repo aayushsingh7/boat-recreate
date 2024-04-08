@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { AppContext } from "./context/Context";
 import Cart from "./layouts/Cart";
 import Footer from "./layouts/Footer";
@@ -15,16 +15,29 @@ import SearchResults from "./pages/SearchResults";
 import ViewProduct from "./pages/ViewProduct";
 
 const App = () => {
+  const location = useLocation();
   
- const {showLogin,showRegister,showProfile,showCart,openSearchPage, showSideNavbar,} = useContext(AppContext)
+ const {showLogin,showRegister,showProfile,showCart,openSearchPage, showSideNavbar,showFilters,
+setShowLogin,setShowRegister,setShowProfile,setShowCart,setOpenSearchPage,setShowSideNavbar,setShowFilters                                                                                        } = useContext(AppContext)
 
  useEffect(()=> {
-  if(showLogin || showRegister || showProfile || showCart || openSearchPage || showSideNavbar){
+  if(showLogin || showFilters || showRegister || showProfile || showCart || openSearchPage || showSideNavbar){
     document.body.style.overflowY = "hidden"
   }else{
     document.body.style.overflowY = "scroll"
   }
- },[showLogin,showRegister,showCart,openSearchPage, showSideNavbar,showProfile])
+ },[showLogin,showRegister,showCart,openSearchPage, showSideNavbar,showProfile,showFilters])
+
+ useEffect(()=> {
+    setShowLogin(false)
+    setShowRegister(false)
+    setShowProfile(false)
+    setShowCart(false)
+    setOpenSearchPage(false)
+    setShowSideNavbar(false)
+    setShowFilters(false)
+ },[location])
+
 
 
   return (

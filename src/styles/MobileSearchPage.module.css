@@ -118,6 +118,8 @@ transition: .5s ease-in-out;
     z-index: -99;
     background:rgba(0, 0, 0, 0.605);
     transition: .5s ease-in-out;
+    top: 0%;
+    left: 0%;
 }
 
 

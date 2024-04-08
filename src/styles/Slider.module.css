@@ -20,7 +20,7 @@
   position: relative;
   /* padding: 10px 0px; */
 }
-
+/* 
 .btn {
   position: absolute;
   top: 50%;
@@ -39,7 +39,7 @@
   background: var(--primary-color);
   box-shadow: 0px 0px 16px 2px #636363;
   cursor: pointer;
-}
+} */
 
 .sec_tion{
   width: 100%;
@@ -51,6 +51,11 @@
 
 .next {
   right: 1%;
+}
+
+.next svg, .prev svg{
+  color: var(--primary-background);
+  font-size: 23px;
 }
 
 .slider_container {
@@ -72,3 +77,9 @@
   height: 0px;
 }
 
+
+@media (max-width:499px) {
+  .next, .prev{
+    display: none !important;
+  }
+}

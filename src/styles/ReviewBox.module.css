@@ -163,4 +163,8 @@ border-radius:5px;
     .verified{
         font-size: 0.7rem;
     }
+    .grid_box_fixed{
+    width:100%;
+    height:300px;
+    }
 }

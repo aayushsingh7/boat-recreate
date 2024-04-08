@@ -35,7 +35,7 @@
   
   .product_container {
     min-width: 350px;
-    background: rgb(27 27 27);
+    background:var( --box-bg-color);
     border-radius: 10px;
     margin-right: 20px;
     overflow: hidden;

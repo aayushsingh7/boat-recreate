@@ -42,7 +42,7 @@ const Login = () => {
             type="email"
             placeholder="Enter your Email"
             autoComplete="off"
-           
+           value={email}
             required
             onInput={(e)=> setEmail(e.target.value)}
           />
@@ -52,6 +52,7 @@ const Login = () => {
             placeholder="Enter your Password"
             autoComplete="off"
             required
+            value={password}
             onInput={(e)=> setPassword(e.target.value)}
           />
           <button className={styles.forgot_password}>Forgot password</button>

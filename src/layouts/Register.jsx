@@ -45,6 +45,7 @@ const Register = () => {
             placeholder="Enter your Name"
             autoComplete="off"
             required
+            value={name}
             onInput={(e)=> setName(e.target.value)}
           />
 
@@ -54,6 +55,7 @@ const Register = () => {
             placeholder="Enter your Email"
             autoComplete="off"
             required
+  value={email}
             onInput={(e)=> setEmail(e.target.value)}
           />
           <input
@@ -62,6 +64,7 @@ const Register = () => {
             placeholder="Enter your Password"
             autoComplete="off"
             required
+            value={password}
             onInput={(e)=> setPassword(e.target.value)}
           />
           {/* <button className={styles.forgot_password}>Forgot password</button> */}

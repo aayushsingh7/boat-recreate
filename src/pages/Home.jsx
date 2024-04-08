@@ -42,10 +42,10 @@ const Home = () => {
         <section className={styles.text_container}>
           {/* <p>Listening music becomes fun with</p> */}
           <h2>
-            <p>
+            {/* <p> */}
               bo<span style={{ color: "red",fontWeight:"600" }}>A</span>t
-            </p>
-            <p style={{fontWeight:"600"}} className={styles.custom}>
+            {/* </p> */}
+            <div style={{fontWeight:"600"}} className={styles.custom}>
               {" "}
               <TextTransition
                 translateValue="30%"
@@ -54,7 +54,7 @@ const Home = () => {
               >
                 {TEXTS[index % TEXTS.length]}
               </TextTransition>
-            </p>
+            </div>
           </h2>
           {/* <p>BoAt Lifestyle is India’s fastest growing audio and wearables brand. They have a wide range of wireless earphones, earbuds, headphones, smart watches, and home audio. Whether you're working out or on an adventure, BoAt will get you sailing!</p> */}
           <div className={styles.btn_container}>

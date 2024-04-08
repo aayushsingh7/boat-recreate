@@ -14,7 +14,7 @@ const Footer = () => {
       <div className={styles.email_container}>
         <img src={logo} alt="" />
         <p>Subscribe to our email alerts!</p>
-        <input type="text" placeholder={"Enter your email address"} />
+        <input type="text"  autoComplete='off' placeholder={"Enter your email address"} />
       </div>
 
     <div  className={styles.seprator}>

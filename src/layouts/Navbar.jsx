@@ -7,6 +7,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Button from '../components/Button';
 import { AppContext } from "../context/Context";
 import styles from "../styles/Navbar.module.css";
+import formatURL from "../utils/formatURL";
 
 
 const Navbar = () => {
@@ -36,7 +37,7 @@ const Navbar = () => {
       return navigate("/");
     }
     if (e.key === "Enter") {
-      navigate(`/search?query=${query}`);
+      navigate(formatURL(`/search?query=${query}`));
     }
   };
 
@@ -44,7 +45,7 @@ const Navbar = () => {
     if (query.trim() === "") {
       navigate("/");
     } else {
-      navigate(`/search?query=${query}`);
+      navigate(formatURl(`/search?query=${query}`));
     }
   };
 
@@ -59,7 +60,7 @@ const Navbar = () => {
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li>
+         <li>
             <Link to={"/search?query=all"}>Explore Products</Link>
           </li>
           <li>
@@ -74,6 +75,7 @@ const Navbar = () => {
             placeholder="Search headphones"
             type="text"
             value={query}
+            autoComplete="off"
             onKeyDown={searchQueryOnType}
             onInput={(e) => setQuery(e.target.value)}
           />
@@ -92,7 +94,7 @@ const Navbar = () => {
           />
 
 
-          <Button background="none" margin="0px 6px" padding="5px" fontSize="0.8rem" onClick={() => user ? setShowProfile(true) : setShowLogin(true)} text={<FaRegUser style={{ fontSize: "23px" }} />} />
+          <Button background="none" margin="0px 6px" padding="5px" fontSize="0.8rem" onClick={() => user && user?.id !== "default_user_id" ? setShowProfile(true) : setShowLogin(true)} text={<FaRegUser style={{ fontSize: "23px" }} />} />
 
           <Button background="none" margin="0px 6px" padding="5px" fontSize="0.8rem" position="relative" onClick={() => setShowCart(true)}
             text={

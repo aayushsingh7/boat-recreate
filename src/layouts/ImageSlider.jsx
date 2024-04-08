@@ -47,14 +47,27 @@ const ImageSlider = ({ tittle, highlight }) => {
 
     return (
         <section className={styles.sec_tion}>
+            
+            <div style={{display:"flex",justifyContent:"space-between"}}>
             {tittle && highlight ? (
                 <h2>
                     {tittle} <span className={styles.under_line}>{`${highlight}`}</span>
                 </h2>
             ) : null}
 
+            <div style={{display:"flex"}}>
+            <Button className={styles.btn_2} onClick={handlePrevClick} text={<AiOutlineLeft style={{ fontSize: "23px", color: "var(--primary-background)" }} />} background="var(--primary-color)" borderRadius="50%" padding="3px" zIndex="10" width="36px" height="36px" boxShadow="0px 0px 4px 1px #313131" />
+
+            <Button className={styles.btn_2} onClick={handleNextClick} text={<AiOutlineRight style={{ fontSize: "23px", color: "var(--primary-background)" }} />} background="var(--primary-color)" borderRadius="50%" padding="3px" zIndex="10" width="36px" height="36px" boxShadow="0px 0px 4px 1px #313131" />
+            </div>
+
+            </div>
+
+
             <div className={styles.slider}>
-                <Button onClick={handlePrevClick} text={<AiOutlineLeft style={{ fontSize: "18px", color: "var(--primary-color)" }} />} background="var(--secondary-background)" height="30px" width="30px" borderRadius="50%" position="absolute" top="50%" transform="translateY(-50%)" left="1%" zIndex="10" />
+                <Button className={styles.btn} onClick={handlePrevClick} text={<AiOutlineLeft style={{ fontSize: "23px", color: "var(--primary-background)" }} />} background="var(--primary-color)" borderRadius="50%" padding="3px" position="absolute" top="50%" transform="translateY(-50%)" left="1%" zIndex="10" width="42px" height="42px" />
+
+
                 {
                     data.map((data, index) => {
                         return (
@@ -84,7 +97,7 @@ const ImageSlider = ({ tittle, highlight }) => {
                     })
                 }
 
-                <Button onClick={handleNextClick} text={<AiOutlineRight style={{ fontSize: "18px", color: "var(--primary-color)" }} />} background="var(--secondary-background)" height="30px" width="30px" borderRadius="50%" position="absolute" top="50%" transform="translateY(-50%)" right="1%" zIndex="10" />
+                <Button  className={styles.btn} onClick={handleNextClick} text={<AiOutlineRight style={{ fontSize:"23px", color: "var(--primary-background)" }} />} background="var(--primary-color)" borderRadius="50%" padding="3px" position="absolute" top="50%" transform="translateY(-50%)" right="1%" zIndex="10"width="42px" height="42px" />
             </div>
 
         </section>

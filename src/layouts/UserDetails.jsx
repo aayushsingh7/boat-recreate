@@ -69,6 +69,7 @@ const UserDetails = () => {
               onInput={handleOnChange}
               value={userDetails.name}
               readOnly={editProfile ? false : true}
+
             />
           </div>
 

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { AppContext } from "../context/Context";
 import categories from "../json/categories.json";
 import styles from "../styles/MobileSearchPage.module.css";
+import formatURL from  '../utils/formatURL'
 
 const MobileSearchPage = () => {
   const { openSearchPage, setOpenSearchPage } = useContext(AppContext);
@@ -24,7 +25,7 @@ const MobileSearchPage = () => {
       return navigate("/");
     }
 
-    navigate(`/search?query=${query}`);
+    navigate(formatURL(`/search?query=${query}`));
   };
 
   return (
@@ -43,13 +44,13 @@ const MobileSearchPage = () => {
         <div className={styles.part_one}>
           <AiOutlineArrowLeft
             className={styles.return}
-            onClick={() => setOpenSearchPage(false)}
+            onClick={() => {setOpenSearchPage(false);navigate("/")}}
           />
           <form onSubmit={handleFormSubmit} style={{ width: "90%" }}>
             <input
               type="text"
               placeholder="Search headphones, earphones, etc"
-              value={query}
+              value={query || ""}
               onChange={(e) => setQuery(e.target.value)}
               autoFocus
             />

@@ -4,6 +4,7 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import SliderBox from "../components/SliderBox";
 import styles from "../styles/Slider.module.css";
 import DealCounter from "./DealCounter";
+import Button from "../components/Button";
 
 const Slider = ({ data, type, highlight, tittle, counter, id }) => {
 
@@ -69,12 +70,21 @@ const Slider = ({ data, type, highlight, tittle, counter, id }) => {
       ) : null}
       <div className={styles.slider}>
         {prevBtn ? (
-          <button
+          <Button
             onClick={handlePrevClick}
-            className={`${styles.prev} ${styles.btn}`}
-          >
-            <AiOutlineLeft />
-          </button>
+            className={`${styles.prev}`}
+            position="absolute"
+            top="50%"
+            transform="translateY(-50%)"
+            padding="3px"
+            width="40px"
+            zIndex="10"
+         boxShadow="0px 0px 4px 1px #313131"
+            borderRadius="50%"
+            height="40px"
+            background="var(--primary-color)"
+          text={ <AiOutlineLeft />}
+          />
         ) : null}
 
         <div className={styles.slider_container} ref={sliderRef}>
@@ -85,12 +95,21 @@ const Slider = ({ data, type, highlight, tittle, counter, id }) => {
           })}
         </div>
         {nextBtn ? (
-          <button
-            onClick={() => handleNextClick()}
-            className={`${styles.next} ${styles.btn}`}
-          >
-            <AiOutlineRight />
-          </button>
+           <Button
+           onClick={handleNextClick}
+           className={`${styles.next}`}
+           position="absolute"
+           top="50%"
+           transform="translateY(-50%)"
+           padding="3px"
+           width="42px"
+           zIndex="10"
+         boxShadow="0px 0px 4px 1px #313131"
+           borderRadius="50%"
+           height="42px"
+           background="var(--primary-color)"
+         text={ <AiOutlineRight />}
+         />
         ) : null}
       </div>
     </section>

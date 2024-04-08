@@ -12,7 +12,7 @@ const ReviewBox = ({ review, type }) => {
     const [likes, setLikes] = useState([])
     const [dislike, setDislike] = useState([])
 
-    console.log(user)
+    // console.log(user)
 
     const addLike = () => {
       removeDislike()
@@ -41,7 +41,7 @@ const ReviewBox = ({ review, type }) => {
     }
 
 
-    console.log(type)
+    // console.log(type)
 
     return (
         <div className={type === "fixed" ? styles.grid_box_fixed: styles.grid_box}>

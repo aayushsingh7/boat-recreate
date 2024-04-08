@@ -113,7 +113,7 @@ const ViewProduct = () => {
               <section className={styles.product_image_container}>
 
                 <div className={styles.main_image}>
-                  <Button onClick={handlePrevClick} text={<AiOutlineLeft style={{ fontSize: "18px", color: "var(--primary-color)" }} />} background="var(--secondary-background)" height="30px" width="30px" borderRadius="50%" position="absolute" top="50%" transform="translateY(-50%)" left="3%" zIndex="10" />
+                  <Button onClick={handlePrevClick} text={<AiOutlineLeft style={{ fontSize: "18px", color: "var(--primary-background)" }} />} background="var(--primary-color)" height="32px" width="32px" borderRadius="50%" position="absolute" top="50%" transform="translateY(-50%)" left="3%" zIndex="10" boxShadow="0px 0px 4px 1px #313131"/>
                
                
                   {
@@ -126,7 +126,7 @@ const ViewProduct = () => {
                       )
                     })
                   }
-                  <Button onClick={handleNextClick} text={<AiOutlineRight style={{ fontSize: "18px", color: "var(--primary-color)" }} />} background="var(--secondary-background)" height="30px" width="30px" borderRadius="50%" position="absolute" top="50%" transform="translateY(-50%)" right="3%" zIndex="10" />
+                  <Button onClick={handleNextClick} text={<AiOutlineRight style={{ fontSize: "18px", color: "var(--primary-background)" }} />} background="var(--primary-color)" height="32px" width="32px" borderRadius="50%" position="absolute" top="50%" transform="translateY(-50%)" right="3%" zIndex="10" boxShadow="0px 0px 4px 1px #313131"/>
 
                   <div className={styles.image_counter_dots}>
                     {
