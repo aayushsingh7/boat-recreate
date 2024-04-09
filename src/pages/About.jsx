@@ -4,10 +4,6 @@ import achievements from '../json/achievements.json';
 import styles from "../styles/About.module.css";
 
 const About = () => {
- 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior:'instant' })
-  }, []);
 
   return (
     <div id="about" className={styles.container}>

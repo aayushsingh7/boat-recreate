@@ -6,6 +6,8 @@
     text-align: center;
     cursor: pointer;
   }
+
+  
   
   .vid_container div{
     max-height: 320px !important;
@@ -13,6 +15,8 @@
   }
   
   .vid_box {
+    display: flex;
+    flex-direction: column;
     margin-right: 20px;
   }
   
@@ -21,12 +25,12 @@
     height: 100%;
     object-fit: cover;
   }
-  .vid_container img {
+  /* .vid_container img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
-  
+   */
   .vid_box p {
     text-align: center;
     font-size: 1rem;
@@ -319,7 +323,7 @@
   
   @media (max-width:650px) {
     .product_container{
-      min-width:180px;
+      min-width:200px;
       margin-right: 10px;
     }
     .product_img{

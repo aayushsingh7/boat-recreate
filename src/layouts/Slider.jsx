@@ -5,16 +5,20 @@ import SliderBox from "../components/SliderBox";
 import styles from "../styles/Slider.module.css";
 import DealCounter from "./DealCounter";
 import Button from "../components/Button";
+import SliderFilter from "../components/SliderFilter";
 
-const Slider = ({ data, type, highlight, tittle, counter, id }) => {
+const Slider = ({ data, type, highlight, tittle, counter, id, filterReq, categories, newFilterSelected}) => {
 
   const sliderRef = useRef(null);
-  // const [nextBtn, setNextBtn] = useState(false);
-  // const [prevBtn, setPrevBtn] = useState(false);
   const [selectedVid, setSelectedVid] = useState(100);
+  const [selectedFilter, setSelectedFilter] = useState("")
   let selected;
   let startX;
   let scrollLeft;
+
+  useEffect(()=> {
+   setSelectedFilter(newFilterSelected)
+  },[ newFilterSelected])
 
   // const updateButtonState = () => {
 
@@ -58,28 +62,37 @@ const Slider = ({ data, type, highlight, tittle, counter, id }) => {
   //     };
   //   }
   // }, []);
-   
-  const handleMouseDown = (e)=> {
+
+  const handleMouseDown = (e) => {
     e.preventDefault()
-selected = true
-  startX = e.pageX - sliderRef.current.offsetLeft;
-  scrollLeft = sliderRef.current.scrollLeft;
+    selected = true
+    startX = e.pageX - sliderRef.current.offsetLeft;
+    scrollLeft = sliderRef.current.scrollLeft;
   }
 
-  const handleMouseUp = (e)=> {
-   selected = false
+  const handleMouseUp = (e) => {
+    selected = false
   }
- 
-  const handleMouseMove = (e)=> {
-    if(!selected) return;
+
+  const handleMouseMove = (e) => {
+    if (!selected) return;
     e.preventDefault()
     const x = e.pageX - sliderRef.current.offsetLeft;
-    const walk = ( x - startX) * 2         
-     sliderRef.current.scrollLeft = scrollLeft -  walk
-     
+    const walk = (x - startX) * 2
+    sliderRef.current.scrollLeft = scrollLeft - walk
+
   }
 
+  useEffect(() => {
+    if (!data) return
+    data.sort(() => Math.random() - 0.5)
+  }, [selectedFilter])
 
+  useEffect(()=> {
+   categories &&  setSelectedFilter(categories[0])
+  },[])
+
+  
   return (
     <section className={styles.sec_tion}>
       {tittle && highlight ? (
@@ -91,6 +104,12 @@ selected = true
       {counter ? (
         <DealCounter />
       ) : null}
+
+      {
+        filterReq ? <SliderFilter selectedFilter={selectedFilter} categories={categories} setSelectedFilter={setSelectedFilter} /> : null
+      }
+
+
       <div className={styles.slider}>
         {/* {prevBtn ? (
           <Button
@@ -111,9 +130,9 @@ selected = true
         ) : null} */}
 
         <div className={styles.slider_container} ref={sliderRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp}>
-          {data.filter((product)=> id ? product.id !== id : true).map((product, index) => {
+          {data.filter((product) => id ? product.id !== id : true).map((product, index) => {
             return (
-             <SliderBox selectedVid={selectedVid} setSelectedVid={setSelectedVid} index={index} type={type} data={product} key={index}/>
+              <SliderBox selectedVid={selectedVid} setSelectedVid={setSelectedVid} index={index} type={type} data={product} key={index} />
             );
           })}
         </div>

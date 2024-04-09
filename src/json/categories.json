@@ -2,37 +2,44 @@
   {
     "id": 1,
     "title": "Wireless Earbuds",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711693143/boat-recreate/images/earbuds_prev_ui_udpq9x.png"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711693143/boat-recreate/images/earbuds_prev_ui_udpq9x.png",
+    "type":"earbuds"
   },
   {
     "id": 2,
     "title": "Neckband",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692689/boat-recreate/images/neckband_prev_ui_kmk4bv.png"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692689/boat-recreate/images/neckband_prev_ui_kmk4bv.png",
+    "type":"neckband"
   },
   {
     "id": 3,
     "title": "SmartWatches",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692356/boat-recreate/images/smartwatch_lnc1vv.png"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692356/boat-recreate/images/smartwatch_lnc1vv.png",
+    "type":"smartwatches"
   },
   {
     "id": 4,
     "title": "Wireless Headphones",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692350/boat-recreate/images/headphones_zwr33d.png"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692350/boat-recreate/images/headphones_zwr33d.png",
+    "type":"headphones"
   },
   {
     "id": 5,
     "title": "Wireless Speakers",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692377/boat-recreate/images/wireless_spaker_orkbsx.png"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692377/boat-recreate/images/wireless_spaker_orkbsx.png",
+    "type":"speakers"
   },
   {
     "id": 6,
     "title": "Wired Earphones",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692373/boat-recreate/images/wired_earphones_ug5nyl.png"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692373/boat-recreate/images/wired_earphones_ug5nyl.png",
+    "type":"earphones"
   },
   {
     "id": 7,
     "title": "Soundbars",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692586/boat-recreate/images/soundbox_2_zelee6.png"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692586/boat-recreate/images/soundbox_2_zelee6.png",
+    "type":"soundbars"
   },
   {
     "id": 8,

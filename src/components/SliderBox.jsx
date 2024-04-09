@@ -75,21 +75,23 @@ const SliderBox = ({ setSelectedVid, selectedVid, data, type, index }) => {
         <ReviewBox  review={data} type="fixed"/>
       ) :  (
         <div className={styles.vid_box}>
+
           <div
-            key={index}
-            className={styles.vid_container}
-            onMouseEnter={() => setSelectedVid(index)}
-            onMouseLeave={() => setSelectedVid(100)}
-          >
-            <ReactPlayer
-              muted={true}
-              loop={true}
-              width={"50vw"}
-              height={"50vw"}
-              playing={index === selectedVid}
-              url={data.url}
-            />
-          </div>
+          key={index}
+          className={styles.vid_container}
+          onMouseEnter={() => setSelectedVid(index)}
+          onMouseLeave={() => setSelectedVid(100)}
+        >
+          <ReactPlayer
+            muted={true}
+            loop={true}
+            width={"50vw"}
+            height={"50vw"}
+            playing={index === selectedVid}
+            url={data.url}
+          />
+        </div> 
+         
           <p>{data.type}</p>
         </div>
       )

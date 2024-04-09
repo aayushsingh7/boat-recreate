@@ -36,7 +36,7 @@ const SearchResults = () => {
       );
     };
     const filterByQuery = (product) => {
-      return query === "all" || product.type?.toLowerCase().includes(query) || product.name?.toLowerCase().includes(query) || product.description?.toLowerCase().includes(query)
+      return query === "all" || product.type?.toLowerCase().replace(/\s/g, "").includes(query.replace(/-/g, "")) || product.name?.toLowerCase().includes(query) || product.description?.toLowerCase().includes(query)
     };
 
     setData(
@@ -48,10 +48,6 @@ const SearchResults = () => {
       )
     );
   }, [location.search]);
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
-  }, []);
 
   return (
     <>

@@ -3,6 +3,8 @@ import categories from "../json/categories.json";
 import styles from "../styles/CategorySlider.module.css";
 import Button from '../components/Button'
 import {AiOutlineRight,AiOutlineLeft} from 'react-icons/ai'
+import { Link } from "react-router-dom";
+import formatURL from "../utils/formatURL";
 
 const CategorySlider = () => {
   const containerRef = useRef(null);
@@ -51,11 +53,11 @@ const CategorySlider = () => {
         }}
       >
         {categories.map((product) => (
-          <div key={product.id} className={styles.category_box}>
+          <Link style={{textDecoration:"none"}} to={formatURL(`/search?query=${product.title}`)} key={product.id} className={styles.category_box}>
             <span className={styles.bg_circle}></span>
             <img src={product.image} alt={product.title} />
             <p className={styles.title}>{product.title}</p>
-          </div>
+          </Link>
         ))}
       </div>
       <Button

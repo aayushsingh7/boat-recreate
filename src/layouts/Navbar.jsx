@@ -28,10 +28,6 @@ const Navbar = () => {
     setQuery("")
   }, [location.search]);
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
-  }, []);
-
   const searchQueryOnType = (e) => {
     if (query.trim() === "") {
       return navigate("/");
@@ -54,18 +50,25 @@ const Navbar = () => {
       <div className={styles.part_one}>
         <div className={styles.ran}>
           <CiMenuBurger onClick={() => setShowSideNavbar(true)} />
-          <img src="/public/images/logo.png" alt="" />
+         <Link to={"/"}>  <img src="/public/images/logo.png" alt="" /></Link>
         </div>
         <ul>
-          <li>
+          {/* <li className={location.pathname === "/" ? styles.active : styles.default}>
             <Link to="/">Home</Link>
-          </li>
+          </li> */}
          <li>
             <Link to={"/search?query=all"}>Explore Products</Link>
           </li>
           <li>
             <Link to="/about">About boAt</Link>
           </li>
+          <li >
+            <Link to="/gift">Gift with boAt</Link>
+          </li>
+          <li >
+            <Link to="/contact">Contact Us</Link>
+          </li>
+
         </ul>
       </div>
 

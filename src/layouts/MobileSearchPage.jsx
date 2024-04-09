@@ -67,7 +67,7 @@ const MobileSearchPage = () => {
                 key={product.id}
                 className={styles.category_box}
                 onClick={() => {
-                  navigate(`/search?query=${product.title}`);
+                  navigate(formatURL(`/search?query=${product.type}`));
                   setOpenSearchPage(false);
                 }}
               >

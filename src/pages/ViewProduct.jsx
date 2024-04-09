@@ -19,11 +19,14 @@ import mergedArray from "../utils/mergeJsonArray";
 
 
 const ViewProduct = () => {
+
   const { name, type } = useParams();
   const { addToCart, removeFromCart, cartItems } = useContext(AppContext)
   const [product, setProduct] = useState(null);
   const [image, setImage] = useState("")
   const [imageIndex, setImageIndex] = useState(0)
+  const [loading,setLoading] = useState(false)
+
 
 
   const calculateTimeLeft = () => {
@@ -49,7 +52,6 @@ const ViewProduct = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" })
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
@@ -59,10 +61,11 @@ const ViewProduct = () => {
 
 
   useEffect(() => {
+    setLoading(true)
+    console.log("loading.....")
     const modifiedName = name.toLowerCase().replace(/-/g, " ");
     const foundProduct = mergedArray.find((product) => {
       const modifiedProductName = product.name.toLowerCase();
-      console.log(product.type.toLowerCase().replace(/\s/g, ""), type.replace(/-/g, ""))
       return (
         product.type.toLowerCase().replace(/\s/g, "") === type.replace(/-/g, "") &&
         modifiedProductName === modifiedName
@@ -80,6 +83,8 @@ const ViewProduct = () => {
     });
     setImage(foundProduct.main_image)
     window.scrollTo({ top: 0, behavior: "smooth" })
+    console.log("loading completed")
+    setLoading(false)
   }, [name, type]);
 
 
@@ -106,7 +111,7 @@ const ViewProduct = () => {
   return (
     <div className={styles.container}>
 
-      <div className={styles.product_main_container}>
+      <div className={styles.product_main_container} style={{minHeight:"100dvh"}}>
         {
           product && (
             <>

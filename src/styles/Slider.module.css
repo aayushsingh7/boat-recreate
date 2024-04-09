@@ -1,3 +1,10 @@
+.sec_tion h2 {
+
+    color: var(--primary-color);
+    font-weight:300;
+  
+}
+
 .under_line {
   /* color: var(--secondary-background); */
   position: relative;

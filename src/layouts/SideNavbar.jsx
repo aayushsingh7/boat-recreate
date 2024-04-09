@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { AiOutlineClose } from "react-icons/ai";
+import { AiFillGift, AiOutlineClose } from "react-icons/ai";
 import { FaRegBuilding } from "react-icons/fa";
 import { HiOutlineHome } from "react-icons/hi";
 import { IoLogOut, IoMailOutline } from "react-icons/io5";
@@ -66,6 +66,11 @@ const SideNavbar = () => {
                   A
                 </span>
                 t
+              </li>
+            </Link>
+            <Link onClick={() => setShowSideNavbar(false)} to={"/gift"}>
+              <li>
+                <AiFillGift/>Gift with boAt
               </li>
             </Link>
             <Link onClick={() => setShowSideNavbar(false)} to={"/contact"}>

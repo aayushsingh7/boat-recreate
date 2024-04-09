@@ -22,9 +22,6 @@ const TEXTS = [
 ];
 
 const Home = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
-  }, []);
 
   const [index, setIndex] = React.useState(0);
 

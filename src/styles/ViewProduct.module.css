@@ -373,7 +373,6 @@ margin-top: 10px;
     justify-content: flex-start;
     width: 100%;
     flex-direction: column;
-    margin-top: 28px;
     padding: 0px 80px;
 }
 
@@ -390,7 +389,7 @@ margin-top: 10px;
 
 .reviews_summary{
 width: 600px;
-padding: 40px 0px;
+/* padding: 40px 0px; */
 position: sticky;
 top: 0%;
 left: 0%;
@@ -525,6 +524,7 @@ left: 0%;
 .reviews_flex_container{
     padding: 0px;
     width: 100%;
+    margin-top: 28px;
 }
     .more_images{
         width: auto;
