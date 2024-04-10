@@ -46,7 +46,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={styles.container} style={{ position: location.pathname.startsWith("/products") ? "relative" : "fixed" }}>
+    <nav className={styles.container} style={{ position: location.pathname.startsWith("/products") || location.pathname.startsWith("/support")? "relative" : "fixed",backdropFilter:location.pathname.startsWith("/support") ? "none" : "blur(50px)" }}>
       <div className={styles.part_one}>
         <div className={styles.ran}>
           <CiMenuBurger onClick={() => setShowSideNavbar(true)} />
@@ -66,7 +66,7 @@ const Navbar = () => {
             <Link to="/gift">Gift with boAt</Link>
           </li>
           <li >
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/support">Support</Link>
           </li>
 
         </ul>
