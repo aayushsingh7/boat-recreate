@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { AiFillGift, AiOutlineClose } from "react-icons/ai";
 import { FaRegBuilding } from "react-icons/fa";
 import { HiOutlineHome } from "react-icons/hi";
-import { IoLogOut, IoMailOutline } from "react-icons/io5";
+import { IoLogOut, IoMail, IoMailOutline } from "react-icons/io5";
 import { TbHeadphones } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { AppContext } from "../context/Context";
@@ -73,9 +73,9 @@ const SideNavbar = () => {
                 <AiFillGift/>Gift with boAt
               </li>
             </Link>
-            <Link onClick={() => setShowSideNavbar(false)} to={"/contact"}>
+            <Link onClick={() => setShowSideNavbar(false)} to={"/support"}>
               <li>
-                <IoMailOutline /> Contact Us
+                <IoMail /> boAt Support
               </li>
             </Link>
           </div>

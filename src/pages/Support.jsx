@@ -5,8 +5,8 @@ import { RiCustomerService2Line } from "react-icons/ri";
 import { GrMapLocation } from "react-icons/gr";
 import { IoTimerOutline } from "react-icons/io5";
 import { BsCashCoin } from "react-icons/bs";
-import { FaExchangeAlt } from "react-icons/fa";
-
+import {  FaExchangeAlt } from "react-icons/fa";
+import { FiBox } from "react-icons/fi";
 
 
 
@@ -35,7 +35,7 @@ const Support = () => {
           </div>
 
           <div className={styles.box}>
-            <RiCustomerService2Line />
+            <FiBox />
             <h4>Order Related</h4>
             <p>Find order related questions and answers</p>
             <Button fontSize="0.7rem" padding="7px 30px" color="var(--primary-color)" borderRadius="50px" border="1px solid var(--primary-color)" text={"Discover how →"} marginTop="20px" background="none" />
@@ -74,7 +74,6 @@ const Support = () => {
           <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_-UVj0Rug8?si=_HzTbEUWFnWV9tD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </section>
-
 
 
       <div className={styles.third_section}>
@@ -117,12 +116,6 @@ const Support = () => {
         </section>
         <section className={styles.image_section}></section>
       </div>
-
- 
-     
-
-
-
 
     </div>
   )

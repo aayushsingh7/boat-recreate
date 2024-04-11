@@ -32,7 +32,6 @@
 .container ul {
   display: flex;
   list-style: none;
-  margin-left: 45px;
   position: relative;
 }
 
@@ -185,7 +184,7 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .container ul {
     display: none;
   }
