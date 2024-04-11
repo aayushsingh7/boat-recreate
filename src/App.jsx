@@ -31,7 +31,7 @@ setShowLogin,setShowRegister,setShowProfile,setShowCart,setOpenSearchPage,setSho
  },[showLogin,showRegister,showCart,openSearchPage, showSideNavbar,showProfile,showFilters])
 
  useEffect(()=> {
-     window.scrollTo({top:0,behavior:"instant"})
+    !location.pathname.startsWith("/products") &&  window.scrollTo({top:0,behavior:"instant"})
     setShowLogin(false)
     setShowRegister(false)
     setShowProfile(false)

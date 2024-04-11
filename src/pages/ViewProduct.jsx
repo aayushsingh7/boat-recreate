@@ -25,8 +25,6 @@ const ViewProduct = () => {
   const [product, setProduct] = useState(null);
   const [image, setImage] = useState("")
   const [imageIndex, setImageIndex] = useState(0)
-  const [loading,setLoading] = useState(false)
-
 
 
   const calculateTimeLeft = () => {
@@ -52,6 +50,7 @@ const ViewProduct = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
+    window.scrollTo({top:0,behavior:"instant"})
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
@@ -61,8 +60,7 @@ const ViewProduct = () => {
 
 
   useEffect(() => {
-    setLoading(true)
-    console.log("loading.....")
+   
     const modifiedName = name.toLowerCase().replace(/-/g, " ");
     const foundProduct = mergedArray.find((product) => {
       const modifiedProductName = product.name.toLowerCase();
@@ -82,9 +80,9 @@ const ViewProduct = () => {
       more_images: updatedImagesArray
     });
     setImage(foundProduct.main_image)
-    window.scrollTo({ top: 0, behavior: "smooth" })
+    window.scrollTo({ top: 0, behavior: "smooth" }) 
     console.log("loading completed")
-    setLoading(false)
+   
   }, [name, type]);
 
 

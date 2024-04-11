@@ -9,6 +9,7 @@ lerna-debug.log*
 
 public/models/
 public/videos/
+src/json/structure.json
 node_modules
 dist
 dist-ssr

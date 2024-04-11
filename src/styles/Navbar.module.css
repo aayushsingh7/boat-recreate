@@ -9,6 +9,7 @@
   top: 0;
   left: 0;
   z-index: 98;
+  border-bottom: 1px solid var(--mid-dark-background);
 }
 
 .cart_length {
@@ -146,7 +147,7 @@
   backdrop-filter: blur(40px);
   font-size: 0.8rem;
   width: 25vw;
-  background: #0000004a;
+ 
 }
 
 .part_two input::placeholder {
@@ -201,11 +202,14 @@
 }
 
 @media (max-width: 820px) {
-  .container img {
-    display: none;
+  .container{
+    background:var(--primary-background) !important;
   }
+  /* .container img {
+    display: none;
+  } */
   .part_two input {
-    background: #9797974a;
+    background:var(--mid-dark-background) !important;
   }
   .input_div {
     width: 100%;

@@ -19,8 +19,11 @@ const SearchResults = () => {
   const maxStar = q.get("max-star");
   const minStar = q.get("min-star");
   const [data, setData] = useState([]);
+  const [loading,setLoading] = useState(false)
 
   useEffect(() => {
+    setLoading(true)
+    console.log("loading")
     const priceCheck = minPrice && maxPrice;
     const starCheck = minStar && maxStar;
 
@@ -47,6 +50,10 @@ const SearchResults = () => {
           filterByStars(product)
       )
     );
+   setTimeout(()=> {
+    setLoading(false)
+    console.log("loading is completed")
+   },200)
   }, [location.search]);
 
   return (
@@ -206,7 +213,18 @@ const SearchResults = () => {
         </h2>
         <button className={styles.filters_btn} onClick={()=> setShowFilters(true)}><IoFilterSharp/> Apply Filters</button>
         <div className={styles.grid_container}>
-          {data.map((product, index) => {
+          {loading ?
+          <>
+           <div className={styles.loaders}></div> 
+           <div className={styles.loaders}></div> 
+           <div className={styles.loaders}></div> 
+            <div className={styles.loaders}></div> 
+            <div className={styles.loaders}></div> 
+            <div className={styles.loaders}></div> 
+            <div className={styles.loaders}></div>
+            <div className={styles.loaders}></div> 
+            </>
+           : data.map((product, index) => {
             return (
               <ProductBox
                 changePermit={false}

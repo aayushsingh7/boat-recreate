@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import { FaRegUser } from "react-icons/fa6";
 import { IoIosSearch } from "react-icons/io";
@@ -13,12 +13,17 @@ import formatURL from "../utils/formatURL";
 const Navbar = () => {
   const location = useLocation()
   const navigate = useNavigate();
+  let viewPortHeight;
+  let currentYPosition;
+  let removeBgRoutes = location.pathname === "/"
+  const [changeBg, setChangeBg] = useState(false)
   const [query, setQuery] = useState("");
   const q = new URLSearchParams(location.search);
   const { setShowSideNavbar } = useContext(AppContext);
   const getSearchRequestText = q.get("query");
   const { setOpenSearchPage, setShowCart, user, cartItemsLength, setShowLogin, setShowProfile } =
     useContext(AppContext);
+  const navbarRef = useRef(null)
 
   useEffect(() => {
     if (location.pathname.startsWith("/search")) {
@@ -41,22 +46,46 @@ const Navbar = () => {
     if (query.trim() === "") {
       navigate("/");
     } else {
-      navigate(formatURl(`/search?query=${query}`));
+      navigate(formatURL(`/search?query=${query}`));
     }
   };
 
+
+  const handleNavbarStyling = ()=> {
+    viewPortHeight = 0
+    currentYPosition = 0
+    if(!removeBgRoutes) return navbarRef.current.style.background = "var(--primary-background)"
+    viewPortHeight = window.innerHeight - 70;
+    currentYPosition = Math.floor(window.scrollY) - navbarRef.current.offsetLeft;
+    if (viewPortHeight < currentYPosition) {
+      setChangeBg(true)
+      navbarRef.current.style.background = "var(--primary-background)"
+    } else {
+      setChangeBg(false)
+      navbarRef.current.style.background = "none"
+    }
+  }
+
+  onscroll = () => {
+  handleNavbarStyling()
+  }
+
+  useEffect(()=> {
+    handleNavbarStyling()
+  },[location])
+
   return (
-    <nav className={styles.container} style={{ position: location.pathname.startsWith("/products") || location.pathname.startsWith("/support")? "relative" : "fixed",backdropFilter:location.pathname.startsWith("/support") ? "none" : "blur(50px)" }}>
+    <nav ref={navbarRef} className={styles.container} style={{ position: location.pathname.startsWith("/products") || location.pathname.startsWith("/support") ? "relative" : "fixed", backdropFilter: location.pathname.startsWith("/support") ? "none" : "blur(100px)", borderBottom:!removeBgRoutes ||  changeBg ? "1px solid var(--mid-dark-background)" : "none" }}>
       <div className={styles.part_one}>
         <div className={styles.ran}>
           <CiMenuBurger onClick={() => setShowSideNavbar(true)} />
-         <Link to={"/"}>  <img src="/public/images/logo.png" alt="" /></Link>
+          <Link to={"/"}>  <img src="/public/images/logo.png" alt="" /></Link>
         </div>
         <ul>
           {/* <li className={location.pathname === "/" ? styles.active : styles.default}>
             <Link to="/">Home</Link>
           </li> */}
-         <li>
+          <li>
             <Link to={"/search?query=all"}>Explore Products</Link>
           </li>
           <li>
@@ -80,6 +109,7 @@ const Navbar = () => {
             value={query}
             autoComplete="off"
             onKeyDown={searchQueryOnType}
+            style={{ background: !removeBgRoutes || changeBg ? "var(--mid-dark-background)" : "#0000004a" }}
             onInput={(e) => setQuery(e.target.value)}
           />
           <IoIosSearch

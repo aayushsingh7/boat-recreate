@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../styles/Gift.module.css'
 import Slider from '../layouts/Slider'
 import dailyDeals from '../json/dailyDeals.json'
@@ -21,7 +21,7 @@ const Gift = () => {
   const changeFilterOption = (filter) => {
     setSelectedFilter(filter)
   }
-
+ 
 
 
 
@@ -83,5 +83,6 @@ const Gift = () => {
     </div>
   )
 }
+
 
 export default Gift

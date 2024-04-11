@@ -29,8 +29,11 @@
 }
 
 .main_img {
+  /* display: none; */
   width: 100%;
-  height: auto;
+   height:100%;
+  background: var(--mid-dark-background);
+  min-height: 40vw;
 }
 
 .box {
