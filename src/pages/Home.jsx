@@ -12,14 +12,7 @@ import ImageSlider from "../layouts/ImageSlider";
 import Slider from "../layouts/Slider";
 import styles from "../styles/Home.module.css";
 
-const TEXTS = [
-  "Headphones",
-  "Speakers",
-  "Earbuds",
-  "Earphones",
-  "Trimmers",
-  "SoundBox",
-];
+
 
 const Home = () => {
 
@@ -33,7 +26,7 @@ const heroSectionImageSlider = ()=> {
    if (index === heroSectionImages.length - 1) return 0
         return index + 1
   })
-  },2500)
+  },3100)
 
 }
 
