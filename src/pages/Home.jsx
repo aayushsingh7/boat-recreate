@@ -158,6 +158,14 @@ useEffect(()=> {
           counter={false}
         />
 
+<Slider
+          data={dailyDeals}
+          type={"product-slider"}
+          tittle={"Top Products from"}
+          highlight={"boAt"}
+          counter={false}
+        />
+
         <Slider
           data={reviews}
           type={"review-slider"}

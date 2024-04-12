@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 import SliderBox from "../components/SliderBox";
 import SliderFilter from "../components/SliderFilter";
 import styles from "../styles/Slider.module.css";
-import DealCounter from "./DealCounter";
 
 const Slider = ({ data, type, highlight, tittle, counter, id, filterReq, categories, newFilterSelected }) => {
 
@@ -56,9 +55,7 @@ const Slider = ({ data, type, highlight, tittle, counter, id, filterReq, categor
         </h2>
       ) : null}
 
-      {counter ? (
-        <DealCounter />
-      ) : null}
+      
 
       {
         filterReq ? <SliderFilter selectedFilter={selectedFilter} categories={categories} setSelectedFilter={setSelectedFilter} /> : null

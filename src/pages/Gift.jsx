@@ -17,6 +17,7 @@ const Gift = () => {
   ]
 
   const categories_two = ["Audiophiles", "Gamers", "Workaholics", "Artists", "Fitness Fanatic"]
+  const categories_three = ["Love Out Loud - 2024","New Year","Birthday","Anniversary","Wedding"]
 
   const changeFilterOption = (filter) => {
     setSelectedFilter(filter)
@@ -63,7 +64,16 @@ const Gift = () => {
 
       <img className={styles.main_img} src='https://res.cloudinary.com/dvk80x6fi/image/upload/c_scale,h_866,q_87/v1712657503/boat-recreate/images/gift-page-2_bokqpq.webp' alt='gift-page-second-image' />
 
+
       <div className='add-padding-container'>
+      <Slider
+          data={dailyDeals}
+          type={"product-slider"}
+          tittle={"For"}
+          highlight={"Speical Days"}
+          filterReq={true}
+          categories={categories_three}
+        />
         <Slider
           data={newLaunches}
           type={"product-slider"}
@@ -72,6 +82,7 @@ const Gift = () => {
           filterReq={true}
           categories={categories_two}
         />
+
 
         <div className={styles.img_sep}>
           <div><img src='https://res.cloudinary.com/dvk80x6fi/image/upload/c_scale,h_500,q_88/v1712657198/boat-recreate/images/sep2_am8blf.webp' alt='gift-image' /></div>

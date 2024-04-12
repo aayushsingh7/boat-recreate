@@ -10,6 +10,8 @@ lerna-debug.log*
 public/models/
 public/videos/
 src/json/structure.json
+src/layouts/DealCounter.jsx
+src/styles/DealCounter.module.css
 node_modules
 dist
 dist-ssr

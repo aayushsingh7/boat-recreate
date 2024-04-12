@@ -9,6 +9,36 @@
 /* margin-top:70px; */
 }
 
+.no_result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height:80dvh;
+}
+
+.no_result h5{
+font-size: 2.5rem;
+color: var(--primary-color);
+font-weight:500;
+}
+
+.no_result svg{
+    font-size: 7rem; 
+    margin-bottom: 30px;
+    color: var(--mid-dark-background);
+}
+
+.no_result p{
+    font-size:1.1rem;
+    color: var(--light-dark-background);
+    margin-top: 20px;
+    text-align: center;
+    width: 50%;
+    line-height: 1.5rem;
+}
+
 .container h2{
     font-weight: 100;
     font-size: 1.4rem;
@@ -55,6 +85,8 @@ font-weight: 100;
     background:black;
     height:100dvh;
     position:sticky;
+    display: flex;
+    flex-direction: column;
     top: 0;
     left: 0;
    padding-top: 90px;
@@ -68,6 +100,18 @@ font-weight: 100;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.options_container::-webkit-scrollbar{
+    background: var(--primary-background);
+    width: 7px;
+}
+
+.options_container::-webkit-scrollbar-thumb{
+    background: var(--mid-dark-background);
+    border-radius: 10px;
 }
 
 .div_style {
@@ -83,8 +127,43 @@ font-weight: 100;
   .container a{
     text-decoration: none;
   }
+
+  .div_style label{
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+  }
+
+  .div_style label input{
+    margin-right: 10px;
+  }
+
+
+  input[type="radio"] {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    width: 17px; 
+    height: 17px;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px; 
+    outline: none; 
+    flex-shrink: 0;
+  }
   
-  .div_style a p {
+  input[type="radio"]:checked {
+    background-color: var(--secondary-background); 
+    border: 2px solid var(--secondary-background);
+  }
+
+  .div_style label input[type="radio"]:checked label:nth-child(2){
+    font-weight: 600;
+    color: white;
+  }
+
+  
+  
+  .div_style label p {
     width: 100%;
    margin: 4px 0px;
     cursor: pointer;
@@ -93,8 +172,9 @@ font-weight: 100;
   }
 
   
-  .div_style a p:hover {
-    color:var(--secondary-background)
+  .div_style label p:hover {
+    color:rgb(246, 246, 246);
+    font-weight: 600;
   }
 
   .dd{
@@ -118,11 +198,19 @@ font-weight: 100;
   }
 
   .stars span:hover{
-    color: #ffaa00;
+    color:rgb(246, 246, 246);
+    font-weight: 600;
   }
 
 .stars svg{
 color:#ffaa00;
+}
+
+.btn_container{
+    width: 100%;
+    padding: 15px 10px;
+    gap: 7px;
+    display: flex;
 }
 
 .container h4{
@@ -130,11 +218,11 @@ color:#ffaa00;
     font-weight: 600;
     font-size:0.9rem;
     position: relative;
-    margin-bottom: 10px !important;
+    margin-bottom: 15px !important;
     display: inline;
 }
 
-.container h4::before{
+/* .container h4::before{
     content: "";
     position: absolute;
     height:3px;
@@ -143,7 +231,7 @@ color:#ffaa00;
     right: 0%;
     bottom:-20%;
    
-}
+} */
 
 .shadow{
     display: none;
@@ -233,15 +321,18 @@ color:#ffaa00;
     .container h4::before{
       width:40%;
     }
+    .options_container{
+        padding:40px 20px;
+    }
 }
 
 @media (max-width:650px) {
+    .div_style label p{
+        font-size:0.8rem;
+       } 
     .container h4{
         font-size:1.3rem !important;
     }
-   .div_style a p{
-    font-size:1rem;
-   } 
    .stars svg{
     font-size: 20px;
    }
@@ -253,10 +344,13 @@ color:#ffaa00;
    }
 }
 
-@media (max-width:520px) {
+@media (max-width:530px) {
     .results{
-        padding: 80px 10px ;
+        padding: 85px 10px ;
     }
+    .div_style label p{
+        font-size:1rem;
+       } 
 }
 
 @media (max-width:450px) {
