@@ -1,4 +1,5 @@
 function generateRandomID(length) {
+  if(!length) return;
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     const charactersLength = characters.length;
     let randomID = '';

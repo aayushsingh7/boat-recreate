@@ -50,7 +50,7 @@ const CategorySlider = () => {
         }}
       >
         {categories.map((product) => (
-          <Link style={{ textDecoration: "none" }} to={formatURL(`/search?query=${product.title}`)} key={product.id} className={styles.category_box}>
+          <Link style={{ textDecoration: "none" }} to={formatURL(`/search?query=${product.type}`)} key={product.id} className={styles.category_box}>
             <span className={styles.bg_circle}></span>
             <img src={product.image} alt={product.title} />
             <p className={styles.title}>{product.title}</p>

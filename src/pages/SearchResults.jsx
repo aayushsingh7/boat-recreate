@@ -9,6 +9,8 @@ import formatURL from "../utils/formatURL";
 import mergedArray from "../utils/mergeJsonArray";
 import Button from "../components/Button";
 import { BsEmojiFrownFill } from "react-icons/bs";
+import convertToLowerCase from "../utils/convertToLowerCase";
+import textFormatter from "../utils/textFormatter";
 
 
 
@@ -51,8 +53,7 @@ const SearchResults = () => {
     setLoading(true)
     const priceCheck = minPriceQuery && maxPriceQuery
     const starCheck = minStarQuery && maxStarQuery
-    // console.log(priceCheck,minPriceQuery,maxPriceQuery)
-    // console.log(starCheck)
+   
 
     const filterByPrice = (product) => {
     const r = !priceCheck || (product.price > minPriceQuery && product.price < maxPriceQuery);
@@ -68,7 +69,7 @@ const SearchResults = () => {
       );
     };
     const filterByQuery = (product) => {
-      return query === "all" || product.type?.toLowerCase().replace(/\s/g, "").includes(query.replace(/-/g, "")) || product.name?.toLowerCase().includes(query) || product.description?.toLowerCase().includes(query)
+      return query === "all" || convertToLowerCase(product.type).includes(convertToLowerCase(query)) || convertToLowerCase(product.name).includes(convertToLowerCase(query)) ||  convertToLowerCase(product.description).includes(convertToLowerCase(query))
     };
 
     setData(
@@ -243,7 +244,7 @@ const SearchResults = () => {
           </div>
 
           <div className={styles.btn_container}>
-            <Button onClick={()=> navigate(`/search?query=${query}`)}text={"Clear"} padding="14px" fontWeight="600" fontSize="0.8rem" color="var(--primary-color)" borderRadius="10px" background="var(--mid-dark-background)" width="100%" />
+            <Button onClick={()=> {navigate(`/search?query=${query}`);setPrice({minPrice:null,maxPrice:null});setStar({minStar:null,maxStar:null})}}text={"Clear"} padding="14px" fontWeight="600" fontSize="0.8rem" color="var(--primary-color)" borderRadius="10px" background="var(--mid-dark-background)" width="100%" />
 
             <Button onClick={handleNavigation}   text={"Apply"} padding="14px" fontWeight="600" fontSize="0.8rem" color="var(--primary-color)" borderRadius="10px" background="var(--secondary-background)" width="100%" />
           </div>
@@ -252,7 +253,7 @@ const SearchResults = () => {
 
         <section className={styles.results}>
           <h2>
-            Showing results for <span>{query}</span>
+            Showing results for <span>{textFormatter(query)}</span>
           </h2>
         {data.length == 0 && !loading ? null :   <button className={styles.filters_btn} onClick={() => setShowFilters(true)}><IoFilterSharp /> Apply Filters</button>}
 

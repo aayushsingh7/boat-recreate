@@ -322,9 +322,16 @@
   }
   
   @media (max-width:650px) {
+    .product_container:first-child:hover {
+      transform:none;
+    }
+    .product_container:last-child:hover {
+      transform:none;
+    }
     .product_container{
       min-width:200px;
       margin-right: 10px;
+      scale:1 !important;
     }
     .product_img{
       height:180px;

@@ -44,16 +44,19 @@
   {
     "id": 8,
     "title": "Gaming Headphones",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692582/boat-recreate/images/gaming_headphones_prev_ui_qjgak7.png"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692582/boat-recreate/images/gaming_headphones_prev_ui_qjgak7.png",
+    "type":"headphones"
   },
   {
     "id": 9,
     "title": "Party Speakers",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692363/boat-recreate/images/speaker_drllyi.png"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692363/boat-recreate/images/speaker_drllyi.png",
+    "type":"speakers"
   },
   {
     "id": 10,
     "title": "Trimmers",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692637/boat-recreate/images/trimmer_prev_ui_wm3e5c.png"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692637/boat-recreate/images/trimmer_prev_ui_wm3e5c.png",
+    "type":"trimmers"
   }
 ]

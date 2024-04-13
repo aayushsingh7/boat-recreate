@@ -5,7 +5,7 @@ import { RiCustomerService2Line } from "react-icons/ri";
 import { GrMapLocation } from "react-icons/gr";
 import { IoTimerOutline } from "react-icons/io5";
 import { BsCashCoin } from "react-icons/bs";
-import {  FaExchangeAlt } from "react-icons/fa";
+import { FaExchangeAlt } from "react-icons/fa";
 import { FiBox } from "react-icons/fi";
 
 
@@ -94,9 +94,10 @@ const Support = () => {
                     <p onClick={() => setQuery("Product Related")}>Product Related</p>
                     <p onClick={() => setQuery("Exchanging Issue")}>Exchanging Issue</p>
                     <p onClick={() => setQuery("Order Related")}>Order Related</p>
-                    <p onClick={() => setQuery("Shipping")}>Shipping Related</p>
+                    <p onClick={() => setQuery("Shipping Related")}>Shipping Related</p>
                     <p onClick={() => setQuery("Payment Issue")}>Payment Issue</p>
                     <p onClick={() => setQuery("Warranty FAQs")}>Warranty FAQs</p>
+                    <p onClick={() => setQuery("Others")}>Others</p>
                   </div> : null
                 }
 

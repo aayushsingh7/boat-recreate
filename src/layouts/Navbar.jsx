@@ -8,6 +8,7 @@ import Button from '../components/Button';
 import { AppContext } from "../context/Context";
 import styles from "../styles/Navbar.module.css";
 import formatURL from "../utils/formatURL";
+import textFormatter from "../utils/textFormatter";
 
 
 const Navbar = () => {
@@ -27,17 +28,17 @@ const Navbar = () => {
 
   useEffect(() => {
     if (location.pathname.startsWith("/search")) {
-      setQuery(getSearchRequestText);
+      setQuery(textFormatter(getSearchRequestText));
       return;
     }
     setQuery("")
   }, [location.search]);
 
   const searchQueryOnType = (e) => {
-    if (query.trim() === "") {
-      return navigate("/");
-    }
     if (e.key === "Enter") {
+      if (query.trim() === "") {
+        return navigate("/");
+      }
       navigate(formatURL(`/search?query=${query}`));
     }
   };
