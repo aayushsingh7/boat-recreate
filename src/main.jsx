@@ -1,16 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './styles/main.css'
-import AppFunction from './context/Context.jsx'
 import { BrowserRouter } from 'react-router-dom'
+import App from './App.jsx'
+import AppFunction from './context/Context.jsx'
+import './styles/main.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  // <React.StrictMode>
-   <BrowserRouter>
- <AppFunction>
+
+  <BrowserRouter>
+    <AppFunction>
       <App />
- </AppFunction>
-   </BrowserRouter>
-  // </React.StrictMode>,
+    </AppFunction>
+  </BrowserRouter>,
 )

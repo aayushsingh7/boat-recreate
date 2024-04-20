@@ -1,26 +1,25 @@
-.container{
-    margin:20px 0px 0px 0px;
+.container {
+  margin: 20px 0px 0px 0px;
 }
 
-.container ul{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 10px;
-    flex-wrap:wrap;
+.container ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-
-.container ul li{
-    list-style: none;
-    padding: 10px 25px;
-    font-size: 0.8rem;
-    color: var(--primary-color);
-    background: var(--mid-dark-background);
-    cursor: pointer;
-    border-radius: 50px;
+.container ul li {
+  list-style: none;
+  padding: 10px 25px;
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  background: var(--mid-dark-background);
+  cursor: pointer;
+  border-radius: 50px;
 }
 
-.container ul .active{
-background: var(--secondary-background);
+.container ul .active {
+  background: var(--secondary-background);
 }

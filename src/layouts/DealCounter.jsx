@@ -33,7 +33,6 @@ const DealCounter = () => {
   }, []);
 
   return (
-
     <div className={styles.dailycount}>
       <img
         src="https://www.boat-lifestyle.com/cdn/shop/files/Strip_Web_7e8d9cac-7c19-4f8a-942b-31ee37358ec3_1400x.jpg?v=1711779751"
@@ -41,24 +40,19 @@ const DealCounter = () => {
       />
       <div className={styles.time}>
         <p>
-          Ending in <span>
-          {timeLeft.hours.toString().padStart(2, "0")}
-        </span>
-        Hours</p>
-        <p><span>
-          {timeLeft.minutes.toString().padStart(2, "0")}
-        </span>
-        Mins 
+          Ending in <span>{timeLeft.hours.toString().padStart(2, "0")}</span>
+          Hours
+        </p>
+        <p>
+          <span>{timeLeft.minutes.toString().padStart(2, "0")}</span>
+          Mins
         </p>
 
         <p>
-          <span>
-            {timeLeft.seconds.toString().padStart(2, "0")}
-          </span>
+          <span>{timeLeft.seconds.toString().padStart(2, "0")}</span>
           Sec
         </p>
       </div>
-
     </div>
   );
 };

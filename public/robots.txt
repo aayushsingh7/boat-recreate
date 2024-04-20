@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /gift
+Allow: /support
+Allow: /products
+Allow: /search
+Disallow: /admin

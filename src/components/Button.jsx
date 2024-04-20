@@ -1,12 +1,27 @@
-import React from 'react'
+import React from "react";
 
-const Button = ({ className,onClick,text, ...props }) => {
-    
+const Button = ({ label, className, onClick, text, ...props }) => {
     return (
-        <button className={className} onClick={onClick} style={{ ...props, appearance: "none", border: "none", cursor: "pointer",color:"var(--primary-color)",fontWeight:"600",display:"flex",justifyContent:"center",alignItems:"center",textDecoration:"none"}}>
+        <button
+            aria-label={label}
+            className={className}
+            onClick={onClick}
+            style={{
+                ...props,
+                appearance: "none",
+                border: "none",
+                cursor: "pointer",
+                color: "var(--primary-color)",
+                fontWeight: "600",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                textDecoration: "none",
+            }}
+        >
             {text}
         </button>
-    )
-}
+    );
+};
 
-export default Button
+export default Button;

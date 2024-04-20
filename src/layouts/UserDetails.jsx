@@ -4,32 +4,30 @@ import { FaUser } from "react-icons/fa";
 import { FaAddressCard } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import { RiLockPasswordFill } from "react-icons/ri";
-import Button from '../components/Button';
+import Button from "../components/Button";
 import { AppContext } from "../context/Context";
 import styles from "../styles/UserDetails.module.css";
 import generateRandomID from "../utils/generateRandomID";
 
 const UserDetails = () => {
-  const { setShowProfile, getUserDetails,user } =
-    useContext(AppContext);
-  const [userDetails,setUserDetails] = useState({
-    name:"",
-    email:"",
-    password:"",
-    address:""
-  })
-  const [editProfile,setEditProfile] = useState(false)
+  const { setShowProfile, getUserDetails, user } = useContext(AppContext);
+  const [userDetails, setUserDetails] = useState({
+    name: "",
+    email: "",
+    password: "",
+    address: "",
+  });
+  const [editProfile, setEditProfile] = useState(false);
 
-  const handleOnChange = (e)=> {
-    setUserDetails((data)=> {
-        return {...data,[e.target.name]:e.target.value}
-    })
-  }
+  const handleOnChange = (e) => {
+    setUserDetails((data) => {
+      return { ...data, [e.target.name]: e.target.value };
+    });
+  };
 
-    useEffect(()=> {
-      setUserDetails(user)
-    },[])
-
+  useEffect(() => {
+    setUserDetails(user);
+  }, []);
 
   const editProfileFunction = (e) => {
     e.preventDefault();
@@ -38,9 +36,9 @@ const UserDetails = () => {
       JSON.stringify({
         id: generateRandomID(15),
         email: userDetails.email,
-        password:userDetails.password,
-        address:userDetails.address,
-        name:userDetails.name,
+        password: userDetails.password,
+        address: userDetails.address,
+        name: userDetails.name,
         logged_in_date: new Date().toISOString(),
       })
     );
@@ -58,7 +56,7 @@ const UserDetails = () => {
         <h2>{editProfile ? "Edit Profile🎨" : "My Profile✨"}</h2>
 
         <div className={styles.part_one}>
-        <div>
+          <div>
             <FaUser />
             <input
               name="name"
@@ -69,7 +67,6 @@ const UserDetails = () => {
               onInput={handleOnChange}
               value={userDetails.name}
               readOnly={editProfile ? false : true}
-
             />
           </div>
 
@@ -115,23 +112,64 @@ const UserDetails = () => {
             />
           </div>
 
-        {editProfile ? <Button onClick={(e)=> e.preventDefault()} text={"Forgot password"}  className={styles.forgot_password} marginTop="15px" background="none" fontSize="0.8rem" textAlign="end" /> : null}
+          {editProfile ? (
+            <Button
+              label={"Forgot password"}
+              text={"Forgot password"}
+              className={styles.forgot_password}
+              marginTop="15px"
+              background="none"
+              fontSize="0.8rem"
+              textAlign="end"
+            />
+          ) : null}
 
-        
+          <div className={styles.sep}>
+            <Button
+              label={"Edit profile"}
+              padding={"15px 20px"}
+              fontSize="0.9rem"
+              borderRadius="10px"
+              width="100%"
+              onClick={(e) => {
+                setEditProfile(true);
+                editProfile ? null : e.preventDefault();
+              }}
+              text={editProfile ? "Save Changes" : "Edit Profile"}
+              background="var(--secondary-background)"
+            />
 
+            {editProfile ? null : (
+              <Button
+                label={"Logout"}
+                padding={"15px 20px"}
+                fontSize="0.9rem"
+                borderRadius="10px"
+                width="100%"
+                onClick={(e) => {
 
-        <div className={styles.sep}>
-
-        <Button padding={"15px 20px"} fontSize="0.9rem" borderRadius="10px" width="100%" onClick={(e)=> {setEditProfile(true);editProfile ? null : e.preventDefault()}} text={editProfile ? "Save Changes" : "Edit Profile"}  background="var(--secondary-background)" />
-
-        {editProfile ? null :  <Button padding={"15px 20px"} fontSize="0.9rem" borderRadius="10px" width="100%" onClick={(e)=> {e.preventDefault();setShowProfile(false);localStorage.removeItem("user_details");getUserDetails()}} text={"Logout"}  background="var(--mid-dark-background)" />}
-        
-  
+                  setShowProfile(false);
+                  localStorage.removeItem("user_details");
+                  getUserDetails();
+                }}
+                text={"Logout"}
+                background="var(--mid-dark-background)"
+              />
+            )}
+          </div>
+          {editProfile && (
+            <Button
+              label={"Cancle"}
+              marginTop="7px"
+              text={"Cancle"}
+              background="var(--mid-dark-background)"
+              padding="15px 20px"
+              width="100%"
+              fontSize="0.9rem"
+              borderRadius="10px"
+            />
+          )}
         </div>
-         {editProfile && <Button marginTop="7px" text={"Cancle"} background="var(--mid-dark-background)" padding="15px 20px" width="100%" fontSize="0.9rem" borderRadius="10px"/>}
-         
-        </div>
-
       </form>
     </div>
   );

@@ -8,23 +8,24 @@ import styles from "../styles/Login.module.css";
 import generateRandomID from "../utils/generateRandomID";
 
 const Login = () => {
-
-  const { setShowLogin,setShowRegister,getUserDetails } = useContext(AppContext);
-  const [email,setEmail] = useState("")
-  const [password,setPassword] = useState("")
+  const { setShowLogin, setShowRegister, getUserDetails } =
+    useContext(AppContext);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const login = (e) => {
-    e.preventDefault()
-    localStorage.setItem("user_details",JSON.stringify(
-        {
-            id:generateRandomID(15),
-            email:email,
-            password:password,
-            logged_in_date:new Date().toISOString(),
-        }
-    ))
-    getUserDetails()
-    setShowLogin(false)
+    e.preventDefault();
+    localStorage.setItem(
+      "user_details",
+      JSON.stringify({
+        id: generateRandomID(15),
+        email: email,
+        password: password,
+        logged_in_date: new Date().toISOString(),
+      })
+    );
+    getUserDetails();
+    setShowLogin(false);
   };
 
   return (
@@ -38,25 +39,34 @@ const Login = () => {
 
         <div className={styles.part_one}>
           <input
-          name="email"
+            name="email"
             type="email"
             placeholder="Enter your Email"
             autoComplete="off"
-           value={email}
+            value={email}
             required
-            onInput={(e)=> setEmail(e.target.value)}
+            onInput={(e) => setEmail(e.target.value)}
           />
           <input
-         name="password"
+            name="password"
             type="password"
             placeholder="Enter your Password"
             autoComplete="off"
             required
             value={password}
-            onInput={(e)=> setPassword(e.target.value)}
+            onInput={(e) => setPassword(e.target.value)}
           />
-          <button className={styles.forgot_password}>Forgot password</button>
-           <Button text={"Login"} onClick={login} padding="15px 20px"  width="100%"  fontSize= "0.8rem"  borderRadius= "10px"  background= "var(--secondary-background)"  marginTop= "40px" />
+          <button aria-label="Forgot password" onClick={(e) => e.preventDefault()} className={styles.forgot_password}>Forgot password</button>
+          <Button
+            label={"Login"}
+            text={"Login"}
+            padding="15px 20px"
+            width="100%"
+            fontSize="0.8rem"
+            borderRadius="10px"
+            background="var(--secondary-background)"
+            marginTop="40px"
+          />
         </div>
 
         <p className={styles.seprator}>------------ or -------------</p>
@@ -68,9 +78,18 @@ const Login = () => {
           <FaGoogle />
         </div>
 
-        <p className={styles.option_p}>Doesn't have an account? <button onClick={()=> {setShowLogin(false);setShowRegister(true)}}>Register</button></p>
-
-
+        <p className={styles.option_p}>
+          Doesn't have an account?{" "}
+          <button
+            aria-label="Go to register page"
+            onClick={() => {
+              setShowLogin(false);
+              setShowRegister(true);
+            }}
+          >
+            Register
+          </button>
+        </p>
       </form>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { Suspense, lazy, useContext, useEffect } from "react";
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AppContext } from "./context/Context";
 import Cart from "./layouts/Cart";
@@ -9,29 +9,31 @@ import Navbar from "./layouts/Navbar";
 import Register from "./layouts/Register";
 import SideNavbar from "./layouts/SideNavbar";
 import UserDetails from "./layouts/UserDetails";
-import About from "./pages/About";
-import Home from "./pages/Home";
-import SearchResults from "./pages/SearchResults";
-import ViewProduct from "./pages/ViewProduct";
-import Gift from "./pages/Gift";
-import Support from "./pages/Support";
+
+const About = lazy(() => import("./pages/About"));
+const Gift = lazy(() => import("./pages/Gift"));
+const Home = lazy(() => import("./pages/Home"));
+const SearchResults = lazy(() => import("./pages/SearchResults"));
+const Support = lazy(() => import("./pages/Support"));
+const ViewProduct = lazy(() => import("./pages/ViewProduct"));
+
 
 const App = () => {
   const location = useLocation();
-  
- const {showLogin,showRegister,showProfile,showCart,openSearchPage, showSideNavbar,showFilters,
-setShowLogin,setShowRegister,setShowProfile,setShowCart,setOpenSearchPage,setShowSideNavbar,setShowFilters                                                                                        } = useContext(AppContext)
 
- useEffect(()=> {
-  if(showLogin || showFilters || showRegister || showProfile || showCart || openSearchPage || showSideNavbar){
-    document.body.style.overflowY = "hidden"
-  }else{
-    document.body.style.overflowY = "scroll"
-  }
- },[showLogin,showRegister,showCart,openSearchPage, showSideNavbar,showProfile,showFilters])
+  const { showLogin, showRegister, showProfile, showCart, openSearchPage, showSideNavbar, showFilters,
+    setShowLogin, setShowRegister, setShowProfile, setShowCart, setOpenSearchPage, setShowSideNavbar, setShowFilters } = useContext(AppContext)
 
- useEffect(()=> {
-    !location.pathname.startsWith("/products") &&  window.scrollTo({top:0,behavior:"instant"})
+  useEffect(() => {
+    if (showLogin || showFilters || showRegister || showProfile || showCart || openSearchPage || showSideNavbar) {
+      document.body.style.overflowY = "hidden"
+    } else {
+      document.body.style.overflowY = "scroll"
+    }
+  }, [showLogin, showRegister, showCart, openSearchPage, showSideNavbar, showProfile, showFilters])
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" })
     setShowLogin(false)
     setShowRegister(false)
     setShowProfile(false)
@@ -39,32 +41,42 @@ setShowLogin,setShowRegister,setShowProfile,setShowCart,setOpenSearchPage,setSho
     setOpenSearchPage(false)
     setShowSideNavbar(false)
     setShowFilters(false)
- },[location])
+  }, [location])
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" })
+  }, [])
+
+
 
 
 
   return (
     <div className="app">
-    <Navbar />
-    <div className="app_content">
-    <SideNavbar/>
-    <Cart/>
-    <MobileSearchPage/>
-    <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/about" element={<About/>} />
-      <Route path="/search" element={<SearchResults/>} />
-      <Route path="/products/:type/:name" element={<ViewProduct/>}/>
-      <Route path="/gift" element={<Gift/>} />
-      <Route path="/support" element={<Support/>} />
-    </Routes>
-   {showLogin ?  <Login/>:null}
-   {showRegister ? <Register/> : null}
-   {showProfile ? <UserDetails/> : null}
-    <Footer />
+      <Navbar />
+      <div className="app_content">
+        <SideNavbar />
+        <Cart />
+        <MobileSearchPage />
+        <Suspense fallback={<div className="lll_con" style={{ width: "100%", height: "100dvh", background: "var(--primary-background)" }}>
+          <div className="loader-spinner"></div></div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/search" element={<SearchResults />} />
+            <Route path="/products/:type/:name" element={<ViewProduct />} />
+            <Route path="/gift" element={<Gift />} />
+            <Route path="/support" element={<Support />} />
+          </Routes>
+        </Suspense>
+        {showLogin ? <Login /> : null}
+        {showRegister ? <Register /> : null}
+        {showProfile ? <UserDetails /> : null}
+
+        <Footer />
+      </div>
     </div>
-  </div>
-  
+
   );
 };
 

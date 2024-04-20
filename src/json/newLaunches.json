@@ -5,25 +5,29 @@
     "price": 3999,
     "discount": 47,
     "original_price": 7490,
-    "main_image":"https://www.boat-lifestyle.com/cdn/shop/files/Artboard1_9517fb5e-6ef2-479a-8c86-5298f09800b9_1300x.png?v=1711716893",
+    "main_image": "https://www.boat-lifestyle.com/cdn/shop/files/Artboard1_9517fb5e-6ef2-479a-8c86-5298f09800b9_1300x.png?v=1711716893",
     "more_images": [
-        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Nirvana_Eutopia.jpg?v=1711716650",
-      
-        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/4_ea2b1903-27d2-4ff3-84a9-bbcf4ea83362_700x.jpg?v=1711716893",
-        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/6_80d6c579-aefc-40a5-ba15-df0059c5fe4c_700x.jpg?v=1711716893",
-        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/7_f61acd9c-2aae-4f71-b677-a144689e2c55_700x.jpg?v=1711716893"
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Nirvana_Eutopia.jpg?v=1711716650",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/4_ea2b1903-27d2-4ff3-84a9-bbcf4ea83362_700x.jpg?v=1711716893",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/6_80d6c579-aefc-40a5-ba15-df0059c5fe4c_700x.jpg?v=1711716893",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/7_f61acd9c-2aae-4f71-b677-a144689e2c55_700x.jpg?v=1711716893"
     ],
-    "tag":"🎉 New launch",
+    "tag": "🎉 New launch",
     "type": "headphones",
-    "special":"10 hours Playback",
+    "special": "10 hours Playback",
     "reviews": 67,
     "reviewStars": 3.5,
     "stock_qty": 342,
     "sold_qty": 1203,
-    "features": ["12 hours playback", "Dual EQ modes", "BEAST™ Mode", "13 mm driver" ],
+    "features": [
+      "12 hours playback",
+      "Dual EQ modes",
+      "BEAST™ Mode",
+      "13 mm driver"
+    ],
     "description": "Wireless Headphone with 20H Playback,  Dual Mic with Enx, ASAP charge",
-    "engraving": false  ,
-    "background":false
+    "engraving": false,
+    "background": false
   },
   {
     "id": "0005948334218",
@@ -34,22 +38,26 @@
     "main_image": "https://www.boat-lifestyle.com/cdn/shop/files/Stone_SpinXPro_1_1300x.png?v=1709717404",
     "more_images": [
       "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_Spinx_Pro.jpg?v=1709718328",
-        "https://www.boat-lifestyle.com/cdn/shop/files/Stone_SpinXPro_2_700x.jpg?v=1709717442",
-        "https://www.boat-lifestyle.com/cdn/shop/files/Stone_SpinXPro_3_700x.jpg?v=1709717442",
-        "https://www.boat-lifestyle.com/cdn/shop/files/Stone_SpinXPro_4_700x.jpg?v=1709717442",
-        "https://www.boat-lifestyle.com/cdn/shop/files/Stone_SpinXPro_5copy_700x.jpg?v=1709717442"
+      "https://www.boat-lifestyle.com/cdn/shop/files/Stone_SpinXPro_2_700x.jpg?v=1709717442",
+      "https://www.boat-lifestyle.com/cdn/shop/files/Stone_SpinXPro_3_700x.jpg?v=1709717442",
+      "https://www.boat-lifestyle.com/cdn/shop/files/Stone_SpinXPro_4_700x.jpg?v=1709717442",
+      "https://www.boat-lifestyle.com/cdn/shop/files/Stone_SpinXPro_5copy_700x.jpg?v=1709717442"
     ],
-    "tag":"🎉 New launch",
+    "tag": "🎉 New launch",
     "type": "speakers",
-    "special":"8 hour playback",
+    "special": "8 hour playback",
     "reviews": 5,
     "reviewStars": 5.0,
     "stock_qty": 342,
     "sold_qty": 1203,
-    "features": ["Bluetooth with 7nm rhythmic Dynamic Drivers", "Nonstop Music", "55 hours if battery" ],
+    "features": [
+      "Bluetooth with 7nm rhythmic Dynamic Drivers",
+      "Nonstop Music",
+      "55 hours if battery"
+    ],
     "description": "Bluetooth with 7nm rhythmic Dynamic Drivers, Nonstop Music, 55 hours if battery",
-    "engraving": false  ,
-    "background":false
+    "engraving": false,
+    "background": false
   },
   {
     "id": "9995844344213",
@@ -60,22 +68,26 @@
     "main_image": "https://www.boat-lifestyle.com/cdn/shop/files/Artboard11_600x.png?v=1707301108",
     "more_images": [
       "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Ultima_Select.jpg?v=1707299725",
-        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard5_1eea1a3c-656b-404b-8835-aa09d294e4bd_600x.jpg?v=1707301108",
-        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard7_74b54a89-4e80-4bcd-bb87-6d7131daccf8_600x.jpg?v=1707301108",
-        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard9_a6f138d6-c31d-4cf7-bd1e-351165f28128_599x.jpg?v=1707301108",
-        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard10_e0c899fe-b0bf-427a-946f-23573c0292a8_599x.jpg?v=1707301108"
+      "https://www.boat-lifestyle.com/cdn/shop/files/Artboard5_1eea1a3c-656b-404b-8835-aa09d294e4bd_600x.jpg?v=1707301108",
+      "https://www.boat-lifestyle.com/cdn/shop/files/Artboard7_74b54a89-4e80-4bcd-bb87-6d7131daccf8_600x.jpg?v=1707301108",
+      "https://www.boat-lifestyle.com/cdn/shop/files/Artboard9_a6f138d6-c31d-4cf7-bd1e-351165f28128_599x.jpg?v=1707301108",
+      "https://www.boat-lifestyle.com/cdn/shop/files/Artboard10_e0c899fe-b0bf-427a-946f-23573c0292a8_599x.jpg?v=1707301108"
     ],
-    "tag":"🎉 New launch",
+    "tag": "🎉 New launch",
     "type": "smartwaches",
-    "special":"Nonstop Music",
+    "special": "Nonstop Music",
     "reviews": 14,
     "reviewStars": 5.0,
     "stock_qty": 342,
     "sold_qty": 1203,
-    "features": ["Bluetooth Calling","100+ Sports Modes","100+ Watch Faces" ],
+    "features": [
+      "Bluetooth Calling",
+      "100+ Sports Modes",
+      "100+ Watch Faces"
+    ],
     "description": "Bluetooth with 7nm rhythmic Dynamic Drivers, Nonstop Music, 55 hours if battery",
-    "engraving": false ,
-    "background":false
+    "engraving": false,
+    "background": false
   },
   {
     "id": "9444593312348",
@@ -86,22 +98,25 @@
     "main_image": "https://www.boat-lifestyle.com/cdn/shop/products/Grey_560cad08-698b-45d6-a3dd-d10ae3fec8ee_600x.png?v=1697625863",
     "more_images": [
       "https://www.boat-lifestyle.com/cdn/shop/files/131Pro-3_600x.jpg?v=1703232410",
-
-        "https://www.boat-lifestyle.com/cdn/shop/files/05_2_700x.jpg?v=1703232410",
-        "https://www.boat-lifestyle.com/cdn/shop/files/07_3_700x.jpg?v=1703232410",
-        "https://www.boat-lifestyle.com/cdn/shop/files/09_2_700x.jpg?v=1703232410"
+      "https://www.boat-lifestyle.com/cdn/shop/files/05_2_700x.jpg?v=1703232410",
+      "https://www.boat-lifestyle.com/cdn/shop/files/07_3_700x.jpg?v=1703232410",
+      "https://www.boat-lifestyle.com/cdn/shop/files/09_2_700x.jpg?v=1703232410"
     ],
-    "tag":"🎉 New launch",
+    "tag": "🎉 New launch",
     "type": "earbuds",
-    "special":"Nonstop Music",
+    "special": "Nonstop Music",
     "reviews": 14,
     "reviewStars": 5.0,
     "stock_qty": 342,
     "sold_qty": 1203,
-    "features": ["BEAST™ Mode", "55 hours battery","IPX5 Sweat" ],
+    "features": [
+      "BEAST™ Mode",
+      "55 hours battery",
+      "IPX5 Sweat"
+    ],
     "description": "Bluetooth with 7nm rhythmic Dynamic Drivers, Nonstop Music, 55 hours if battery,IPX5 Sweat",
-    "engraving": false  ,
-    "background":false
+    "engraving": false,
+    "background": false
   },
   {
     "id": "9999923888123",
@@ -111,22 +126,26 @@
     "original_price": 4990,
     "main_image": "https://www.boat-lifestyle.com/cdn/shop/products/c09da58b-fbc9-4c30-afdd-40c61f1cbba5_600x.png?v=1625046574",
     "more_images": [
-        "https://www.boat-lifestyle.com/cdn/shop/products/battery-3_0b37c40a-4bf6-4849-8297-6c195b1b3287_700x.jpg?v=1678974123",
-        "https://www.boat-lifestyle.com/cdn/shop/products/boat-3_b6dc4cb5-c2c7-44c8-8b07-fad1ab57fd35_700x.jpg?v=1678974123",
-        "https://www.boat-lifestyle.com/cdn/shop/products/IPX-3_a9e9da41-3504-4b08-be8c-263530c031d4_700x.jpg?v=1678974123",
-        "https://www.boat-lifestyle.com/cdn/shop/products/IWP-3_600f9588-a052-436a-824c-56466871e7ed_700x.jpg?v=1678974123"
+      "https://www.boat-lifestyle.com/cdn/shop/products/battery-3_0b37c40a-4bf6-4849-8297-6c195b1b3287_700x.jpg?v=1678974123",
+      "https://www.boat-lifestyle.com/cdn/shop/products/boat-3_b6dc4cb5-c2c7-44c8-8b07-fad1ab57fd35_700x.jpg?v=1678974123",
+      "https://www.boat-lifestyle.com/cdn/shop/products/IPX-3_a9e9da41-3504-4b08-be8c-263530c031d4_700x.jpg?v=1678974123",
+      "https://www.boat-lifestyle.com/cdn/shop/products/IWP-3_600f9588-a052-436a-824c-56466871e7ed_700x.jpg?v=1678974123"
     ],
-    "tag":"🎉 New launch",
+    "tag": "🎉 New launch",
     "type": "earbuds",
-    "special":"20 hours playback",
+    "special": "20 hours playback",
     "reviews": 122,
     "reviewStars": 4.8,
     "stock_qty": 342,
     "sold_qty": 1203,
-    "features": [ "Nonstop Music", "20 Hours Playback","IPX5 Sweat" ],
+    "features": [
+      "Nonstop Music",
+      "20 Hours Playback",
+      "IPX5 Sweat"
+    ],
     "description": "Bluetooth with 7nm rhythmic Dynamic Drivers, Nonstop Music, 20 hours,IPX5 Sweat",
-    "engraving": false ,
-    "background":false
+    "engraving": false,
+    "background": false
   },
   {
     "id": "9954832212734",
@@ -137,22 +156,55 @@
     "main_image": "https://www.boat-lifestyle.com/cdn/shop/files/Artboard6_259902fa-69ef-4495-b388-34c7a19efada_1300x.png?v=1711019705",
     "more_images": [
       "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AB_5400D.jpg?v=1711019254",
-        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard1_541dfb38-2f20-4f6b-9294-283e45477fb7_700x.jpg?v=1711019705",
-        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard2_7a2d95f9-d1c9-472f-bc0a-30f322f19c85_700x.jpg?v=1711019705",
-        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard3_700x.jpg?v=1711019705",
-        "https://www.boat-lifestyle.com/cdn/shop/files/Artboard4_002da9ca-82cb-4ee8-a9b4-12ba35f3e49d_700x.jpg?v=1711019705"
+      "https://www.boat-lifestyle.com/cdn/shop/files/Artboard1_541dfb38-2f20-4f6b-9294-283e45477fb7_700x.jpg?v=1711019705",
+      "https://www.boat-lifestyle.com/cdn/shop/files/Artboard2_7a2d95f9-d1c9-472f-bc0a-30f322f19c85_700x.jpg?v=1711019705",
+      "https://www.boat-lifestyle.com/cdn/shop/files/Artboard3_700x.jpg?v=1711019705",
+      "https://www.boat-lifestyle.com/cdn/shop/files/Artboard4_002da9ca-82cb-4ee8-a9b4-12ba35f3e49d_700x.jpg?v=1711019705"
     ],
-    "tag":"🎉 New launch",
-    "type": "speakers",
-    "special":"550 watts",
+    "tag": "🎉 New launch",
+    "type": "sound bars",
+    "special": "550 watts",
     "reviews": 4,
     "reviewStars": 5.0,
     "stock_qty": 342,
     "sold_qty": 1203,
-    "features": ["Bluetooth with 7nm rhythmic Dynamic Drivers", "Nonstop Music", "55 hours if battery" ],
+    "features": [
+      "Bluetooth with 7nm rhythmic Dynamic Drivers",
+      "Nonstop Music",
+      "55 hours if battery"
+    ],
     "description": "Bluetooth with 7nm rhythmic Dynamic Drivers, Nonstop Music, 55 hours if battery",
-    "engraving": false  ,
-    "background":false
+    "engraving": false,
+    "background": false
+  },
+  {
+    "id": "9954855556432",
+    "name": "Misfit Groom 100 5 in 1",
+    "price": 999,
+    "discount": 75,
+    "original_price": 3999,
+    "main_image": "https://www.boat-lifestyle.com/cdn/shop/files/Groom1005in1_1_600x.png?v=1697783994",
+    "more_images": [
+      "https://www.boat-lifestyle.com/cdn/shop/files/Groom1005in1_1_600x.jpg?v=1697783994",
+      "https://www.boat-lifestyle.com/cdn/shop/files/Groom1005in1_2_600x.jpg?v=1697783994",
+      "https://www.boat-lifestyle.com/cdn/shop/files/Groom1005in1_3_600x.jpg?v=1697783994",
+      "https://www.boat-lifestyle.com/cdn/shop/files/Groom1005in1_4_600x.jpg?v=1697783994",
+      "https://www.boat-lifestyle.com/cdn/shop/files/Groom1005in1_5_600x.jpg?v=1697783994"
+    ],
+    "tag": "🎉 New launch",
+    "type": "trimmers",
+    "special": "120 Minute Runtime",
+    "reviews": 8,
+    "reviewStars": 4.8,
+    "stock_qty": 342,
+    "sold_qty": 1203,
+    "features": [
+      "Matte Finish",
+      "Type-C Charging",
+      "Safety Lock"
+    ],
+    "description": "Grooming Kit with 120 Minutes Runtime, Multiple Attachments, Multiple Range Settings",
+    "engraving": false,
+    "background": false
   }
-  
 ]

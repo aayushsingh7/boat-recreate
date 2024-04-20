@@ -2,61 +2,61 @@
   {
     "id": 1,
     "title": "Wireless Earbuds",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711693143/boat-recreate/images/earbuds_prev_ui_udpq9x.png",
-    "type":"earbuds"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/c_scale,h_200,q_100/v1711693143/boat-recreate/images/earbuds_prev_ui_udpq9x.webp",
+    "type": "earbuds"
   },
   {
     "id": 2,
     "title": "Neckband",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692689/boat-recreate/images/neckband_prev_ui_kmk4bv.png",
-    "type":"neckband"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/c_scale,h_200,q_100/v1711692689/boat-recreate/images/neckband_prev_ui_kmk4bv.webp",
+    "type": "neckbands"
   },
   {
     "id": 3,
     "title": "SmartWatches",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692356/boat-recreate/images/smartwatch_lnc1vv.png",
-    "type":"smartwatches"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/c_scale,h_200,q_100/v1711692356/boat-recreate/images/smartwatch_lnc1vv.webp",
+    "type": "smartwatches"
   },
   {
     "id": 4,
     "title": "Wireless Headphones",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692350/boat-recreate/images/headphones_zwr33d.png",
-    "type":"headphones"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/c_scale,h_200,q_100/v1711692350/boat-recreate/images/headphones_zwr33d.webp",
+    "type": "headphones"
   },
   {
     "id": 5,
     "title": "Wireless Speakers",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692377/boat-recreate/images/wireless_spaker_orkbsx.png",
-    "type":"speakers"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/c_scale,h_200,q_100/v1711692377/boat-recreate/images/wireless_spaker_orkbsx.webp",
+    "type": "speakers"
   },
   {
     "id": 6,
     "title": "Wired Earphones",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692373/boat-recreate/images/wired_earphones_ug5nyl.png",
-    "type":"earphones"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/c_scale,h_200,q_100/v1711692373/boat-recreate/images/wired_earphones_ug5nyl.webp",
+    "type": "earphones"
   },
   {
     "id": 7,
     "title": "Soundbars",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692586/boat-recreate/images/soundbox_2_zelee6.png",
-    "type":"soundbars"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/c_scale,h_200,q_100/v1711692586/boat-recreate/images/soundbox_2_zelee6.webp",
+    "type": "soundbars"
   },
   {
     "id": 8,
     "title": "Gaming Headphones",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692582/boat-recreate/images/gaming_headphones_prev_ui_qjgak7.png",
-    "type":"headphones"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/c_scale,h_200,q_100/v1711692582/boat-recreate/images/gaming_headphones_prev_ui_qjgak7.webp",
+    "type": "headphones"
   },
   {
     "id": 9,
     "title": "Party Speakers",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692363/boat-recreate/images/speaker_drllyi.png",
-    "type":"speakers"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/c_scale,h_200,q_100/v1711692363/boat-recreate/images/speaker_drllyi.webp",
+    "type": "speakers"
   },
   {
     "id": 10,
     "title": "Trimmers",
-    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/v1711692637/boat-recreate/images/trimmer_prev_ui_wm3e5c.png",
-    "type":"trimmers"
+    "image": "https://res.cloudinary.com/dvk80x6fi/image/upload/c_scale,h_200,q_100/v1711692637/boat-recreate/images/trimmer_prev_ui_wm3e5c.webp",
+    "type": "trimmers"
   }
 ]

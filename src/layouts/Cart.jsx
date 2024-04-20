@@ -18,14 +18,12 @@ const Cart = () => {
     <>
       <div
         onClick={() => setShowCart(false)}
-        className={`${styles.shadow} ${
-          showCart ? styles.show_shadow : styles.hide_shadow
-        }`}
+        className={`${styles.shadow} ${showCart ? styles.show_shadow : styles.hide_shadow
+          }`}
       ></div>
       <div
-        className={`${styles.container} ${
-          showCart ? styles.show : styles.hide
-        }`}
+        className={`${styles.container} ${showCart ? styles.show : styles.hide
+          }`}
       >
         <div className={styles.header}>
           <h2>Cart</h2>
@@ -45,15 +43,15 @@ const Cart = () => {
             <ul className={styles.product_container}>
               {cartItems.length > 0
                 ? cartItems.map((product, index) => {
-                    return (
-                      <ProductBox
-                        changePermit={true}
-                        min={430}
-                        product={product}
-                        productIndex={index}
-                        key={index}
-                      />
-                    );
+                  return (
+                    <ProductBox
+                      changePermit={true}
+                      min={430}
+                      product={product}
+                      productIndex={index}
+                      key={index}
+                    />
+                  );
                 })
                 : null}
             </ul>
@@ -75,8 +73,15 @@ const Cart = () => {
                 This order contains a gift
               </label>
 
-            <Button text={"Proceed to Payment"} padding="15px" width="100%" fontSize="0.8rem" borderRadius="10px" background="var(--secondary-background)"/>
-            
+              <Button
+                label={"Proceed to payment"}
+                text={"Proceed to Payment"}
+                padding="15px"
+                width="100%"
+                fontSize="0.8rem"
+                borderRadius="10px"
+                background="var(--secondary-background)"
+              />
             </div>
           </>
         )}

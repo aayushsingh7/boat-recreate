@@ -1,77 +1,77 @@
-/* @font-face {
-    font-family: metro;
-    src: url(Metropolis-Regular.otf);
-  } */
-
-
-.container{
-   background: var(--primary-background);
-position: relative;
-display: flex;
-justify-content: space-between;
+.container {
+  background: var(--primary-background);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
-.category_box_container{
-    margin:25px 0px;
-    display: flex;
-    position: relative;
-    transition: .2s ease-in-out;
-    overflow-x: hidden;
-    scrollbarWidth: none;
-     msOverflowStyle: none;
-
+.category_box_container {
+  margin: 25px 0px;
+  display: flex;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  overflow-x: hidden;
+  scrollbarwidth: none;
+  msoverflowstyle: none;
 }
 
-.category_box{
-  background:rgb(37 37 37 / 79%);
+.img_div {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category_box {
+  background: rgb(37 37 37 / 79%);
   margin: 0px 5px;
-    height: 170px;
-    min-width: 130px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
-padding:10px;
+  height: 170px;
+  width: 150px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  padding: 12px 10px;
+  flex-grow: 0;
 }
 
-
-.category_box_container img{
-    height: auto;
-    max-height: 100px;
-    max-width: 100px;
-    object-fit: contain; 
-    position: relative;
+.category_box_container img {
+  height: auto;
+  max-height: 100px;
+  max-width: 100px;
+  object-fit: contain;
+  position: relative;
 }
 
-.title{
-    text-align: center;
-    font-size: 15px;
-    color: var(--primary-color);
-    margin-top: 15px;
-font-weight: 400;
+.title {
+  text-align: center;
+  font-size: 15px;
+  color: var(--primary-color);
+  margin-top: 15px;
+  font-weight: 400;
 }
 
-
- 
-
- .prev{
-    left: 1%;
+.prev {
+  left: 1%;
 }
 
-.next{
-    right: 1%;
+.next {
+  right: 1%;
 }
 
-
-.next svg, .prev svg{
-    font-size: 23px;
-    color:var(--primary-background);
+.next svg,
+.prev svg {
+  font-size: 23px;
+  color: var(--primary-background);
 }
 
-@media (max-width:499px) {
-    .next, .prev{
-        display: none !important;
-    }
+@media (max-width: 499px) {
+  .next,
+  .prev {
+    display: none !important;
+  }
 }

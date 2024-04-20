@@ -25,8 +25,8 @@
     "reviews": 67,
     "reviewStars": 5.0,
     "stock_qty": 120,
-    "sold_qty": 283 ,
-    "background":false
+    "sold_qty": 283,
+    "background": false
   },
   {
     "id": "9504594832111",
@@ -54,8 +54,8 @@
     "reviews": 1345,
     "reviewStars": 4.8,
     "stock_qty": 10,
-    "sold_qty": 2394 ,
-    "background":false
+    "sold_qty": 2394,
+    "background": false
   },
   {
     "id": "1112920394322",
@@ -83,8 +83,8 @@
     "reviews": 50,
     "reviewStars": 4.9,
     "stock_qty": 658,
-    "sold_qty": 495 ,
-    "background":false
+    "sold_qty": 495,
+    "background": false
   },
   {
     "id": "0392900193845",
@@ -113,12 +113,12 @@
     "reviews": 187,
     "reviewStars": 4.9,
     "stock_qty": 192,
-    "sold_qty": 594 ,
-    "background":false
+    "sold_qty": 594,
+    "background": false
   },
   {
     "id": "0392920111124",
-    "main_image":"https://www.boat-lifestyle.com/cdn/shop/products/5f7d33ad-39a9-4426-836e-c300814839b9_600x.png?v=1625046105",
+    "main_image": "https://www.boat-lifestyle.com/cdn/shop/products/5f7d33ad-39a9-4426-836e-c300814839b9_600x.png?v=1625046105",
     "more_images": [
       "https://www.boat-lifestyle.com/cdn/shop/files/R260-FI_Blue02_108daeeb-c0e3-4ceb-bbe6-ee917beb3b1e_800x.png?v=1685967817",
       "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/04_8f721dd3-4d7c-46bb-aa34-09004fd60c3a_600x.jpg?v=1687513263",
@@ -141,8 +141,8 @@
     "reviews": 1745,
     "reviewStars": 4.8,
     "stock_qty": 1040,
-    "sold_qty": 332 ,
-    "background":false
+    "sold_qty": 332,
+    "background": false
   },
   {
     "id": "0392920666574",
@@ -170,8 +170,8 @@
     "reviews": 43,
     "reviewStars": 4.7,
     "stock_qty": 82,
-    "sold_qty": 283 ,
-    "background":false
+    "sold_qty": 283,
+    "background": false
   },
   {
     "id": "0392920112321",
@@ -196,9 +196,9 @@
     "tag": "",
     "special": "12 Hours Playback",
     "reviews": 15,
-    "reviewStars":5,
+    "reviewStars": 5,
     "stock_qty": 120,
-    "sold_qty": 283 ,
-    "background":false
+    "sold_qty": 283,
+    "background": false
   }
 ]

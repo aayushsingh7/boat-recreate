@@ -1,187 +1,195 @@
-.container{
-    width: 100%;
-    padding: 60px 60px;
-    background:rgb(37 37 37 / 79%);
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    overflow: hidden;
+.container {
+  width: 100%;
+  padding: 60px 60px;
+  background: var(--box-bg-color);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.section_one{
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content:flex-start;
+.section_one {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.email_container img{
-width: 340px;
-object-fit: cover;
-height: 70px;
-position: relative;
-left: -86px;
+.email_container img {
+  width: 340px;
+  object-fit: cover;
+  height: 70px;
+  position: relative;
+  left: -86px;
 }
 
-.email_container p{
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    margin-top: 15px;
+.email_container p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 15px;
 }
 
-.email_container input{
-    appearance: none;
-    border: none;
-    font-size: 0.8rem;
-    padding: 18px;
-    width: 100%;
-    background: black;
-    color:var(--primary-color);
-    margin-top: 15px;
-    border-radius: 10px;
+.email_container input {
+  appearance: none;
+  border: none;
+  font-size: 0.8rem;
+  padding: 18px;
+  width: 100%;
+  background: var(--mid-dark-background);
+  color: var(--primary-color);
+  margin-top: 15px;
+  border-radius: 10px;
   outline: none;
 }
 
-.component{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
+.email_container input::placeholder {
+  color: var(--secondary-color);
 }
 
-.component h4{
-    font-size: 0.8rem;
-    font-weight: bold;
-    margin-bottom: 25px;
-    color: var(--primary-color);
+.component {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
-.component span{
-    font-size: 0.7rem;
-    margin: 8px 0px;
-    color:rgb(152, 152, 152);
-    cursor: pointer;
+.component h2 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: var(--primary-color);
 }
 
-.component span:hover{
-    text-decoration: underline;
+.component span {
+  font-size: 0.7rem;
+  margin: 8px 0px;
+  color: var(--secondary-color);
+  cursor: pointer;
 }
 
-.section_two{
-    margin-top: 40px;
-    width: 100%;
-    background:rgba(54, 54, 54, 0.892);
- padding: 40px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.component span:hover {
+  text-decoration: underline;
 }
 
-.social_handles{
-    display: flex;
-    align-items:center;
-    justify-content: center;
+.section_two {
+  margin-top: 40px;
+  width: 100%;
+  background: var(--mid-dark-background);
+  padding: 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.social_handles h4{
-    color: var(--primary-color);
-    font-size: 0.9rem;
-    font-weight: bold;
-    margin-right: 6px;
+.social_handles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.social_options{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.social_handles h2 {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-right: 6px;
 }
 
-.social_options svg{
-color: var(--primary-color);
-width: 50px;
-height: 50px;
-padding: 10px;
-background: var(--primary-background);
-border-radius: 5px;
-margin: 0px 3px;
-cursor: pointer;
+.social_options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.ran{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    color: var(--primary-color);
-    margin-top: 50px;
+.social_options svg {
+  color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background: var(--primary-background);
+  border-radius: 5px;
+  margin: 0px 3px;
+  cursor: pointer;
 }
 
-.light_span{
-    color:rgb(152, 152, 152);
-    font-size: 0.6rem;
-    margin-top: 20px;
-    line-height: 1rem;
+.ran {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: var(--primary-color);
+  margin-top: 50px;
 }
 
-.rights{
-    width: 50%;
-    margin-top: 20px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+.light_span {
+  color: var(--secondary-color);
+  font-size: 0.6rem;
+  margin-top: 20px;
+  line-height: 1rem;
 }
 
-.seprator{
-    display: flex;
-    align-items:flex-start;
-    justify-content: space-between;
-    width: 48%;
-    margin-left: 80px;
+.rights {
+  width: 50%;
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
 }
- 
 
-@media (max-width:1200px) {
-  .seprator{
+.seprator {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 48%;
+  margin-left: 80px;
+}
+
+@media (max-width: 1200px) {
+  .seprator {
     width: 100%;
   }
 }
 
-@media (max-width:1000px) {
-    .section_one{
-     flex-direction: column;
-    } 
-    .seprator{
-        width: 100%;
-        margin-left: 0px;
-        margin-top: 50px;
-    }
-    .rights{
-        width: 70%;
-    }
- } 
+@media (max-width: 1000px) {
+  .section_one {
+    flex-direction: column;
+  }
+  .seprator {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  .rights {
+    width: 70%;
+  }
+}
 
+@media (max-width: 550px) {
+  .container {
+    padding: 40px 20px;
+  }
+}
 
- @media (max-width:550px) {
-    .container{
-        padding: 40px 20px;
-    }
- }
+@media (max-width: 540px) {
+  .social_handles {
+    flex-direction: column;
+  }
+  .social_handles h2 {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
 
- @media (max-width:540px) {
-    .social_handles{
-        flex-direction: column;
-    }
-    .social_handles h4{
-        margin-right: 0px;
-        margin-bottom: 10px;
-    }
- }
+@media (max-width: 499px) {
+  .component span {
+    font-size: 0.65rem;
+  }
+}
 
- @media (max-width:400px) {
-    .email_container{
-        width: 100%;
-    }
- }
+@media (max-width: 400px) {
+  .email_container {
+    width: 100%;
+  }
+}

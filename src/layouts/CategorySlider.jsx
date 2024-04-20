@@ -1,10 +1,13 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import { Link } from "react-router-dom";
+import Animate from '../animation/Animate';
 import categories from "../json/categories.json";
 import styles from "../styles/CategorySlider.module.css";
 import formatURL from "../utils/formatURL";
+import { AppContext } from "../context/Context";
 
 const CategorySlider = () => {
+
 
   const containerRef = useRef(null);
   let startX;
@@ -15,7 +18,6 @@ const CategorySlider = () => {
     selected = true;
     startX = e.pageX - containerRef.current.offsetLeft;
     scrollLeft = containerRef.current.scrollLeft;
-    console.log(startX)
   }
 
   const handleMouseUp = () => {
@@ -49,12 +51,13 @@ const CategorySlider = () => {
           msOverflowStyle: "none",
         }}
       >
-        {categories.map((product) => (
-          <Link style={{ textDecoration: "none" }} to={formatURL(`/search?query=${product.type}`)} key={product.id} className={styles.category_box}>
-            <span className={styles.bg_circle}></span>
-            <img src={product.image} alt={product.title} />
-            <p className={styles.title}>{product.title}</p>
-          </Link>
+        {categories.map((product, index) => (
+          <Animate key={product.id} delay={index * 0.05} overflowHidden={false} type="rightToLeft">
+            <Link title={`Search ${product.type}`} style={{ textDecoration: "none" }} to={formatURL(`/search?query=${product.type}`)} className={styles.category_box}>
+              <div className={styles.img_div}> <img src={product.image} alt={`Shop ${product.type}`} /></div>
+              <p className={styles.title}>{product.title}</p>
+            </Link>
+          </Animate>
         ))}
       </div>
 

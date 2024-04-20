@@ -1,20 +1,24 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { AppContext } from "../context/Context";
 import categories from "../json/categories.json";
 import styles from "../styles/MobileSearchPage.module.css";
-import formatURL from  '../utils/formatURL'
+import formatURL from "../utils/formatURL";
 
 const MobileSearchPage = () => {
+
   const { openSearchPage, setOpenSearchPage } = useContext(AppContext);
 
   const [query, setQuery] = useState("");
   const q = new URLSearchParams(location.search);
   const navigate = useNavigate();
+  const inputRef = useRef(null)
 
-  
   useEffect(() => {
+    if (openSearchPage) {
+      inputRef.current.focus()
+    }
     setQuery(q.get("query"));
   }, [openSearchPage]);
 
@@ -22,37 +26,39 @@ const MobileSearchPage = () => {
     e.preventDefault();
     setOpenSearchPage(false);
     if (query.trim() === "") {
+      inputRef.current.blur()
       return navigate("/");
     }
-
     navigate(formatURL(`/search?query=${query}`));
+    inputRef.current.blur()
   };
+
 
   return (
     <>
       <div
         onClick={() => setOpenSearchPage(false)}
-        className={`${styles.shadow} ${
-          openSearchPage ? styles.show_shadow : styles.hide_shadow
-        }`}
+        className={`${styles.shadow} ${openSearchPage ? styles.show_shadow : styles.hide_shadow
+          }`}
       ></div>
       <div
-        className={`${styles.container} ${
-          openSearchPage ? styles.show : styles.hide
-        }`}
+        className={`${styles.container} ${openSearchPage ? styles.show : styles.hide
+          }`}
       >
         <div className={styles.part_one}>
           <AiOutlineArrowLeft
             className={styles.return}
-            onClick={() => {setOpenSearchPage(false);navigate("/")}}
+            onClick={(e) => {
+              setOpenSearchPage(false);
+            }}
           />
           <form onSubmit={handleFormSubmit} style={{ width: "90%" }}>
             <input
+              ref={inputRef}
               type="text"
               placeholder="Search headphones, earphones, etc"
               value={query || ""}
               onChange={(e) => setQuery(e.target.value)}
-              autoFocus
             />
           </form>
           )
