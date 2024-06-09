@@ -15,12 +15,14 @@ const CategorySlider = () => {
   let selected;
 
   const handleMouseDown = (e) => {
+    e.preventDefault()
     selected = true;
     startX = e.pageX - containerRef.current.offsetLeft;
     scrollLeft = containerRef.current.scrollLeft;
   }
 
-  const handleMouseUp = () => {
+  const handleMouseUp = (e) => {
+    e.preventDefault()
     selected = false;
   }
 
@@ -36,8 +38,6 @@ const CategorySlider = () => {
 
   return (
     <div className={styles.container}>
-
-
       <div
         className={styles.category_box_container}
         ref={containerRef}
@@ -50,6 +50,7 @@ const CategorySlider = () => {
           scrollbarWidth: "none",
           msOverflowStyle: "none",
         }}
+
       >
         {categories.map((product, index) => (
           <Animate key={product.id} delay={index * 0.05} overflowHidden={false} type="rightToLeft">

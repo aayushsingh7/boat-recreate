@@ -115,34 +115,34 @@ const Slider = ({
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
         >
-          {
-            !inView ?
-              <>
-                <LoadingTemplate type={type} />
-                <LoadingTemplate type={type} />
-                <LoadingTemplate type={type} />
-                <LoadingTemplate type={type} />
-                <LoadingTemplate type={type} />
-                <LoadingTemplate type={type} />
-                <LoadingTemplate type={type} />
-                <LoadingTemplate type={type} />
-              </>
-              :
-              data
-                .filter((product) => (id ? product.id !== id : true))
-                .map((product, index) => {
-                  return (
-                    <SliderBox
-                      selectedVid={selectedVid}
-                      setSelectedVid={setSelectedVid}
-                      index={index}
-                      type={type}
-                      data={product}
-                      key={index}
-                    />
-                  );
-                })
-          }
+        {
+          !inView ?
+            <>
+              <LoadingTemplate type={type} />
+              <LoadingTemplate type={type} />
+              <LoadingTemplate type={type} />
+              <LoadingTemplate type={type} />
+              <LoadingTemplate type={type} />
+              <LoadingTemplate type={type} />
+              <LoadingTemplate type={type} />
+              <LoadingTemplate type={type} />
+            </>
+            :
+            data
+              .filter((product) => (id ? product.id !== id : true))
+              .map((product, index) => {
+                return (
+                  <SliderBox
+                    selectedVid={selectedVid}
+                    setSelectedVid={setSelectedVid}
+                    index={index}
+                    type={type}
+                    data={product}
+                    key={index}
+                  />
+                );
+              })
+        }
         </div>
       </div>
     </section >
