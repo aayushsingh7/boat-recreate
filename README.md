@@ -43,13 +43,12 @@ npm install
 - Start the development server:
 
 ```bash
-npm start
+npm run dev
 ```
 
 - Open your browser and navigate to the link given on termial to view the application.
 
-![Alt Text](https://res.cloudinary.com/dvk80x6fi/image/upload/v1713424840/Screenshot_610_neaytl.png)
-
+![Alt Text](https://res.cloudinary.com/dvk80x6fi/image/upload/v1718524947/Screenshot_769_b0cnrm.png)
 <br>
 
 ## Features
@@ -94,7 +93,7 @@ Certainly, we were dissatisfied with these outcomes. Therefore, we implemented t
 
 After implementing these optimizations, the current performance of our application is as follows:
 
-![Screenshot of Current Performance](https://res.cloudinary.com/dvk80x6fi/image/upload/v1713429475/Screenshot_612_isgjed.png)
+![Screenshot of Current Performance](https://res.cloudinary.com/dvk80x6fi/image/upload/v1718524591/Screenshot_768_qktg8u.png)
 
 We are excited to see the positive impact these optimizations will have on our project's performance and user experience.
 

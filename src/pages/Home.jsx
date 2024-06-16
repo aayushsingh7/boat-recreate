@@ -1,7 +1,6 @@
 import React, { lazy, Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import { TypeAnimation } from "react-type-animation";
 import Animate from "../animation/Animate";
 import Button from "../components/Button";
 import bestSellerCategoriesVideos from "../json/bestSellerCategories.json";
@@ -30,6 +29,15 @@ const Home = () => {
     heroSectionImageSlider();
   }, []);
 
+  const categories = [
+    "HEADPHONES",
+    "SPEAKERS",
+    "EARBUDS",
+    "EARPHONES",
+    "TRIMMERS",
+    "SOUNDBOXES"
+  ]
+
   return (
     <div id="home" className={styles.container}>
       <Helmet>
@@ -38,87 +46,51 @@ const Home = () => {
         <link rel="canonical" href="http://localhost:4173/" />
       </Helmet>
       <section className={styles.hero_section}>
-        <section className={styles.text_container}>
-          <Animate overflowHidden={true} type={"topToBottom"}>
-            <h2 className={styles.hero_heading}>
-              <span>
-                bo<span>A</span>t
-              </span>
-              <TypeAnimation
-                sequence={[
-                  "Headphones.",
-                  2500,
-                  "Speakers.",
-                  2500,
-                  "Earbuds.",
-                  2500,
-                  "Earphones.",
-                  2500,
-                  "Trimmers.",
-                  2500,
-                  "SoundBox.",
-                  2500,
-                ]}
-                speed={70}
-                repeat={Infinity}
-              />
-            </h2>
+        <div className={styles.product_details}>
+          <h1>
+            <span className={styles.company_name}><Animate overflowHidden={true} type={"leftToRight"}>BO<span>A</span>T </Animate></span>
+            <Animate overflowHidden={true} type={"leftToRight"} delay={0.2}>
+              <span className={styles.cate}>
+                {categories[imageIndex]}</span>
+            </Animate>
+          </h1>
+          <Animate overflowHidden={true} type={"leftToRight"} delay={0.4}>
+            <p>Dive into superior sound with our cutting-edge products. Elevate your audio experience with premium quality and unmatched performance on every wave.</p>
           </Animate>
-          <Animate overflowHidden={true} type={"topToBottom"} delay={0.25}>
-            <div className={styles.btn_container}>
-              <a href="#home-products" style={{ textDecoration: "none" }}>
-                <Button
-                  label={"Shop now"}
-                  padding="12px 30px"
-                  borderRadius="5px"
-                  fontSize="1rem"
-                  margin="10px"
-                  background="var(--secondary-background)"
-                  text={"Shop now"}
-                />
-              </a>
-              <Link style={{ textDecoration: "none" }} title="Go to about page" to={"/about"}>
-                <Button
-                  label={"About us"}
-                  padding="12px 30px"
-                  borderRadius="5px"
-                  fontSize="1rem"
-                  margin="10px"
-                  background="var(--mid-dark-background)"
-                  text={"About Us"}
-                />
+          <Animate overflowHidden={true} type={"leftToRight"} width="100%" delay={0.6}>
+            <div className={styles.btn_container} style={{ justifyContent: "flex-start", display: "flex", width: "100%" }}>
+              <Link to={"/search?query=all"}>
+                <Button text={"View Products"}
+                  background="var(--secondary-background)" color="var(--primary-background)" />
               </Link>
+              <Link to={"/about"}>
+                <Button text={"About boAt"}
+                  background="var(--mid-dark-background)" color="var(--primary-background)" marginLeft="15px" /></Link>
             </div>
           </Animate>
-        </section>
-        <section className={styles.img_container}>
-          <div className={styles.slider}>
-            {heroSectionImages.map((image, index) => {
-              return (
-                <img
-                  style={{ translate: `${imageIndex * -100}%` }}
-                  key={index}
-                  src={image}
-                  alt={`slider-${index}`}
-                  loading="lazy"
-                />
-              );
-            })}
-          </div>
-        </section>
-        <span className={styles.cutter}></span>
-      </section>
+
+        </div>
+
+        <div className={styles.product_image}>
+
+          {heroSectionImages.map((image, index) => {
+            return (
+              <img
+                style={{ translate: `${imageIndex * -100}%` }}
+                key={index}
+                src={image}
+                alt={`slider-${index}`}
+                loading="lazy"
+              />
+            );
+          })}
+
+        </div>
+
+      </section >
+
 
       <div className="add-padding-container" id="home-products">
-
-
-        <section>
-          <h2>
-            Shop by <span className={styles.under_line}>Categories</span>
-          </h2>
-          <CategorySlider />
-        </section>
-
 
         <Slider
           data={dailyDeals}
@@ -128,6 +100,15 @@ const Home = () => {
           counter={true}
           filterReq={false}
         />
+
+
+        <section>
+          <h2>
+            Shop by <span className={styles.under_line}>Categories</span>
+          </h2>
+          <CategorySlider />
+        </section>
+
 
 
         <Slider
@@ -172,7 +153,7 @@ const Home = () => {
 
         <ImageSlider tittle={"In the"} highlight={"Press"} />
       </div>
-    </div>
+    </div >
   );
 };
 
