@@ -25,13 +25,13 @@ To get started with the project, follow these steps:
 - Clone the repository:
 
 ```bash
- git clone https://github.com/aayushsingh7/Boat-recreate.git
+ git clone https://github.com/aayushsingh7/grandmasters-ReimagineRound1.git
 ```
 
 - Navigate to the project directory:
 
 ```bash
- cd boat-redesign
+ cd grandmasters-ReimagineRound1
 ```
 
 - Install dependencies using npm:
@@ -83,7 +83,7 @@ Certainly, we were dissatisfied with these outcomes. Therefore, we implemented t
 
 - We replaced `static imports` with `dynamic imports (React.lazy)` to limit the loading of non-essential pages, layouts, components, etc. This adjustment significantly improved the loading speed of the application.
 
-- Additionally, we utilized React's `img` tag options such as `loading="instant"` and `loading="lazy"`, enabling us to instantly load essential images and defer loading of images that are not immediately required (e.g., those outside the viewport).
+- Additionally, we utilized React's `img` tag options such as `loading="eager"` and `loading="lazy"`, enabling us to instantly load essential images and defer loading of images that are not immediately required (e.g., those outside the viewport).
 
 - Furthermore, we enhanced accessibility by adding `aria-label` to buttons and `title` attributes to anchor tags.
 
