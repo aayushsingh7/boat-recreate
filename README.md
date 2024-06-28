@@ -109,7 +109,7 @@ We are excited to see the positive impact these optimizations will have on our p
 
 **Sheryians from reImage Hackathon:**
 
-- A special thank you to the `Sheryians team` for organizing the `reImage` Hackathon, which provided the platform for us to collaborate and create this project.
+- A special thank you to the `Sheryians team` for organizing the `ReImagine` Hackathon, which provided the platform for us to collaborate and create this project.
 
 <br>
 
