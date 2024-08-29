@@ -25,13 +25,13 @@ To get started with the project, follow these steps:
 - Clone the repository:
 
 ```bash
- git clone https://github.com/aayushsingh7/grandmasters-ReimagineRound1.git
+ git clone https://github.com/aayushsingh7/boat-recreate.git
 ```
 
 - Navigate to the project directory:
 
 ```bash
- cd grandmasters-ReimagineRound1
+ cd boat-recreate
 ```
 
 - Install dependencies using npm:
@@ -106,11 +106,7 @@ We are excited to see the positive impact these optimizations will have on our p
 - Thank you to our dedicated team of developers for their hard work and commitment to excellence throughout the project.
   - [Aayush Singh (Captain)](https://github.com/aayushsingh7)
   - [Srinivash R.T](https://github.com/CByadd)
-
-**Sheryians from reImage Hackathon:**
-
-- A special thank you to the `Sheryians team` for organizing the `ReImagine` Hackathon, which provided the platform for us to collaborate and create this project.
-
+  - 
 <br>
 
 ## Thank You😁💖
